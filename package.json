@@ -1,0 +1,35 @@
+{
+  "name": "shopit-v2",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Ecommerce App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/app.js",
+    "dev": "NODE_ENV=DEVELOPMENT nodemon backend/app.js",
+    "prod": "NODE_ENV=PRODUCTION nodemon backend/app.js",
+    "seeder": "node backend/seeder/seeder.js"
+  },
+  "author": "Ghulam Abbas",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.3",
+    "cookie-parser": "^1.4.6",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "nodemailer": "^6.9.5",
+    "openai": "^4.85.1",
+    "puppeteer": "^24.2.1",
+    "react-icons": "^5.4.0",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
