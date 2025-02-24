@@ -1,2784 +1,496 @@
 [
   {
-    "name": "MidJourney V6.1",
-    "description": "« Powerful image generator based on text description (Discord + Web) »",
+    "name": "ElevenLabs",
+    "description": "AI voice reader that reads text naturally and clones your voice with lifelike precision.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/midjourney_v6.1",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320594/toolzite/products/midjourney_v6.1.png"
+        "public_id": "toolzite/products/elevenlabs",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404245/toolzite/products/elevenlabs.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://midjourney.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://elevenlabs.io/?from=partnerstephens742",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Adobe Firefly 3",
-    "description": "« Powerful AI tools for easy image editing, generation and enhancement: image generator, generative fill, generative recolor, etc. »",
+    "name": "Audiobox by Meta",
+    "description": "Smart audio editing toolbox: voice cloning, sound effects, AI audio creation, and a magic audio editor.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/adobe_firefly_3",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320593/toolzite/products/adobe_firefly_3.png"
+        "public_id": "toolzite/products/audiobox_by_meta",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404242/toolzite/products/audiobox_by_meta.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://prf.hn/l/EJXxwOp",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://audiobox.metademolab.com/maker",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Stable Diffusion 3.5",
-    "description": "« A free opensource image generator with the ability to use templates (local installation) »",
+    "name": "Murf.AI",
+    "description": "AI-powered voice production suite offering text-to-speech, translation, voice cloning, and transcription tools.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/stable_diffusion_3.5",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320594/toolzite/products/stable_diffusion_3.5.png"
+        "public_id": "toolzite/products/murf.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404245/toolzite/products/murf.ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://stablediffusionweb.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://get.murf.ai/k28jnfv9u5up",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Leonardo AI",
-    "description": "« A complete design platform that generates professional images, 3D textures and designs. Create assets for video games, fashion, architecture and more with intuitive tools like AI Canvas »",
+    "name": "Uberduck",
+    "description": "Write text and have it read by celebrities, or clone your own voice for personalized narration.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/leonardo_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320594/toolzite/products/leonardo_ai.png"
+        "public_id": "toolzite/products/uberduck",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404244/toolzite/products/uberduck.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://leonardo.ai/?via=aixploria",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://uberduck.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Ideogram 2.0",
-    "description": "« An image generator capable of creating impressive illustrations and integrating text. Ideal for creating logos, storyboards, advertising banners, etc. »",
+    "name": "Play HT",
+    "description": "A voice generator that reads any text aloud, including your own voice through advanced cloning technology.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/ideogram_2.0",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320594/toolzite/products/ideogram_2.0.png"
+        "public_id": "toolzite/products/play_ht",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404243/toolzite/products/play_ht.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://ideogram.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.play.ht/?via=aixploria",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "FLUX.1",
-    "description": "« Generate photorealistic images from text with an open-source model available in 3 versions: Pro (API), Dev (non-commercial) and Schnell (personal use) »",
+    "name": "Voicemy.ai",
+    "description": "Create AI song covers using hundreds of celebrity voices or clone your own voice.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/flux.1",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320605/toolzite/products/flux.1.png"
+        "public_id": "toolzite/products/voicemy.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404253/toolzite/products/voicemy.ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://blackforestlabs.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://voicemy.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Recraft V3",
-    "description": "« A high-precision AI image generator. Create designs with positionable text, refine styles, generate vector images and much more »",
+    "name": "OpenVoice AI",
+    "description": "Quickly clone your voice for realistic text-to-speech with emotion, accents, pauses, and natural intonation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/recraft_v3",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320606/toolzite/products/recraft_v3.png"
+        "public_id": "toolzite/products/openvoice_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404250/toolzite/products/openvoice_ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://www.recraft.ai/ai-image-generator",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://research.myshell.ai/open-voice",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Freepik",
-    "description": "« An ultra-realistic text-to-image generator with a host of new features: real-time editing, image generation with infinite scrolling, etc. »",
+    "name": "Descript",
+    "description": "AI tools for seamless video and podcast editing—write, record, transcribe, edit, and share in one platform.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/freepik",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320598/toolzite/products/freepik.png"
+        "public_id": "toolzite/products/descript",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404261/toolzite/products/descript.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://www.freepik.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://get.descript.com/sx9ahgvct8j9",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "DALL·E 3",
-    "description": "« An image generator that integrates with the ChatGPT interface. Easily manipulate and create your own images using prompts. »",
+    "name": "Voice Engine by OpenAI",
+    "description": "Clone a voice instantly using OpenAI’s Voice Engine for dubbing and multilingual translations.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/dall·e_3",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320600/toolzite/products/dall%C2%B7e_3.png"
+        "public_id": "toolzite/products/voice_engine_by_openai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404257/toolzite/products/voice_engine_by_openai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://openai.com/dall-e-3",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Krea.ai",
-    "description": "« Generate images or videos using a design-driven AI. This AI is able to produce an illustration from a simple drawing »",
+    "name": "CloneDub",
+    "description": "Convert audio into different languages while maintaining the original voice tone with AI voice cloning.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/krea.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320601/toolzite/products/krea.ai.png"
+        "public_id": "toolzite/products/clonedub",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404256/toolzite/products/clonedub.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://www.krea.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.clonedub.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Bing Image Creator",
-    "description": "« Bing's new AI image generator that creates illustrations from text. Now powered by Dall-E 3 »",
+    "name": "Speechify",
+    "description": "AI voice-over generator for videos, ads, audiobooks, e-learning, and dubbing—featuring 200+ voices, 60+ languages, and customization.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/bing_image_creator",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320615/toolzite/products/bing_image_creator.png"
+        "public_id": "toolzite/products/speechify",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404271/toolzite/products/speechify.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://www.bing.com/create",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://speechify.com/ai-voice-generator/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Illustroke AI",
-    "description": "« An AI that generates stunning vector illustrations from text »",
+    "name": "Hailuo AI Audio",
+    "description": "Free AI text-to-speech tool with voice cloning in under 10 seconds, featuring 300+ customizable multilingual voices.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/illustroke_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320612/toolzite/products/illustroke_ai.png"
+        "public_id": "toolzite/products/hailuo_ai_audio",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404270/toolzite/products/hailuo_ai_audio.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://illustroke.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.hailuo.ai/audio",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Snowpixel",
-    "description": "« An AI that turns your ideas into works of art. Generate images, animations, pixel art, etc. »",
+    "name": "Fish Audio",
+    "description": "Advanced text-to-speech platform for realistic AI voices, customizable for easy integration via a powerful API.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/snowpixel",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320614/toolzite/products/snowpixel.png"
+        "public_id": "toolzite/products/fish_audio",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404268/toolzite/products/fish_audio.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://snowpixel.app/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://fish.audio/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Sqriblr",
-    "description": "« An article generator that will find the most relevant images to illustrate your writing (with ChatGPT) »",
+    "name": "Respeecher AI",
+    "description": "AI converts voices for dubbing, ads, and e-learning, with a Hollywood-quality voice marketplace.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/sqriblr",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320616/toolzite/products/sqriblr.png"
+        "public_id": "toolzite/products/respeecher_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404273/toolzite/products/respeecher_ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://sqriblr.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.respeecher.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "EVE AI",
-    "description": "« Generation of artistic content based on templates to be integrated into your projects »",
+    "name": "Whisper OpenAI",
+    "description": "A multilingual speech recognition model ideal for real-time translation and audio applications.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/eve_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320630/toolzite/products/eve_ai.png"
+        "public_id": "toolzite/products/whisper_openai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404266/toolzite/products/whisper_openai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://dapp.eveai.xyz/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.aixploria.com/out/WhisperOpenAI",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Maze AI",
-    "description": "« An AI-based image generator that runs on the Discord platform and allows you to share your art galleries »",
+    "name": "Neets AI",
+    "description": "High-quality AI voice synthesis with natural tone, emotion, and a built-in voice cloning tool.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/maze_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320632/toolzite/products/maze_ai.png"
+        "public_id": "toolzite/products/neets_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404279/toolzite/products/neets_ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://maze.guru/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://neets.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "IconifyAI",
-    "description": "« Professional quality web and app icon generator in just a few seconds »",
+    "name": "SonixTw by Fineshare",
+    "description": "AI platform for voice cloning and digital voice doubles—sing, read text, or personalize speech synthesis.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/iconifyai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320631/toolzite/products/iconifyai.png"
+        "public_id": "toolzite/products/sonixtw_by_fineshare",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404282/toolzite/products/sonixtw_by_fineshare.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://www.iconifyai.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.fineshare.com/ai-voice-cloning/?ref=aixploria",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Variart",
-    "description": "« Give an image to the AI and it generates another very similar one in less than 8 seconds »",
+    "name": "Coachvox AI",
+    "description": "Create an AI-powered voice assistant to engage and convert website visitors into customers.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/variart",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320633/toolzite/products/variart.png"
+        "public_id": "toolzite/products/coachvox_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404289/toolzite/products/coachvox_ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://variart.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://coachvox.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "AnimeAI App",
-    "description": "« Generate anime-style avatars from one of your photos, with a selection of custom styles »",
+    "name": "Gotalk.ai",
+    "description": "Studio-quality text-to-speech in 50+ languages, with advanced voice cloning capabilities.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/animeai_app",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320634/toolzite/products/animeai_app.png"
+        "public_id": "toolzite/products/gotalk.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404301/toolzite/products/gotalk.ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://animeai.app/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://gotalk.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "PatternAI",
-    "description": "« Create patterns with custom and unique designs. Generated by an AI with a great artistic sense »",
+    "name": "Gemelo",
+    "description": "NVIDIA Maxine-powered AI clones voices and creates interactive digital avatars for customer engagement.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/patternai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320643/toolzite/products/patternai.png"
+        "public_id": "toolzite/products/gemelo",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404285/toolzite/products/gemelo.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://www.patterned.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://gemelo.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Autodraft",
-    "description": "« An AI image generator specializing in the creation of comic strips, cartoons, comics and anime »",
+    "name": "Delphi AI",
+    "description": "AI platform to build a digital version of yourself using text, videos, and audio—ideal for creators.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/autodraft",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320644/toolzite/products/autodraft.png"
+        "public_id": "toolzite/products/delphi_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404307/toolzite/products/delphi_ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://autodraft.in/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.delphi.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Pixelfy",
-    "description": "« Generate artistic images in Pixel Art style and integrate them into your creative projects »",
+    "name": "Play.ai",
+    "description": "AI-powered voice cloning for conversational agents and natural-sounding interactive dialogues.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/pixelfy",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320643/toolzite/products/pixelfy.png"
+        "public_id": "toolzite/products/play.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404319/toolzite/products/play.ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://www.pixelfy.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://play.ai/?via=aixploria",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "EmojiHi",
-    "description": "« Show your emotions with a custom emoji generator that produces Apple-style emojis »",
+    "name": "TalkingAvatar",
+    "description": "Edit videos with AI that clones voices, lip-syncs, and translates content into multiple languages.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/emojihi",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320660/toolzite/products/emojihi.png"
+        "public_id": "toolzite/products/talkingavatar",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404315/toolzite/products/talkingavatar.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://emojihi.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.talkingavatar.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Liro",
-    "description": "« An image generator that emphasizes the confidentiality of the images you generate. An AI that uses Stable Diffusion models »",
+    "name": "Resemble",
+    "description": "AI voice cloning tool that reads text using a lifelike reproduction of your voice.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/liro",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320646/toolzite/products/liro.png"
+        "public_id": "toolzite/products/resemble",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404310/toolzite/products/resemble.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://liro.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.resemble.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Typho",
-    "description": "« An AI application available on the Apple Store for creating unique artistic portraits, without the need for complex settings. »",
+    "name": "Applio",
+    "description": "Open-source AI ecosystem for voice cloning—create, customize, and integrate lifelike synthetic voices.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/typho",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320669/toolzite/products/typho.png"
+        "public_id": "toolzite/products/applio",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404326/toolzite/products/applio.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://apps.apple.com/us/app/typho-ai-photo-playground/id6470999411",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://applio.org/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "FreeImage AI",
-    "description": "« Image generation in Stable Diffusion with support for 256x256 and 512x512 formats »",
+    "name": "ElevenLabs Voice Design",
+    "description": "Generate and customize ultra-realistic AI voices with precise emotional and tonal control.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/freeimage_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320668/toolzite/products/freeimage_ai.png"
+        "public_id": "toolzite/products/elevenlabs_voice_design",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404329/toolzite/products/elevenlabs_voice_design.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://freeimage.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://elevenlabs.io/voice-design?from=partnerstephens742",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Xinva",
-    "description": "« Generation of artistic images and designs that leverage your imagination and creativity »",
+    "name": "Parler-TTS",
+    "description": "Open-source AI text-to-speech tool using a 600-million-parameter model for natural voice synthesis.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/xinva",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320670/toolzite/products/xinva.png"
+        "public_id": "toolzite/products/parler-tts",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404325/toolzite/products/parler-tts.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://xinva.ai/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://github.com/huggingface/parler-tts",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "RunDiffusion",
-    "description": "« An image generator with preloaded templates in a cloud. Several customizable and configurable options »",
+    "name": "Vall-E",
+    "description": "AI perfectly replicates voices for ultra-realistic speech synthesis.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/rundiffusion",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320669/toolzite/products/rundiffusion.png"
+        "public_id": "toolzite/products/vall-e",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404323/toolzite/products/vall-e.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://rundiffusion.com/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://arxiv.org/abs/2301.02111",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Image Mixer",
-    "description": "« Combine multiple images together and create totally new illustrations »",
+    "name": "Cartesia AI",
+    "description": "Real-time AI voice synthesis platform for speech applications, used by over 10,000 people.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/image_mixer",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320669/toolzite/products/image_mixer.png"
+        "public_id": "toolzite/products/cartesia_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404328/toolzite/products/cartesia_ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://huggingface.co/spaces/lambdalabs/image-mixer-demo",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://cartesia.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "AI Gallery",
-    "description": "« Generate images with various templates, post-processing and guidance options. Save your presets, history, etc. »",
+    "name": "Momento AI",
+    "description": "Get your own AI voice clone, letting fans interact with you anytime through cutting-edge AI technology.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/ai_gallery",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320677/toolzite/products/ai_gallery.png"
+        "public_id": "toolzite/products/momento_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404338/toolzite/products/momento_ai.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://aigallery.app/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.momentoai.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Image AI App",
-    "description": "« Generate images like Pokémon, D&D, dragons, anime or cartoon characters, etc. »",
+    "name": "AI Studios",
+    "description": "AI-powered video platform transforms text into professional videos with realistic avatars in 80+ languages.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/image_ai_app",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320680/toolzite/products/image_ai_app.png"
+        "public_id": "toolzite/products/ai_studios",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404341/toolzite/products/ai_studios.png"
       }
     ],
-    "category": "Image Generators",
-    "link": "https://imageai.app/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Dreamlook",
-    "description": "« Easily train AIs from a series of custom models and get custom images »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dreamlook",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320675/toolzite/products/dreamlook.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://dreamlook.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Drawww",
-    "description": "« A drawing application with real-time AI assistance for IPad tablet users. The image is built in real time according to your drawing »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/drawww",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320675/toolzite/products/drawww.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.drawww.app/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "FollowFox",
-    "description": "« An open-source text-to-image generator using the Stable Diffusion model. Create images from a prompt on Discord »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/followfox",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320691/toolzite/products/followfox.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://followfox.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "PiktID",
-    "description": "« A tool that hides your real identity by changing your face in your photos. You can easily customise the face that replaces you »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/piktid",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320689/toolzite/products/piktid.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://piktid.com/eraseid-ai-face-anonymizer/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Dad Can’t Draw",
-    "description": "« Create up to 500 personalized coloring pages per month for your children with AI. Drawings are unique and follow your instructions (prompt) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dad_can’t_draw",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320684/toolzite/products/dad_can%E2%80%99t_draw.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.aixploria.com/out/DadCan%26%238217%3BtDraw",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "RocketAI",
-    "description": "« Marketing oriented image generator. Fast generation of attractive visual ads »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/rocketai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320687/toolzite/products/rocketai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://rocketai.io/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Lucidpic",
-    "description": "« Quickly create unique, royalty free and customizable photos of people »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/lucidpic",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320688/toolzite/products/lucidpic.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://lucidpic.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Tracejourney",
-    "description": "« Add a bot to the Midjourney Discord and quickly vectorize any image you generate »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/tracejourney",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320700/toolzite/products/tracejourney.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://discord.com/invite/CHYcHCzHed",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Ilus AI",
-    "description": "« Create stunning custom illustrations exportable in SVG or PNG format. Choose from predefined templates or train your own by importing your own designs »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ilus_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320696/toolzite/products/ilus_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://ilus.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Text to Pokemon",
-    "description": "« Generate unique Pokemon from any text. Customization and sharing on social networks »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/text_to_pokemon",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320705/toolzite/products/text_to_pokemon.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://replicate.com/lambdal/text-to-pokemon",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "WallpaperAI.io",
-    "description": "« Create stunning 5K wallpapers with AI. Describe your idea and get a high-resolution image for PC, laptop or smartphone. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/wallpaperai.io",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320703/toolzite/products/wallpaperai.io.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://wallpaperai.io/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Plurana",
-    "description": "« AI-generated, high-quality vector designs, with over 1000 graphic combinations available. 25 free downloads »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/plurana",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320706/toolzite/products/plurana.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://plurana.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "VectorArt.ai",
-    "description": "« An AI drawing and vector image generator with customisable parameters. It also features a large gallery of royalty-free visuals (PNG and SVG) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/vectorart.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320711/toolzite/products/vectorart.ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://vectorart.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "StickerBaker",
-    "description": "« An open-source, top-quality AI sticker generator. This tool is fast and easy to use, working via a prompt. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stickerbaker",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320732/toolzite/products/stickerbaker.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stickerbaker.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "EverArt AI",
-    "description": "« Create your own graphic style and generate many similar styled images in just a few moments »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/everart_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320713/toolzite/products/everart_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.everart.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Stable Doodle",
-    "description": "« AI that turns your sketches into digital works of art. Recommended for designers, draftsmen and architects »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stable_doodle",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320713/toolzite/products/stable_doodle.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://clipdrop.co/fr/stable-doodle",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Dumb Meme Generator",
-    "description": "« A funny meme generator that creates both the image and the text of the meme. Interface is simple to use and works with a prompt »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dumb_meme_generator",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320711/toolzite/products/dumb_meme_generator.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://dumb-meme.herokuapp.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Cuebric",
-    "description": "« Create photo-realistic virtual environments quickly and intuitively. This AI is capable of automatically generating, segmenting and integrating images in Unreal Engine »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/cuebric",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320750/toolzite/products/cuebric.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://cuebric.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Artroom AI",
-    "description": "« An AI platform focused on artistic creation. Easily create high-quality images (4K resolution) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/artroom_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320763/toolzite/products/artroom_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://artroom.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "FastSDXL by Fal.ai",
-    "description": "« A Playground for generating images very quickly and a complete structure for easy construction with ready-to-use APIs »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/fastsdxl_by_fal.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320737/toolzite/products/fastsdxl_by_fal.ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://fastsdxl.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Ipic AI",
-    "description": "« Generate unique images with easy-to-use AI. Easily illustrate your blogs, websites, social networks and more »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ipic_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320739/toolzite/products/ipic_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.ipic.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Artificial Art",
-    "description": "« An AI-based generator of artistic images and illustrations with numerous adjustable parameters »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/artificial_art",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320742/toolzite/products/artificial_art.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://artificial-art.eu/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Gcore AI Image",
-    "description": "« An AI platform that gives you the power to generate stunning, realistic images. A simple text description is all it takes (prompt) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/gcore_ai_image",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320775/toolzite/products/gcore_ai_image.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://gcore.com/cloud/ai-image-generator",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Apob AI",
-    "description": "« Create your digital clone in one click with AI. Upload a photo and let your digital double come to life in personalized images and videos »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/apob_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320774/toolzite/products/apob_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://apob.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "PNGMaker",
-    "description": "« A website to quickly create transparent PNG images from a prompt. Ideal for designers, marketers, graphic artists, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/pngmaker",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320778/toolzite/products/pngmaker.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://pngmaker.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "IP Adapter FaceID",
-    "description": "« Upload your face and get images of yourself in different artistic contexts. Easy to use from a prompt »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ip_adapter_faceid",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320805/toolzite/products/ip_adapter_faceid.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://ipadapterfaceid.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Shakker AI",
-    "description": "« Submit a reference image to this AI and it will remix it while retaining its style. Editing options: Inpaint, collage, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/shakker_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320810/toolzite/products/shakker_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.shakker.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Little Artist",
-    "description": "« Turn your children's doodles or drawings into real works of art! You can also print them on canvas or a poster »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/little_artist",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320806/toolzite/products/little_artist.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://little-artist.co/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Eilla AI",
-    "description": "« Assistant in the creation of images and graphics of all kinds »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/eilla_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320808/toolzite/products/eilla_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://eilla.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "SVG.io",
-    "description": "« A free SVG generator that works with instructions (prompt text). Describe your idea and the AI creates a high-quality SVG for you »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/svg.io",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320806/toolzite/products/svg.io.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://svg.io/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "PicFinder",
-    "description": "« Generate infinite images for free with an AI that only needs a vague description (via a prompt) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/picfinder",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320816/toolzite/products/picfinder.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://picfinder.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Amazon Titan",
-    "description": "« A versatile tool capable of generating images, modelling and generating text using different templates. Multi-modal capabilities »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/amazon_titan",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320827/toolzite/products/amazon_titan.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://aws.amazon.com/bedrock/titan/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Stable Artisan",
-    "description": "« A multimodal generative AI Discord bot that works with the Stability AI API. It allows you to generate and modify images with Stable Diffusion 3 »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stable_artisan",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320834/toolzite/products/stable_artisan.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stability.ai/stable-artisan",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Dream AI",
-    "description": "« You write text, the AI makes images for you (Wombo) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dream_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320821/toolzite/products/dream_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://dream.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Go Charlie",
-    "description": "« Make 4K images and ads for the web »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/go_charlie",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320905/toolzite/products/go_charlie.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://gocharlie.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Starryai",
-    "description": "« A mobile compatible drawing, photo and image creator »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/starryai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320896/toolzite/products/starryai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://starryai.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Kaiber Superstudio",
-    "description": "« An intelligent creative platform for image and video production. Explore, blend and refine your ideas with intuitive AI models and tools. Also features a collaborative workspace »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/kaiber_superstudio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320900/toolzite/products/kaiber_superstudio.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://kaiber.pxf.io/QyRW5P",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Turbo.art",
-    "description": "« Experience creative image generation in real time with SDXL Turbo. Import a photo, rework it with a prompt and intuitive drawing tools »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/turbo.art",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320898/toolzite/products/turbo.art.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://turbo.art/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Vizcom",
-    "description": "« Watch your designs come to life in seconds »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/vizcom",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320940/toolzite/products/vizcom.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.vizcom.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Stable Horde",
-    "description": "« A participatory platform that allows you to create images »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stable_horde",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320941/toolzite/products/stable_horde.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stablehorde.net/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Pollinations",
-    "description": "« A creative, simple and ecological image generator »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/pollinations",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320937/toolzite/products/pollinations.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://pollinations.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Recraft V3 SVG",
-    "description": "« An AI image generator that excels at creating vector graphics (SVG). Create logos, icons and illustrations in a variety of styles, with precise rendering control and professional quality »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/recraft_v3_svg",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320926/toolzite/products/recraft_v3_svg.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://zeke.github.io/red-panda-svg/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AI Comic Factory",
-    "description": "« A Comic Book generator powered by SDXL. The tool not only automatically generates the drawings, but also the story »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ai_comic_factory",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320965/toolzite/products/ai_comic_factory.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://aicomicfactory.com/playground",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Nvidia Canvas",
-    "description": "« Draw a sketch and the AI turns it into a realistic image »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/nvidia_canvas",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320963/toolzite/products/nvidia_canvas.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.nvidia.com/fr-fr/studio/canvas/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Tensor.art",
-    "description": "« A complete AI image generator for creating comics and illustrations. Transform your ideas into original visual works with a variety of artistic styles and customizable models »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/tensor.art",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320959/toolzite/products/tensor.art.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://tensor.art/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "StableStudio",
-    "description": "« An open-source, community-based interface for easy AI image generation »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stablestudio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320964/toolzite/products/stablestudio.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://github.com/Stability-AI/StableStudio",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Pixela AI",
-    "description": "« Generate textures from a prompt. You can also search a very large database using keywords »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/pixela_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320959/toolzite/products/pixela_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://pixela.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AutoDraw",
-    "description": "« Become a professional designer in an instant »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/autodraw",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320974/toolzite/products/autodraw.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.autodraw.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Luma Photon",
-    "description": "« An AI image generator that combines quality and speed. Create consistent illustrations from text or reference images at 10 times less cost than existing solutions »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/luma_photon",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320986/toolzite/products/luma_photon.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://lumalabs.ai/photon",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Art Remix by Google",
-    "description": "« Transform any image by remixing it with AI. Describe the desired changes via a prompt and let the magic happen. Create infinitely! »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/art_remix_by_google",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320975/toolzite/products/art_remix_by_google.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://artsandculture.google.com/experiment/art-remix/2gFc5DkygEURfw",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Visual Electric",
-    "description": "« An image generator for creative minds that works with instructions. It also has options such as remixing, variations, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/visual_electric",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320985/toolzite/products/visual_electric.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://visualelectric.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Hotspot AI",
-    "description": "« Automated generator of professional illustrations and photos. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/hotspot_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320976/toolzite/products/hotspot_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://hotpot.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Republic Labs AI",
-    "description": "« The people's GenAI Platform where you can generate images and videos simultaneously with multiple models using a single prompt »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/republic_labs_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320999/toolzite/products/republic_labs_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://republiclabs.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Frames By Runway",
-    "description": "« An image generator for ultra-precise stylistic control. Create coherent visual universes and explore different variations while preserving your aesthetic signature »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/frames_by_runway",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320991/toolzite/products/frames_by_runway.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.aixploria.com/out/FramesByRunway",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "SDXL Turbo Online",
-    "description": "« Generate images from text or images in near real time (ADD). Fine-tuning is also easily performed »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/sdxl_turbo_online",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320994/toolzite/products/sdxl_turbo_online.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stablediffusionweb.com/SDXL-Turbo",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "DreamStudio",
-    "description": "« An easy-to-use platform for rapid image generation. The site uses generative templates from Stability.ai »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dreamstudio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740320991/toolzite/products/dreamstudio.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://dreamstudio.ai/generate",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "RenderNet",
-    "description": "« Generate high-quality AI images with absolute control. Create realistic, consistent characters with FaceLock and ControlNet »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/rendernet",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321079/toolzite/products/rendernet.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://rendernet.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "ImageFX by Google",
-    "description": "« An Imagen 2-based image generator that produces high-quality illustrations. Operates via a prompt on an intuitive interface »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/imagefx_by_google",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321075/toolzite/products/imagefx_by_google.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://aitestkitchen.withgoogle.com/tools/image-fx",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Easy-Peasy AI",
-    "description": "« Write your content 10x faster. 80 templates available for writing, image generation, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/easy-peasy_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321073/toolzite/products/easy-peasy_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://easy-peasy.ai/?via=aixploria",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Skybox Lab",
-    "description": "« Generate panoramic skybox prototypes and save them in a resolution of 1536x3278px »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/skybox_lab",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321076/toolzite/products/skybox_lab.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://skybox.blockadelabs.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Imagine by Meta AI",
-    "description": "« An easy-to-use image generator that works with a prompt. Produces good quality images (with watermark) free of charge »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/imagine_by_meta_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321091/toolzite/products/imagine_by_meta_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://imagine.meta.com",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Dezgo",
-    "description": "« Image generator based on Stable Diffusion 1.5 »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dezgo",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321101/toolzite/products/dezgo.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://dezgo.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Story Illustrator AI",
-    "description": "« An AI tool for easy creation of comics and stories. Generate panels, characters, dialogues and more »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/story_illustrator_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321085/toolzite/products/story_illustrator_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://makemycomics.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "StoryDiffusion",
-    "description": "« An AI tool that generates coherent images and videos over long sequences thanks to an auto-attention mechanism. Create compelling stories while maintaining character and plot consistency »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/storydiffusion",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321096/toolzite/products/storydiffusion.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://storydiffusion.github.io/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Switti",
-    "description": "« Generate HD images seven times faster than current diffusion models. Take advantage of an architecture that optimizes memory and visual quality through more powerful transformers »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/switti",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321096/toolzite/products/switti.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://yandex-research.github.io/switti/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Generated Photos",
-    "description": "« An AI that can improve your photos and generate new ones with templates »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/generated_photos",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321115/toolzite/products/generated_photos.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://generated.photos/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AI Meme by Rusher",
-    "description": "« Create hilarious memes in seconds from any URL. The service is free and available in many languages »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ai_meme_by_rusher",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321131/toolzite/products/ai_meme_by_rusher.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://rusher.ai/free-tools/ai-meme-generator",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Headpix.ai",
-    "description": "« Create professional profile photos with AI. Turn your selfies into studio-quality portraits for your professional image on social networks and websites »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/headpix.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321130/toolzite/products/headpix.ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://headpix.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Mage",
-    "description": "« Generation of uncensored images with the StableDiffusion algorithm »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/mage",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321129/toolzite/products/mage.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.mage.space/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "SketchPro AI",
-    "description": "« Receive sketches from an image and even a vague description »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/sketchpro_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321131/toolzite/products/sketchpro_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://sketchpro.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Stable Diffusion 3 Medium",
-    "description": "« Stability AI's most advanced open-source AI model (2 billion parameters). Generate even more realistic images: photorealism, coherence, understanding of complex prompts, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stable_diffusion_3_medium",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321143/toolzite/products/stable_diffusion_3_medium.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stability.ai/news/stable-diffusion-3-medium",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Fy! Studio",
-    "description": "« Turn your idea into a relevant piece of art »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/fy!_studio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321137/toolzite/products/fy%21_studio.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.iamfy.co/studio",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Different Dimension Me",
-    "description": "« This AI turns you into a manga character »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/different_dimension_me",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321142/toolzite/products/different_dimension_me.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://differentdimensionme.net/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Deep Dream Generator",
-    "description": "« Give him some ideas and he creates a nice image for you »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/deep_dream_generator",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321139/toolzite/products/deep_dream_generator.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://deepdreamgenerator.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Stable Cascade",
-    "description": "« Stability.ai's new model for creating high-resolution images from a prompt. Use of Würstchen architecture for fast, cost-effective training or inference »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stable_cascade",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321192/toolzite/products/stable_cascade.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stablediffusionxl.com/stable-cascade/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Pebblely",
-    "description": "« Creation of visuals for marketing, advertising or product presentations »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/pebblely",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321173/toolzite/products/pebblely.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://app.pebblely.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Neural Canvas",
-    "description": "« Create your own Comic Book with this Comic Book drawing generator »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/neural_canvas",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321194/toolzite/products/neural_canvas.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://neuralcanvas.io/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Consistent Character by fofr",
-    "description": "« Quickly create images of a character in different positions while maintaining consistency »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/consistent_character_by_fofr",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321176/toolzite/products/consistent_character_by_fofr.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://replicate.com/fofr/consistent-character",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Airbrush AI",
-    "description": "« Create original photos, artworks, NFT, etc.. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/airbrush_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321208/toolzite/products/airbrush_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.airbrush.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "MobileDiffusion by Google",
-    "description": "« An ultra-fast, mobile-friendly, text-based image generator. It can produce an image in less than a second, directly on your smartphone »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/mobilediffusion_by_google",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321207/toolzite/products/mobilediffusion_by_google.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://blog.research.google/2024/01/mobilediffusion-rapid-text-to-image.html",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Getimg AI",
-    "description": "« Generate beautiful images and edit them directly without software »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/getimg_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321204/toolzite/products/getimg_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://getimg.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Imagen 2 by Google",
-    "description": "« The most advanced and powerful image generator from the Google team »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/imagen_2_by_google",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321238/toolzite/products/imagen_2_by_google.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://imagen.research.google/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Capitol AI",
-    "description": "« Combine the best AI models to boost your creativity. Ideal for creating original storytelling content »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/capitol_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321239/toolzite/products/capitol_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.capitol.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Leo AI",
-    "description": "« Bring your product idea to life with an engineering design AI co-driver. Simplify the conception and optimisation of your 3D CAD models »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/leo_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321237/toolzite/products/leo_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.getleo.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AI Emojis Generator",
-    "description": "« Create your own custom emoji from a prompt. Describe how you want your emoji to look, and the AI will design it for you »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ai_emojis_generator",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321283/toolzite/products/ai_emojis_generator.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://emojis.sh/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Dall-E 2",
-    "description": "« Professional quality image generator created by the company OpenAI »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dall-e_2",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321268/toolzite/products/dall-e_2.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://openai.com/dall-e-2/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Artificial Studio AI",
-    "description": "« A large collection of tools to assist you in creating and editing images, music or videos »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/artificial_studio_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321273/toolzite/products/artificial_studio_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.artificialstudio.ai/tools",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Craiyon",
-    "description": "« An AI that draws your images from your text »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/craiyon",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321267/toolzite/products/craiyon.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.craiyon.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Letz.AI",
-    "description": "« Generate realistic images with AI and easily create your own models from your photos »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/letz.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321268/toolzite/products/letz.ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://letz.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "A1.art",
-    "description": "« A web portal for freely discovering and building AI art apps. Share your creations easily and benefit from a community that appreciates art and artificial intelligence »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/a1.art",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321295/toolzite/products/a1.art.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://a1.art/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Photify AI",
-    "description": "« Transform your selfies into thousands of stunning photos. Change your hairstyle, your clothes and explore different styles or eras in an instant »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/photify_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321301/toolzite/products/photify_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://photify.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Invoke",
-    "description": "« An image generator with numerous customization options. Rapid creation of high-quality visuals for commercial use »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/invoke",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321298/toolzite/products/invoke.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.invoke.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Coloromo AI Art Generator",
-    "description": "« Automatic generation of images and digital art that can be printed on a giant poster or board »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/coloromo_ai_art_generator",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321305/toolzite/products/coloromo_ai_art_generator.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.coloromo.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Stable Diffusion 3",
-    "description": "« The most powerful image generator from Stability.ai. The model can be tested as a membership or via the API »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stable_diffusion_3",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321326/toolzite/products/stable_diffusion_3.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stability.ai/news/stable-diffusion-3",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AI Emoji Generator",
-    "description": "« Vaguely describe your idea and the AI will quickly design a large, high-quality emoji for you »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ai_emoji_generator",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321322/toolzite/products/ai_emoji_generator.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://aiemojigenerator.org/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Muse Pro",
-    "description": "« An AI-driven drawing assistant that works in real time. Enhance your artistic creations with a host of intelligent digital tools. Also works on Ipad »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/muse_pro",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321325/toolzite/products/muse_pro.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.musepro.app/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AI ColoringPage Online",
-    "description": "« An AI tool that generates coloring pages in a wide choice of styles. Ideal for hobby or professional projects »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ai_coloringpage_online",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321323/toolzite/products/ai_coloringpage_online.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.aicoloringpages.online/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AI Coloring Pages",
-    "description": "« Generate free images to colour in real time using AI technology. A wide variety of formats and styles available »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ai_coloring_pages",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321354/toolzite/products/ai_coloring_pages.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://aicoloringpages.net/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Image Maker",
-    "description": "« An image generator under Stable Diffusion that can work with over 1000 different templates and styles »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/image_maker",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321335/toolzite/products/image_maker.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://clio.so/maker",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Ezilee",
-    "description": "« Discover a unique (multi-model) way to solve your challenges with AI. Combine different models and enhance your creativity »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ezilee",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321339/toolzite/products/ezilee.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://ezilee.fr/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Image App",
-    "description": "« Generate images with AI using several models at once: Stable Diffusion, DALL-E, Rothko AI, Openjourney or Hiroshinagai »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/image_app",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321337/toolzite/products/image_app.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://imageapp.xyz/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Dashtoon Studio",
-    "description": "« Simplify the creation of comic books with the help of AI. Explore various artistic styles, choose from a library of characters or create your own »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/dashtoon_studio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321367/toolzite/products/dashtoon_studio.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.dashtoon.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Kandinsky 2",
-    "description": "« A promising open-source project for high-quality image generation (Text2Image) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/kandinsky_2",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321360/toolzite/products/kandinsky_2.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://github.com/ai-forever/Kandinsky-2",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Kartiv",
-    "description": "« An AI-powered design assistant to create stunning visuals via a prompt. Ideal for marketing and e-commerce. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/kartiv",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321365/toolzite/products/kartiv.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.kartiv.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "More Graphics Patterns",
-    "description": "« A texture, pattern and background generator for use with a prompt. The site features a favorites and categories system »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/more_graphics_patterns",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321394/toolzite/products/more_graphics_patterns.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://more.graphics/patterns",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AIimag.es",
-    "description": "« Easily transform your texts into images with Stable Diffusion, a Windows-based software package. Take advantage of an intuitive interface »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/aiimag.es",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321397/toolzite/products/aiimag.es.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://aiimag.es/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Top VS Best",
-    "description": "« An easy-to-use AI-based image generator to illustrate your design, social networking, website, marketing and other projects »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/top_vs_best",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321396/toolzite/products/top_vs_best.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://topvsbest.com/aiimagecreator/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Exactly.ai",
-    "description": "« Accelerate your artistic creations effortlessly. Generate images using multiple AI models and get a truly unique style »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/exactly.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321396/toolzite/products/exactly.ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://exactly.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "ColorBliss.art",
-    "description": "« An AI that turns your ideas into personalised colouring pictures in a matter of seconds. You can then print them out easily »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/colorbliss.art",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321394/toolzite/products/colorbliss.art.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://colorbliss.art/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Boords",
-    "description": "« An innovative AI storyboard generator that simplifies the creation of illustrated scripts and storyboards. No need to know how to draw »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/boords",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321404/toolzite/products/boords.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://boords.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "TileMaker",
-    "description": "« Create unique, high-quality wallpapers in seconds. Numerous customization and design options are available »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/tilemaker",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321402/toolzite/products/tilemaker.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://tilemaker.app/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "MemeDaddy",
-    "description": "« A meme generator that works from a prompt. Briefly describe your meme idea and the AI takes care of everything »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/memedaddy",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321404/toolzite/products/memedaddy.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://memedaddy.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Voxxio",
-    "description": "« Turn your spoken ideas into visual stories with this AI-assisted storyboard creator. It analyzes the narrative and offers customization options. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/voxxio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321406/toolzite/products/voxxio.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://voxxio.io/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "BetterPic",
-    "description": "« Get professional-quality portraits thanks to AI. Upload 15 images, choose your style and receive hundreds of portraits quickly »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/betterpic",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321422/toolzite/products/betterpic.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.betterpic.io/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Impossible Images",
-    "description": "« Automatic generation of images that can be used in any type of project: social networks, art, web design, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/impossible_images",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321435/toolzite/products/impossible_images.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://impossibleimages.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Synthesys X",
-    "description": "« Generate images from objects or patterns using a detection extension on Google Chrome »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/synthesys_x",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321436/toolzite/products/synthesys_x.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://synthesys.io/x/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "PatentDrawAI",
-    "description": "« Accelerate the creation of your inventions with this AI tool for drafting and illustrating patent techniques »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/patentdrawai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321435/toolzite/products/patentdrawai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://patentdrawai.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Fuups AI",
-    "description": "« An innovative and qualitative image generator with an integrated marketplace »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/fuups_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321439/toolzite/products/fuups_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://fuups.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Digitalmuses",
-    "description": "« A model generator to quickly create captivating and creative characters. New models added every month »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/digitalmuses",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321432/toolzite/products/digitalmuses.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.digitalmuses.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Aiart FM",
-    "description": "« AI generation of artworks from a prompt. Based on models under Stable Diffusion »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/aiart_fm",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321446/toolzite/products/aiart_fm.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://aiart.fm/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "IconLab AI",
-    "description": "« An AI generator for automated, personalized creation of application icons (mobile or desktop) »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/iconlab_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321449/toolzite/products/iconlab_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.iconlabai.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Kittl",
-    "description": "« An AI-based graphic design tool that helps create impressive designs »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/kittl",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321448/toolzite/products/kittl.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.kittl.com/feature/ai-text-to-image",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Iconik AI",
-    "description": "« Automatic generation of application icons. Choose from a wide range of design options, conforming to Apple and Google guidelines. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/iconik_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321444/toolzite/products/iconik_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.iconikai.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "ARTSMART AI",
-    "description": "« An image generator that can work with plugins. Automatic sharing on social networks »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/artsmart_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321454/toolzite/products/artsmart_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://artsmart.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Whisk Google",
-    "description": "« An artistic tool that combines and transforms your images using artificial intelligence. Easily remix your photos without having to write complicated prompts »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/whisk_google",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321458/toolzite/products/whisk_google.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://blog.google/technology/google-labs/whisk/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Clipdrop",
-    "description": "« A palette of tools to easily create artistically appealing visuals »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/clipdrop",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321461/toolzite/products/clipdrop.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://clipdrop.co/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Artguru",
-    "description": "« A platform dedicated entirely to art, featuring multiple AI tools: image generator, Face Swap, Avatar, Headshot, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/artguru",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321460/toolzite/products/artguru.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.artguru.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Freepik Pikaso",
-    "description": "« An image generator that works from your drawings. Draw your sketch and watch the image being built in real time with AI »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/freepik_pikaso",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321465/toolzite/products/freepik_pikaso.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.freepik.com/ai/pikaso-ai-drawing",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "MagicShot.ai",
-    "description": "« An AI image generator that transforms your ideas into stunning visuals. Perfect for designers and creators, it makes image creation easy and fun! »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/magicshot.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321476/toolzite/products/magicshot.ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://magicshot.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "PixAI.Art",
-    "description": "« Immerse yourself in the world of anime art with an image generator that works with styles and models »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/pixai.art",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321475/toolzite/products/pixai.art.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://pixai.art/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Stylar AI",
-    "description": "« Easily generate pro designs with an assistant powered by advanced AI. Operates via prompt, in a drag-and-drop interface »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/stylar_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321503/toolzite/products/stylar_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.stylar.ai/?via=aixploria",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "NijiJourney",
-    "description": "« Generation of good quality anime and manga type images »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/nijijourney",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321501/toolzite/products/nijijourney.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://nijijourney.com/en/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Imagine Anything",
-    "description": "« A fast, high-quality AI image generation tool. Describe your idea via a prompt, choose your options and the AI does the rest. Ideal for art, design, marketing, logos, etc. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/imagine_anything",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321503/toolzite/products/imagine_anything.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.imagineanything.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Microsoft Designer",
-    "description": "« AI-generated marketing graphics for professional, commercial-quality visual messages. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/microsoft_designer",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321500/toolzite/products/microsoft_designer.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://designer.microsoft.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Night Café",
-    "description": "« Generate images from multiple algorithms »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/night_café",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321501/toolzite/products/night_caf%C3%A9.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://nightcafe.studio/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Imagen 3 by Google",
-    "description": "« Create photorealistic images from text with Google DeepMind's 3rd generation generator. Enjoy even greater control over the style, composition and even animation of your illustrations »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/imagen_3_by_google",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321510/toolzite/products/imagen_3_by_google.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://deepmind.google/technologies/imagen-3/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "SDXL by Stable Diffusion",
-    "description": "« A version of Stable Diffusion capable of generating images in large formats and superior quality. Works on local installation or online demo »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/sdxl_by_stable_diffusion",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321509/toolzite/products/sdxl_by_stable_diffusion.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://stablediffusionweb.com/StableDiffusionXL",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Animated Drawings",
-    "description": "« An Open-Source AI that allows a drawing to come to life and animate in a very surprising way »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/animated_drawings",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321509/toolzite/products/animated_drawings.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://sketch.metademolab.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "DeepAI",
-    "description": "« A simple, free image generator with multiple customization options. You can also create optical illusion illustrations »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/deepai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321514/toolzite/products/deepai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://deepai.org/machine-learning-model/text2img",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Playground AI",
-    "description": "« A very popular image generator that generates relevant illustrations »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/playground_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321518/toolzite/products/playground_ai.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://playgroundai.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "PicLumen",
-    "description": "« An AI image generator that integrates numerous artistic models (Flux.1 available). This platform also includes editing tools such as background removal, image enhancement, colorization and more »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/piclumen",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321532/toolzite/products/piclumen.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.piclumen.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "BlueWillow",
-    "description": "« A free image and illustration generator that works on the Discord application »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/bluewillow",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321530/toolzite/products/bluewillow.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.bluewillow.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "insMind AI Image Generator",
-    "description": "« A text-to-image generator that lets you create beautiful pictures with AI. Choose from a wide range of styles, quickly edit your photos and customize the results using an intuitive interface. »",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/insmind_ai_image_generator",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740321559/toolzite/products/insmind_ai_image_generator.png"
-      }
-    ],
-    "category": "Image Generators",
-    "link": "https://www.insmind.com/ai-image-generator/",
+    "category": "Voice Cloning & Synthesis",
+    "link": "https://www.deepbrain.io/aistudios",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
