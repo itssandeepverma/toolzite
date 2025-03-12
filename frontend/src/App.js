@@ -17,10 +17,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Toaster position="top-center" />
+        {/* <Toaster position="top-center" /> */}
         <Header />
 
-        <div className="container">
+        <div className="container-fluid">
           <Routes>
             {userRoutes}
             {adminRoutes}

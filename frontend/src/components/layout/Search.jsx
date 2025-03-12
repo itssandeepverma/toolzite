@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 const Search = () => {
   const [keyword, setKeyword] = useState("");
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Search = () => {
           id="search_field"
           aria-describedby="search_btn"
           className="form-control"
-          placeholder="Enter Product Name ..."
+          placeholder="Search for any Product... "
           name="keyword"
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
