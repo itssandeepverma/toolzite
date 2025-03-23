@@ -19,6 +19,9 @@ import MyOrders from "../order/MyOrders";
 import OrderDetails from "../order/OrderDetails";
 import Invoice from "../invoice/Invoice";
 import Home from "../Home";
+import ListProducts from "../product/ListProducts";
+import ListAllCard from "../layout/category/ListAllCard";
+import ComingSoon from "../layout/ComingSoon";
 
 const userRoutes = () => {
   return (
@@ -27,6 +30,15 @@ const userRoutes = () => {
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      
+      <Route path="/products" element={<ListProducts/>} />
+
+      <Route path="/allcategory" element={<ListAllCard/>} />
+
+      <Route path='/comingsoon' element = {<ComingSoon/>}></Route>
+
+
+
 
       <Route path="/password/forgot" element={<ForgotPassword />} />
       <Route path="/password/reset/:token" element={<ResetPassword />} />

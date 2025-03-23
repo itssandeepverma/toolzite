@@ -73,7 +73,7 @@ export default function AiToolsMarquee() {
     <>
       <GlobalStyle />
       <div className="container text-white p-4">
-        <div className="card-container" style={{padding: "0rem"}}>
+        <div className="card-container" style={{padding: "1rem"}}>
           <h2 className="text-center mb-4">Trending AI Tools</h2>
           <div className="overflow-hidden">
             {tools.map((row, index) => (

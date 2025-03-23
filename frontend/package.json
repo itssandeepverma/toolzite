@@ -10,6 +10,7 @@
     "countries-list": "^3.0.5",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
+    "lucide-react": "^0.483.0",
     "mdbreact": "^5.2.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
