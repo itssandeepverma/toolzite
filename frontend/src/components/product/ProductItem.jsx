@@ -28,15 +28,13 @@ const ProductItem = ({ product, columnSize }) => {
           style={{ height: "70%" }}
         >
           {/* Product Name */}
-          <h5 className="card-title">
-            {product?.name || "Card title"}
-          </h5>
+          <h5 className="card-title">{product?.name || "Card title"}</h5>
           {/* Gradient Underline */}
           <div
             style={{
               height: "2px",
               width: "80%",
-              background: "linear-gradient(to right, rgb(228, 118, 188),rgb(88, 141, 240))",
+              background: "linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32))",
               margin: "0.5rem auto",
             }}
           ></div>
@@ -49,18 +47,13 @@ const ProductItem = ({ product, columnSize }) => {
 
           {/* Margin between description and explore button */}
           <div className="my-4">
-            {/* Explore Button with Inline SVG Icon */}
+            {/* Explore Button with Hover Effect */}
             <a
               href={product?.link || "#"}
               rel="nofollow"
               target="_blank"
               title={`Visit ${product?.name || "this product"}`}
-              className="btn btn-gradient btn-sm d-inline-flex align-items-center justify-content-center"
-              style={{
-                background: "linear-gradient(to right, rgb(67 67 67), gray)",
-                border: "none",
-                color: "white",
-              }}
+              className="btn btn-gradient btn-sm d-inline-flex align-items-center justify-content-center explore-btn"
             >
               Explore
               <svg
@@ -69,11 +62,7 @@ const ProductItem = ({ product, columnSize }) => {
                 strokeWidth="2"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
-                style={{
-                  marginLeft: "0.5rem",
-                  height: "19px",
-                  width: "19px",
-                }}
+                className="explore-icon"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -88,13 +77,40 @@ const ProductItem = ({ product, columnSize }) => {
           {/* Product Category at the Bottom */}
           {product?.category && (
             <div className="mt-2">
-              <span className="badge bg-secondary">
-                #{product.category}
-              </span>
+              <span className="badge bg-secondary">#{product.category}</span>
             </div>
           )}
         </div>
       </div>
+
+      {/* CSS Styles */}
+      <style>
+        {`
+          .explore-btn {
+            background: linear-gradient(to right, rgb(67, 67, 67), gray);
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            // transition: all 0.1s ease-in-out;
+          }
+
+          .explore-btn:hover {
+            background: linear-gradient(to right, rgb(0, 156, 62,0.5), rgb(172, 236, 32,0.5));
+            color: white;
+          }
+
+          .explore-btn:hover .explore-icon {
+            stroke: white;
+          }
+
+          .explore-icon {
+            margin-left: 0.5rem;
+            height: 19px;
+            width: 19px;
+            // transition: stroke 0.3s ease-in-out;
+          }
+        `}
+      </style>
     </div>
   );
 };

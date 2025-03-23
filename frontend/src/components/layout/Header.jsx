@@ -86,7 +86,7 @@ const Header = () => {
             {/* All Products */}
             <li className="nav-item">
               <button className="nav-link btn nav-btn" onClick={handleAllProductsClick}>
-                All Products
+                All Tools
               </button>
             </li>
 
