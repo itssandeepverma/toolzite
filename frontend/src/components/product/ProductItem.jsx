@@ -91,7 +91,7 @@ const ProductItem = ({ product, columnSize }) => {
             border: none;
             color: white;
             padding: 0.5rem 1rem;
-            // transition: all 0.1s ease-in-out;
+            transition: all 0.s ease-in-out;
           }
 
           .explore-btn:hover {
@@ -107,7 +107,7 @@ const ProductItem = ({ product, columnSize }) => {
             margin-left: 0.5rem;
             height: 19px;
             width: 19px;
-            // transition: stroke 0.3s ease-in-out;
+            transition: stroke 0.3s ease-in-out;
           }
         `}
       </style>
