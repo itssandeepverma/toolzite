@@ -17,13 +17,22 @@ const userSchema = new mongoose.Schema(
     },
     password: {
       type: String,
-      required: [true, "Please enter your password"],
       minLength: [6, "Your password must be longer than 6 characters"],
       select: false,
     },
+    googleId: {
+      type: String,
+      default: null, // Google users ke liye ID store karega
+    },
     avatar: {
-      public_id: String,
-      url: String,
+      public_id: {
+        type: String,
+        default: null, // Default null rakhna Google users ke liye
+      },
+      url: {
+        type: String,
+        default: "https://cdn-icons-png.flaticon.com/512/149/149071.png", // Default avatar
+      },
     },
     role: {
       type: String,
@@ -37,7 +46,7 @@ const userSchema = new mongoose.Schema(
 
 // Encrypting password before saving the user
 userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) {
+  if (!this.isModified("password") || !this.password) {
     next();
   }
 
@@ -58,7 +67,7 @@ userSchema.methods.comparePassword = async function (enteredPassword) {
 
 // Generate password reset token
 userSchema.methods.getResetPasswordToken = function () {
-  // Gernerate token
+  // Generate token
   const resetToken = crypto.randomBytes(20).toString("hex");
 
   // Hash and set to resetPasswordToken field
@@ -73,4 +82,4 @@ userSchema.methods.getResetPasswordToken = function () {
   return resetToken;
 };
 
-export default mongoose.model("User", userSchema);
+export default mongoose.models.User || mongoose.model("User", userSchema);

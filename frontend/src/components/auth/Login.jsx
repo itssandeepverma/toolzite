@@ -23,6 +23,11 @@ const Login = () => {
     }
   }, [error, isAuthenticated]);
 
+  const handleGoogleLogin = () => {
+    window.open("http://localhost:4000/api/v1/auth/google", "_self");
+  };
+  
+
   const submitHandler = (e) => {
     e.preventDefault();
 
@@ -80,6 +85,18 @@ const Login = () => {
               disabled={isLoading}
             >
               {isLoading ? "Authenticating..." : "LOGIN"}
+            </button>
+
+            <p className="text-center my-2">OR</p>
+
+            <button
+              id="google_login_button"
+              type="button"
+              className="btn w-100 py-2 mt-3"
+              disabled={isLoading}
+              onClick={handleGoogleLogin}
+            >
+              {isLoading ? "Authenticating..." : "LOGIN WITH GOOGLE"}
             </button>
 
             <div className="my-3">
