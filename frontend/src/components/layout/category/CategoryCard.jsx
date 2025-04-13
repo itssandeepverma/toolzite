@@ -113,8 +113,8 @@ const CategoryCard = ({ category }) => {
         ))}
       </ul>
 
-      <button
-        onClick={ handleSeeAllClick } // Redirect on click
+      <a
+        href={`/products?category=${encodeURIComponent(category)}`} // Redirect on click
         style={{
           background: "linear-gradient(to right, rgba(0, 156, 62, 0.5), rgb(172, 236, 32, 0.5))", // Match button color from image
           color: "#fff",
@@ -133,7 +133,7 @@ const CategoryCard = ({ category }) => {
       >
         <Rocket size={22} style={{ color: "white" }} />
         See all ({size}) →
-      </button>
+      </a>
 
 
     

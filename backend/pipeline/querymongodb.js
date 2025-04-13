@@ -9,14 +9,29 @@ export const connectDatabase = () => {
     console.log(`MongoDB Database connected with HOST: ${con?.connection?.host}`);
 
     try {
-      // Assuming 'yourCollectionName' is the name of the collection where you want to delete the data
-      const result = await mongoose.connection.db.collection('tool').deleteMany({
-        category: { $in: ['Chat & Assistants'] }
+      // Count the number of documents with category 'AI Agents'
+      const result = await mongoose.connection.db.collection('products').countDocuments({
+        category: { $in: ['AI Agents'] }
       });
 
-      console.log(`${result.deletedCount} document(s) deleted.`);
+      console.log(`Number of documents with category 'AI Agents': ${result}`);
     } catch (error) {
-      console.error("Error deleting documents:", error.message);
+      console.error("Error counting documents:", error.message);
     }
+
+
+    const result = await mongoose.connection.db.collection('products').deleteMany({
+      category: { $in: ['AI Agents'] }
+    });
+
+    console.log(`Number of documents deleted with category 'AI Agents': ${result.deletedCount}`);
+
+
+
+  }).catch((error) => {
+    console.error("Database connection failed:", error.message);
+    process.exit(1);
   });
 };
+
+// connectDatabase();

@@ -1,496 +1,1328 @@
 [
   {
-    "name": "ElevenLabs",
-    "description": "AI voice reader that reads text naturally and clones your voice with lifelike precision.",
+    "name": "Manus AI Agent",
+    "description": "- AI agent that autonomously handles tasks like travel planning and financial analysis online.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/elevenlabs",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404245/toolzite/products/elevenlabs.png"
+        "public_id": "toolzite/products/manus_ai_agent",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569672/toolzite/products/manus_ai_agent.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://elevenlabs.io/?from=partnerstephens742",
+    "category": "AI Agents",
+    "link": "https://manus.im/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Audiobox by Meta",
-    "description": "Smart audio editing toolbox: voice cloning, sound effects, AI audio creation, and a magic audio editor.",
+    "name": "Browser Use",
+    "description": "- Python tool that helps AI agents understand and interact with websites seamlessly.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/audiobox_by_meta",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404242/toolzite/products/audiobox_by_meta.png"
+        "public_id": "toolzite/products/browser_use",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569670/toolzite/products/browser_use.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://audiobox.metademolab.com/maker",
+    "category": "AI Agents",
+    "link": "https://browser-use.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Murf.AI",
-    "description": "AI-powered voice production suite offering text-to-speech, translation, voice cloning, and transcription tools.",
+    "name": "OWL by Camel AI",
+    "description": "- Framework to manage multiple AI agents for automating web, media, and document tasks.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/murf.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404245/toolzite/products/murf.ai.png"
+        "public_id": "toolzite/products/owl_by_camel_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569672/toolzite/products/owl_by_camel_ai.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://get.murf.ai/k28jnfv9u5up",
+    "category": "AI Agents",
+    "link": "https://github.com/camel-ai/owl",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Uberduck",
-    "description": "Write text and have it read by celebrities, or clone your own voice for personalized narration.",
+    "name": "Replit Agent",
+    "description": "- AI dev assistant that builds apps from text in 50+ languages, deploy-ready.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/uberduck",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404244/toolzite/products/uberduck.png"
+        "public_id": "toolzite/products/replit_agent",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569672/toolzite/products/replit_agent.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://uberduck.ai/",
+    "category": "AI Agents",
+    "link": "https://replit.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Play HT",
-    "description": "A voice generator that reads any text aloud, including your own voice through advanced cloning technology.",
+    "name": "OpenManus",
+    "description": "- Open-source autonomous agent for data analysis, trip planning, and content generation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/play_ht",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404243/toolzite/products/play_ht.png"
+        "public_id": "toolzite/products/openmanus",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569669/toolzite/products/openmanus.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.play.ht/?via=aixploria",
+    "category": "AI Agents",
+    "link": "https://openmanus.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Voicemy.ai",
-    "description": "Create AI song covers using hundreds of celebrity voices or clone your own voice.",
+    "name": "Manus AI Agent",
+    "description": "- AI agent that autonomously handles tasks like travel planning and financial analysis online.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/voicemy.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404253/toolzite/products/voicemy.ai.png"
+        "public_id": "toolzite/products/manus_ai_agent",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571537/toolzite/products/manus_ai_agent.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://voicemy.ai/",
+    "category": "AI Agents",
+    "link": "https://manus.im/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OpenVoice AI",
-    "description": "Quickly clone your voice for realistic text-to-speech with emotion, accents, pauses, and natural intonation.",
+    "name": "Browser Use",
+    "description": "- Python tool that helps AI agents understand and interact with websites seamlessly.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/openvoice_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404250/toolzite/products/openvoice_ai.png"
+        "public_id": "toolzite/products/browser_use",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571535/toolzite/products/browser_use.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://research.myshell.ai/open-voice",
+    "category": "AI Agents",
+    "link": "https://browser-use.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Descript",
-    "description": "AI tools for seamless video and podcast editing—write, record, transcribe, edit, and share in one platform.",
+    "name": "OWL by Camel AI",
+    "description": "- Framework to manage multiple AI agents for automating web, media, and document tasks.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/descript",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404261/toolzite/products/descript.png"
+        "public_id": "toolzite/products/owl_by_camel_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571538/toolzite/products/owl_by_camel_ai.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://get.descript.com/sx9ahgvct8j9",
+    "category": "AI Agents",
+    "link": "https://github.com/camel-ai/owl",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Voice Engine by OpenAI",
-    "description": "Clone a voice instantly using OpenAI’s Voice Engine for dubbing and multilingual translations.",
+    "name": "Replit Agent",
+    "description": "- AI dev assistant that builds apps from text in 50+ languages, deploy-ready.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/voice_engine_by_openai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404257/toolzite/products/voice_engine_by_openai.png"
+        "public_id": "toolzite/products/replit_agent",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571538/toolzite/products/replit_agent.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices",
+    "category": "AI Agents",
+    "link": "https://replit.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "CloneDub",
-    "description": "Convert audio into different languages while maintaining the original voice tone with AI voice cloning.",
+    "name": "OpenManus",
+    "description": "- Open-source autonomous agent for data analysis, trip planning, and content generation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/clonedub",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404256/toolzite/products/clonedub.png"
+        "public_id": "toolzite/products/openmanus",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571535/toolzite/products/openmanus.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.clonedub.com/",
+    "category": "AI Agents",
+    "link": "https://openmanus.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Speechify",
-    "description": "AI voice-over generator for videos, ads, audiobooks, e-learning, and dubbing—featuring 200+ voices, 60+ languages, and customization.",
+    "name": "Manus AI Agent",
+    "description": "- AI agent that autonomously handles tasks like travel planning and financial analysis online.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/speechify",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404271/toolzite/products/speechify.png"
+        "public_id": "toolzite/products/manus_ai_agent",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571611/toolzite/products/manus_ai_agent.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://speechify.com/ai-voice-generator/",
+    "category": "AI Agents",
+    "link": "https://manus.im/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Hailuo AI Audio",
-    "description": "Free AI text-to-speech tool with voice cloning in under 10 seconds, featuring 300+ customizable multilingual voices.",
+    "name": "Browser Use",
+    "description": "- Python tool that helps AI agents understand and interact with websites seamlessly.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/hailuo_ai_audio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404270/toolzite/products/hailuo_ai_audio.png"
+        "public_id": "toolzite/products/browser_use",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571608/toolzite/products/browser_use.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.hailuo.ai/audio",
+    "category": "AI Agents",
+    "link": "https://browser-use.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Fish Audio",
-    "description": "Advanced text-to-speech platform for realistic AI voices, customizable for easy integration via a powerful API.",
+    "name": "OWL by Camel AI",
+    "description": "- Framework to manage multiple AI agents for automating web, media, and document tasks.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/fish_audio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404268/toolzite/products/fish_audio.png"
+        "public_id": "toolzite/products/owl_by_camel_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571610/toolzite/products/owl_by_camel_ai.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://fish.audio/",
+    "category": "AI Agents",
+    "link": "https://github.com/camel-ai/owl",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Respeecher AI",
-    "description": "AI converts voices for dubbing, ads, and e-learning, with a Hollywood-quality voice marketplace.",
+    "name": "Replit Agent",
+    "description": "- AI dev assistant that builds apps from text in 50+ languages, deploy-ready.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/respeecher_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404273/toolzite/products/respeecher_ai.png"
+        "public_id": "toolzite/products/replit_agent",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571609/toolzite/products/replit_agent.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.respeecher.com/",
+    "category": "AI Agents",
+    "link": "https://replit.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Whisper OpenAI",
-    "description": "A multilingual speech recognition model ideal for real-time translation and audio applications.",
+    "name": "OpenManus",
+    "description": "- Open-source autonomous agent for data analysis, trip planning, and content generation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/whisper_openai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404266/toolzite/products/whisper_openai.png"
+        "public_id": "toolzite/products/openmanus",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571607/toolzite/products/openmanus.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.aixploria.com/out/WhisperOpenAI",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Neets AI",
-    "description": "High-quality AI voice synthesis with natural tone, emotion, and a built-in voice cloning tool.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/neets_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404279/toolzite/products/neets_ai.png"
-      }
-    ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://neets.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "SonixTw by Fineshare",
-    "description": "AI platform for voice cloning and digital voice doubles—sing, read text, or personalize speech synthesis.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/sonixtw_by_fineshare",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404282/toolzite/products/sonixtw_by_fineshare.png"
-      }
-    ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.fineshare.com/ai-voice-cloning/?ref=aixploria",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Coachvox AI",
-    "description": "Create an AI-powered voice assistant to engage and convert website visitors into customers.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/coachvox_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404289/toolzite/products/coachvox_ai.png"
-      }
-    ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://coachvox.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Gotalk.ai",
-    "description": "Studio-quality text-to-speech in 50+ languages, with advanced voice cloning capabilities.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/gotalk.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404301/toolzite/products/gotalk.ai.png"
-      }
-    ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://gotalk.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Gemelo",
-    "description": "NVIDIA Maxine-powered AI clones voices and creates interactive digital avatars for customer engagement.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/gemelo",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404285/toolzite/products/gemelo.png"
-      }
-    ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://gemelo.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Delphi AI",
-    "description": "AI platform to build a digital version of yourself using text, videos, and audio—ideal for creators.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/delphi_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404307/toolzite/products/delphi_ai.png"
-      }
-    ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.delphi.ai/",
+    "category": "AI Agents",
+    "link": "https://openmanus.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
     "name": "Play.ai",
-    "description": "AI-powered voice cloning for conversational agents and natural-sounding interactive dialogues.",
+    "description": "- Voice interface with cloning features to create lifelike, personalized AI conversations.",
     "ratings": 0,
     "images": [
       {
         "public_id": "toolzite/products/play.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404319/toolzite/products/play.ai.png"
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571629/toolzite/products/play.ai.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://play.ai/?via=aixploria",
+    "category": "AI Agents",
+    "link": "https://play.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "TalkingAvatar",
-    "description": "Edit videos with AI that clones voices, lip-syncs, and translates content into multiple languages.",
+    "name": "Operator by OpenAI",
+    "description": "- ChatGPT-powered agent that books travel, orders groceries, and completes web tasks automatically.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/talkingavatar",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404315/toolzite/products/talkingavatar.png"
+        "public_id": "toolzite/products/operator_by_openai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571623/toolzite/products/operator_by_openai.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.talkingavatar.ai/",
+    "category": "AI Agents",
+    "link": "https://operator.chatgpt.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Resemble",
-    "description": "AI voice cloning tool that reads text using a lifelike reproduction of your voice.",
+    "name": "Storm",
+    "description": "- Research AI assistant that generates structured articles using reliable online sources.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/resemble",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404310/toolzite/products/resemble.png"
+        "public_id": "toolzite/products/storm",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571622/toolzite/products/storm.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.resemble.ai/",
+    "category": "AI Agents",
+    "link": "https://storm.genie.stanford.edu/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Applio",
-    "description": "Open-source AI ecosystem for voice cloning—create, customize, and integrate lifelike synthetic voices.",
+    "name": "Do Browser",
+    "description": "- Chrome extension for voice/text AI commands to automate browser-based web tasks.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/applio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404326/toolzite/products/applio.png"
+        "public_id": "toolzite/products/do_browser",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571623/toolzite/products/do_browser.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://applio.org/",
+    "category": "AI Agents",
+    "link": "https://www.dobrowser.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "ElevenLabs Voice Design",
-    "description": "Generate and customize ultra-realistic AI voices with precise emotional and tonal control.",
+    "name": "enso",
+    "description": "- enso offers simple, effective AI agents to handle business tasks effortlessly.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/elevenlabs_voice_design",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404329/toolzite/products/elevenlabs_voice_design.png"
+        "public_id": "toolzite/products/enso",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571625/toolzite/products/enso.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://elevenlabs.io/voice-design?from=partnerstephens742",
+    "category": "AI Agents",
+    "link": "https://www.enso.bot/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Parler-TTS",
-    "description": "Open-source AI text-to-speech tool using a 600-million-parameter model for natural voice synthesis.",
+    "name": "Relevance AI",
+    "description": "- No-code AI platform to build teams of agents for business task automation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/parler-tts",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404325/toolzite/products/parler-tts.png"
+        "public_id": "toolzite/products/relevance_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571646/toolzite/products/relevance_ai.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://github.com/huggingface/parler-tts",
+    "category": "AI Agents",
+    "link": "https://relevanceai.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Vall-E",
-    "description": "AI perfectly replicates voices for ultra-realistic speech synthesis.",
+    "name": "Magentic-One",
+    "description": "- Multi-agent system that divides tasks for AI collaboration and smarter execution.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/vall-e",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404323/toolzite/products/vall-e.png"
+        "public_id": "toolzite/products/magentic-one",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571643/toolzite/products/magentic-one.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://arxiv.org/abs/2301.02111",
+    "category": "AI Agents",
+    "link": "https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Cartesia AI",
-    "description": "Real-time AI voice synthesis platform for speech applications, used by over 10,000 people.",
+    "name": "LoopGPT",
+    "description": "- Autonomous AI that supports multi-tasking and flexible interruptions during operation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/cartesia_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404328/toolzite/products/cartesia_ai.png"
+        "public_id": "toolzite/products/loopgpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571641/toolzite/products/loopgpt.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://cartesia.ai/",
+    "category": "AI Agents",
+    "link": "https://github.com/farizrahman4u/loopgpt",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Momento AI",
-    "description": "Get your own AI voice clone, letting fans interact with you anytime through cutting-edge AI technology.",
+    "name": "GoalGPT",
+    "description": "- AI powered by OpenAI API that independently executes varied tasks.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/momento_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404338/toolzite/products/momento_ai.png"
+        "public_id": "toolzite/products/goalgpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571680/toolzite/products/goalgpt.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.momentoai.com/",
+    "category": "AI Agents",
+    "link": "https://beta.nando.ai/goalgpt.php",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "AI Studios",
-    "description": "AI-powered video platform transforms text into professional videos with realistic avatars in 80+ languages.",
+    "name": "OpenDevin",
+    "description": "- Advanced autonomous AI agent for code creation and software development.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/ai_studios",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1740404341/toolzite/products/ai_studios.png"
+        "public_id": "toolzite/products/opendevin",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571642/toolzite/products/opendevin.png"
       }
     ],
-    "category": "Voice Cloning & Synthesis",
-    "link": "https://www.deepbrain.io/aistudios",
+    "category": "AI Agents",
+    "link": "https://github.com/OpenDevin/OpenDevin",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "MetaGPT",
+    "description": "- AI simulating a team of experts to solve complex tasks via API.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/metagpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571693/toolzite/products/metagpt.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/geekan/MetaGPT",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Open Interpreter",
+    "description": "- Terminal-based voice assistant that accelerates computing through spoken commands.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/open_interpreter",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571691/toolzite/products/open_interpreter.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://openinterpreter.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Cognosys 2.0",
+    "description": "- Data-focused AI agent making smart decisions through advanced analytics.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/cognosys_2.0",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571693/toolzite/products/cognosys_2.0.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.cognosys.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "SuperAGI",
+    "description": "- Open-source toolkit to build and launch custom AI agents from GitHub.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/superagi",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571705/toolzite/products/superagi.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://superagi.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Multi-GPT",
+    "description": "- AI project manager that forms expert agent teams to fulfill your goals.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/multi-gpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571693/toolzite/products/multi-gpt.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/rumpfmax/Multi-GPT",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Amelia.ai",
+    "description": "- Virtual assistant that enhances customer service and internal processes with AI automation.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/amelia.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571720/toolzite/products/amelia.ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://amelia.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Jace.ai",
+    "description": "- Fully autonomous AI agent that performs intricate tasks upon request.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/jace.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571719/toolzite/products/jace.ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.jace.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Agent2Agent Protocol",
+    "description": "- Protocol allowing communication and teamwork between different AI agents.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/agent2agent_protocol",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571718/toolzite/products/agent2agent_protocol.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://google.github.io/A2A/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "BabyAgi",
+    "description": "- Self-prompting, autonomous multi-tasking AI agent for hands-free operations.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/babyagi",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571718/toolzite/products/babyagi.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/oliveirabruno01/babyagi-asi",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Camel AI",
+    "description": "- AI agent with chatbot capabilities and intelligent decision-making skills.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/camel_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571722/toolzite/products/camel_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.camel-ai.org/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "AgentGPT",
+    "description": "- User-friendly platform to build and run autonomous agents without coding.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/agentgpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571734/toolzite/products/agentgpt.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://agentgpt.reworkd.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Emergence AI",
+    "description": "- AI agent system to automate workflows and business processes using “Agent E.”",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/emergence_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571741/toolzite/products/emergence_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.emergence.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Paradigm AI",
+    "description": "- Use AI agent swarms to process and act on data accurately.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/paradigm_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571733/toolzite/products/paradigm_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.paradigmai.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Genspark",
+    "description": "- Search tool powered by AI agents creating unbiased, personalized knowledge pages.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/genspark",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571739/toolzite/products/genspark.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.genspark.com",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Agents SDK OpenAI",
+    "description": "- Dev toolbox for creating agents that browse, search, and analyze documents.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/agents_sdk_openai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571736/toolzite/products/agents_sdk_openai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://openai.com/index/new-tools-for-building-agents/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Convergence AI",
+    "description": "- Conversational AI automating everyday tasks like emails, summaries, and shopping.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/convergence_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571754/toolzite/products/convergence_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://convergence.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "KaneAI",
+    "description": "- Natural language testing assistant to write and manage end-to-end software tests.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/kaneai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571754/toolzite/products/kaneai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.lambdatest.com/kane-ai",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Zapier Agents",
+    "description": "- Build AI agents to automate email, calendar, and lead management with integrations.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/zapier_agents",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571753/toolzite/products/zapier_agents.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://zapier.com/agents",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Bee Agent Framework",
+    "description": "- LLM-based agent framework with secure code tools, memory, and JavaScript/Python integration.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/bee_agent_framework",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571751/toolzite/products/bee_agent_framework.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://i-am-bee.github.io/bee-agent-framework/#/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Swarm by OpenAI",
+    "description": "- OpenAI's agent orchestration framework for learning multi-agent systems easily.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/swarm_by_openai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571753/toolzite/products/swarm_by_openai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/openai/swarm",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Stripe Agentic Workflow",
+    "description": "- Secure payment automation API for AI agent workflows.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/stripe_agentic_workflow",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571765/toolzite/products/stripe_agentic_workflow.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://stripe.dev/blog/adding-payments-to-your-agentic-workflows",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Portia Labs",
+    "description": "- Create structured, controllable agents for automating difficult multi-step tasks.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/portia_labs",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571765/toolzite/products/portia_labs.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.portialabs.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Open Agent Studio",
+    "description": "- Agent builder for semantic, resilient automations with zero coding.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/open_agent_studio",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571769/toolzite/products/open_agent_studio.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.openagent.studio/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Autotab AI",
+    "description": "- Teach a browser-based AI robot tasks—it repeats steps automatically.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/autotab_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571765/toolzite/products/autotab_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.autotab.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Aomni AI",
+    "description": "- Data extraction agent that boosts Auto-GPT performance significantly.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/aomni_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571786/toolzite/products/aomni_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.aomni.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Hippocratic AI",
+    "description": "- Healthcare platform with 300+ AI agents for various medical specialties.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/hippocratic_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571790/toolzite/products/hippocratic_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.hippocraticai.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Synthflow AI",
+    "description": "- Human-voiced AI assistant that manages calls for sales and scheduling.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/synthflow_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571783/toolzite/products/synthflow_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://synthflow.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Fini AI",
+    "description": "- Turn knowledge bases into 24/7 conversational AI support agents.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/fini_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571783/toolzite/products/fini_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.usefini.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "WestWorld Simulation",
+    "description": "- Simulation exploring autonomous AI interaction and social behavior.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/westworld_simulation",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571780/toolzite/products/westworld_simulation.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://arxiv.org/pdf/2304.03442.pdf",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "SWE-agent",
+    "description": "- AI tool to auto-debug GitHub repositories using GPT-4.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/swe-agent",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571802/toolzite/products/swe-agent.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://swe-agent.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "AgentLLM",
+    "description": "- LLaMA-compatible free and open-source autonomous agent.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/agentllm",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571804/toolzite/products/agentllm.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/Josh-XT/Agent-LLM",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "DreamGPT",
+    "description": "- AI project that creates new ideas from creative hallucinations.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/dreamgpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571804/toolzite/products/dreamgpt.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/DivergentAI/dreamGPT",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "OpenAGI",
+    "description": "- Experimental AI that manipulates and understands images autonomously.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/openagi",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571802/toolzite/products/openagi.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/agiresearch/OpenAGI",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "ChatArena",
+    "description": "- Linguistic tool to study how AI agents interact through games.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/chatarena",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571803/toolzite/products/chatarena.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/chatarena/chatarena",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Jarvis (Microsoft)",
+    "description": "- Microsoft-built AI assistant that manages tasks personally.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/jarvis_(microsoft)",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571815/toolzite/products/jarvis_%28microsoft%29.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/microsoft/JARVIS",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "CrewAI",
+    "description": "- Multi-agent coordination platform for efficient task management.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/crewai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571817/toolzite/products/crewai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.crewai.com/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "MultiOn",
+    "description": "- Personal AI butler that schedules, books, and orders for you.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/multion",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571816/toolzite/products/multion.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.multion.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Devika AI",
+    "description": "- Open-source AI engineer that writes and debugs code independently.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/devika_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571817/toolzite/products/devika_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/stitionai/devika",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Ninja AI",
+    "description": "- Ninja: all-in-one AI assistant with 20+ integrated top models.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/ninja_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571817/toolzite/products/ninja_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://myninja.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Microsoft OmniParser",
+    "description": "- Innovative tool to analyze and understand interactive elements in screenshots.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/microsoft_omniparser",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571834/toolzite/products/microsoft_omniparser.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://microsoft.github.io/OmniParser/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Lindy.ai",
+    "description": "- Agent builder for managing emails, meetings, and support with business tool integration.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/lindy.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571832/toolzite/products/lindy.ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.lindy.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Claude Engineer",
+    "description": "- Claude-integrated CLI for autonomous coding, search, and project handling.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/claude_engineer",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571832/toolzite/products/claude_engineer.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/Doriandarko/claude-engineer",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Wordfare AI",
+    "description": "- Fast agent development IDE for text programming with loops, APIs, and hooks.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/wordfare_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571831/toolzite/products/wordfare_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.wordware.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Conversational AI",
+    "description": "- Add natural voice to AI agents with this low-latency text-to-speech tool.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/conversational_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571833/toolzite/products/conversational_ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://elevenlabs.io/conversational-ai",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "North by Cohere",
+    "description": "- Build AI for workflow automation with secure search and content generation.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/north_by_cohere",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571848/toolzite/products/north_by_cohere.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://cohere.com/north",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Abacus",
+    "description": "- Platform to build large-scale AI workflows, agents, and chatbots.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/abacus",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571847/toolzite/products/abacus.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://abacus.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Runner H",
+    "description": "- Web automation tool to create workflows using natural language—no coding needed.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/runner_h",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571844/toolzite/products/runner_h.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://www.hcompany.ai/blog/introducing-h",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Agent.ai",
+    "description": "- AI agent marketplace and development platform for hiring or creating assistants.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/agent.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571847/toolzite/products/agent.ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://agent.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "AutoGen",
+    "description": "- Microsoft open-source system for high-efficiency, multi-agent AI deployments.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/autogen",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571845/toolzite/products/autogen.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://microsoft.github.io/autogen/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "MyShell.ai",
+    "description": "- Decentralized builder to create, share, and monetize AI agents and voices.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/myshell.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571860/toolzite/products/myshell.ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://myshell.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Sintra.ai",
+    "description": "- Platform automating tasks using specialized activity-based AI chatbots.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/sintra.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571867/toolzite/products/sintra.ai.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://playosinc.pxf.io/QyVWNz",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Project Mariner",
+    "description": "- Chrome extension with Gemini 2.0 for AI-powered web navigation.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/project_mariner",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571863/toolzite/products/project_mariner.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://deepmind.google/technologies/project-mariner/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "AutoGPT",
+    "description": "- Open-source AI connected to the internet for autonomous task handling.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/autogpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571860/toolzite/products/autogpt.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://github.com/Torantulino/Auto-GPT",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Momen",
+    "description": "- No-code builder to scale and monetize AI agents using LLMs and data.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/momen",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571862/toolzite/products/momen.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://momen.app/ai",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Godmode",
+    "description": "- Generative agents like ChatGPT used to create original and creative results.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/godmode",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571878/toolzite/products/godmode.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://godmode.space/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Deep Research",
+    "description": "- OpenAI’s AI-powered search that compiles verified answers from thousands of sources.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/deep_research",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571891/toolzite/products/deep_research.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://openai.com/index/introducing-deep-research/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "HyperPilot",
+    "description": "- Test and compare top AI agents like CUA and Claude for web automation.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/hyperpilot",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571880/toolzite/products/hyperpilot.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://pilot.hyperbrowser.ai/",
+    "type": "",
+    "numOfReviews": 0,
+    "reviews": []
+  },
+  {
+    "name": "Adobe AI Agents",
+    "description": "- AI coordination platform to enhance content, sites, and customer experiences through agents.",
+    "ratings": 0,
+    "images": [
+      {
+        "public_id": "toolzite/products/adobe_ai_agents",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571882/toolzite/products/adobe_ai_agents.png"
+      }
+    ],
+    "category": "AI Agents",
+    "link": "https://prf.hn/l/RlD9wvB/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []

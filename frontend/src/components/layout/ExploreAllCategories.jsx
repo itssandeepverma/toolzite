@@ -84,10 +84,10 @@ const CategorySection = () => {
           marginTop: "-90px",
         }}
       >
-        <button
-          onClick={() => navigate("/allcategory")} // Redirect on click
+        <a
+          href="/allcategory"
           style={{
-            background: "linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32,0.7))", // Match button color from image
+            background: "linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32, 0.7))",
             color: "#fff",
             fontSize: "18px",
             padding: "14px 28px",
@@ -99,11 +99,13 @@ const CategorySection = () => {
             display: "flex",
             alignItems: "center",
             gap: "12px",
+            textDecoration: "none", // make sure it's not underlined
           }}
         >
           <Rocket size={22} style={{ color: "white" }} />
           Explore All Categories
-        </button>
+        </a>
+
       </div>
     </div>
   );

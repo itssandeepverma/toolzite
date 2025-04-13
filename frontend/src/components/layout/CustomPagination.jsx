@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import Pagination from "react-js-pagination";
 
 const CustomPagination = ({ resPerPage, filteredProductsCount }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   let [searchParams] = useSearchParams();
-  const navigate = useNavigate();
-
   const page = Number(searchParams.get("page")) || 1;
 
   useEffect(() => {
@@ -17,22 +15,12 @@ const CustomPagination = ({ resPerPage, filteredProductsCount }) => {
   const setCurrentPageNo = (pageNumber) => {
     setCurrentPage(pageNumber);
 
-    // Preserve all filters when updating page number
+    // Update search params manually and redirect using full href
     const newSearchParams = new URLSearchParams(searchParams);
     newSearchParams.set("page", pageNumber);
 
     const path = window.location.pathname + "?" + newSearchParams.toString();
-    navigate(path);
-
-    // Scroll to the filters section instead of products
-    const filtersSection = document.getElementById("filters");
-    if (filtersSection) {
-      filtersSection.scrollIntoView({ behavior: "smooth" });
-
-      setTimeout(() => {
-        window.scrollBy(0, -100); // Move slightly above filters
-      }, 300);
-    }
+    window.location.href = path; // <- THIS triggers a full page reload and resets scroll
   };
 
   return (
@@ -50,7 +38,7 @@ const CustomPagination = ({ resPerPage, filteredProductsCount }) => {
           itemClass="page-item"
           linkClass="page-link"
           hideFirstLastPages={false}
-          pageRangeDisplayed={5} // Number of pages before '...'
+          pageRangeDisplayed={5}
         />
       )}
     </div>

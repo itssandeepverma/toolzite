@@ -100,6 +100,16 @@ export default function Footer() {
                 >
                   <i className="fab fa-youtube"></i>
                 </a>
+                <a
+                  className="social-icon"
+                  href="https://medium.com/@toolzite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-medium-m"></i>
+                </a>
+
+
               </div>
             </div>
           </section>
