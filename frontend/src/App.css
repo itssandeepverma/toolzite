@@ -36,6 +36,12 @@ nav {
   padding: 0.1rem 1rem;
 }
 
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj4KPHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjUiIHJ4PSIyIiBmaWxsPSJncmVlbiIgLz4KPHJlY3QgeT0iMTIiIHdpZHRoPSIzMCIgaGVpZ2h0PSI1IiByeD0iMiIgZmlsbD0iZ3JlZW4iIC8+CjxyZWN0IHk9IjI0IiB3aWR0aD0iMzAiIGhlaWdodD0iNSIgcng9IjIiIGZpbGw9ImdyZWVuIiAvPjwvc3ZnPg==');
+}
+
+
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -296,7 +302,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  /* background-image: linear-gradient(to right, rgb(67 67 67), gray); */
+  /* background-image: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32)); */
   font-weight: 700;
 }
 
@@ -307,14 +313,14 @@ footer {
 .wrapper form .btn,
 .fetch-btn {
   /* background-color: #fa9c23; */
-  background-image: linear-gradient(to right, rgb(67 67 67), gray);
+  background-image: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
   /* border-color: #fa9c23; */
   color: white;
   margin-top: 1rem;
 }
 
 .fetch-btn:hover {
-  background-image: linear-gradient(to right, rgb(67 67 67), gray);
+  background-image: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
   color: white;
 }
 
@@ -474,7 +480,7 @@ footer {
 
 /* Pagination */
 .page-item.active .page-link {
-  background-image: linear-gradient(to right, rgb(67 67 67), gray);
+  background-image: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
   border-color: #747474;
   color : white;
 }
@@ -732,7 +738,7 @@ footer {
 }
 
 .category-btn {
-  background: linear-gradient(to right, rgb(67 67 67), gray);
+  background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
   border: none;
   color: white;
   padding: 8px 15px;

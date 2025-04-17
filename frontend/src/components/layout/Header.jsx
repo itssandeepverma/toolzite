@@ -3,6 +3,7 @@ import { useGetMeQuery } from "../../redux/api/userApi";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { useLazyLogoutQuery } from "../../redux/api/authApi";
+import Button from "./LoginButton";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -150,9 +151,7 @@ const Header = () => {
             ) : (
               !isLoading && (
                 <li className="nav-item">
-                  <Link to="/login" className="btn login-btn">
-                    Login
-                  </Link>
+                  <Button text="Login" onClick={() => navigate("/login")} />
                 </li>
               )
             )}
@@ -214,5 +213,7 @@ const Header = () => {
     </nav>
   );
 };
+
+
 
 export default Header;

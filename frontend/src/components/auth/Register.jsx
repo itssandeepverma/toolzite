@@ -47,7 +47,8 @@ const Register = () => {
   return (
     <>
       <MetaData title={"Register"} />
-      <div className="row wrapper">
+      <div style={{ marginTop: "140px", marginBottom: "100px" }}
+        className="row wrapper">
         <div className="col-10 col-lg-5">
           <form className="shadow rounded bg-body" onSubmit={submitHandler}>
             <h2 className="mb-4">Register</h2>

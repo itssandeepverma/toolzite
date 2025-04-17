@@ -36,10 +36,12 @@ const productSchema = new mongoose.Schema(
       required: [true, "Please enter product category"],
       enum: {
         values: [
-          "3D Models & Assets",
-          "Virtual Agents",
-          "Chat & Assistants",
           "AI Agents",
+          "Video Generators",
+          "Chat & Assistants",
+          "Voice Cloning & Synthesis",
+          "3D Models & Assets",
+          "Virtual AI Characters",
           "Detection Tools",
           "Utility Apps",
           "Featured Picks",

@@ -1,1328 +1,976 @@
 [
   {
-    "name": "Manus AI Agent",
-    "description": "- AI agent that autonomously handles tasks like travel planning and financial analysis online.",
+    "name": "Leonardo AI",
+    "description": "- A full design platform to generate 3D assets for games, fashion, architecture and more.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/manus_ai_agent",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569672/toolzite/products/manus_ai_agent.png"
+        "public_id": "toolzite/products/leonardo_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874010/toolzite/products/leonardo_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://manus.im/",
+    "category": "3D Models & Assets",
+    "link": "https://leonardo.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Browser Use",
-    "description": "- Python tool that helps AI agents understand and interact with websites seamlessly.",
+    "name": "Genie by Lumalabs",
+    "description": "- Design 3D models with animations, particles and share your creations on Discord easily.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/browser_use",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569670/toolzite/products/browser_use.png"
+        "public_id": "toolzite/products/genie_by_lumalabs",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874011/toolzite/products/genie_by_lumalabs.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://browser-use.com/",
+    "category": "3D Models & Assets",
+    "link": "https://lumalabs.ai/genie",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OWL by Camel AI",
-    "description": "- Framework to manage multiple AI agents for automating web, media, and document tasks.",
+    "name": "Kinetix",
+    "description": "- Create 3D animations without any prior knowledge using a beginner-friendly AI platform.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/owl_by_camel_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569672/toolzite/products/owl_by_camel_ai.png"
+        "public_id": "toolzite/products/kinetix",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874009/toolzite/products/kinetix.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/camel-ai/owl",
+    "category": "3D Models & Assets",
+    "link": "https://www.kinetix.tech/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Replit Agent",
-    "description": "- AI dev assistant that builds apps from text in 50+ languages, deploy-ready.",
+    "name": "DreamFusion 3D",
+    "description": "- Generate 3D objects directly from text prompts using AI-based interpretation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/replit_agent",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569672/toolzite/products/replit_agent.png"
+        "public_id": "toolzite/products/dreamfusion_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874012/toolzite/products/dreamfusion_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://replit.com/",
+    "category": "3D Models & Assets",
+    "link": "https://dreamfusion3d.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OpenManus",
-    "description": "- Open-source autonomous agent for data analysis, trip planning, and content generation.",
+    "name": "Hunyuan3D",
+    "description": "- Create expressive characters and dynamic scenes with text-driven realistic 3D animation generation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/openmanus",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744569669/toolzite/products/openmanus.png"
+        "public_id": "toolzite/products/hunyuan3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874048/toolzite/products/hunyuan3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://openmanus.github.io/",
+    "category": "3D Models & Assets",
+    "link": "https://github.com/tencent/Hunyuan3D-2",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Manus AI Agent",
-    "description": "- AI agent that autonomously handles tasks like travel planning and financial analysis online.",
+    "name": "Krikey AI",
+    "description": "- Automatically generate 3D avatars and explore a public gallery of AI-made designs.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/manus_ai_agent",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571537/toolzite/products/manus_ai_agent.png"
+        "public_id": "toolzite/products/krikey_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874027/toolzite/products/krikey_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://manus.im/",
+    "category": "3D Models & Assets",
+    "link": "https://www.krikey.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Browser Use",
-    "description": "- Python tool that helps AI agents understand and interact with websites seamlessly.",
+    "name": "Edify 3D",
+    "description": "- NVIDIA’s platform for ultra-realistic 3D models with 4K textures and PBR from text/images.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/browser_use",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571535/toolzite/products/browser_use.png"
+        "public_id": "toolzite/products/edify_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874038/toolzite/products/edify_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://browser-use.com/",
+    "category": "3D Models & Assets",
+    "link": "https://research.nvidia.com/labs/dir/edify-3d/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OWL by Camel AI",
-    "description": "- Framework to manage multiple AI agents for automating web, media, and document tasks.",
+    "name": "DeepMotion",
+    "description": "- Transform any video into real-time, high-quality 3D animations instantly.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/owl_by_camel_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571538/toolzite/products/owl_by_camel_ai.png"
+        "public_id": "toolzite/products/deepmotion",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874028/toolzite/products/deepmotion.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/camel-ai/owl",
+    "category": "3D Models & Assets",
+    "link": "https://www.deepmotion.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Replit Agent",
-    "description": "- AI dev assistant that builds apps from text in 50+ languages, deploy-ready.",
+    "name": "DimensionX",
+    "description": "- AI that turns images into 3D/4D scenes with controllable camera and photo realism.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/replit_agent",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571538/toolzite/products/replit_agent.png"
+        "public_id": "toolzite/products/dimensionx",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874070/toolzite/products/dimensionx.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://replit.com/",
+    "category": "3D Models & Assets",
+    "link": "https://chenshuo20.github.io/DimensionX/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OpenManus",
-    "description": "- Open-source autonomous agent for data analysis, trip planning, and content generation.",
+    "name": "Luma AI",
+    "description": "- Capture reality and transform it into an immersive 3D format using AI.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/openmanus",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571535/toolzite/products/openmanus.png"
+        "public_id": "toolzite/products/luma_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874100/toolzite/products/luma_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://openmanus.github.io/",
+    "category": "3D Models & Assets",
+    "link": "https://lumalabs.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Manus AI Agent",
-    "description": "- AI agent that autonomously handles tasks like travel planning and financial analysis online.",
+    "name": "Move AI",
+    "description": "- AI platform for motion capture and real-time 3D video character animation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/manus_ai_agent",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571611/toolzite/products/manus_ai_agent.png"
+        "public_id": "toolzite/products/move_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874091/toolzite/products/move_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://manus.im/",
+    "category": "3D Models & Assets",
+    "link": "https://www.move.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Browser Use",
-    "description": "- Python tool that helps AI agents understand and interact with websites seamlessly.",
+    "name": "Masterpiece X",
+    "description": "- Transform text into 3D visual elements for rapid prototyping and quick design previews.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/browser_use",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571608/toolzite/products/browser_use.png"
+        "public_id": "toolzite/products/masterpiece_x",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874095/toolzite/products/masterpiece_x.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://browser-use.com/",
+    "category": "3D Models & Assets",
+    "link": "https://www.masterpiecex.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OWL by Camel AI",
-    "description": "- Framework to manage multiple AI agents for automating web, media, and document tasks.",
+    "name": "Movmi AI",
+    "description": "- Create humanoid animations with AI-powered motion capture for realistic 3D movement.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/owl_by_camel_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571610/toolzite/products/owl_by_camel_ai.png"
+        "public_id": "toolzite/products/movmi_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874115/toolzite/products/movmi_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/camel-ai/owl",
+    "category": "3D Models & Assets",
+    "link": "https://movmi.co/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Replit Agent",
-    "description": "- AI dev assistant that builds apps from text in 50+ languages, deploy-ready.",
+    "name": "Blender Copilot",
+    "description": "- GPT-based AI that simplifies 3D modeling in Blender with natural language commands.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/replit_agent",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571609/toolzite/products/replit_agent.png"
+        "public_id": "toolzite/products/blender_copilot",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874102/toolzite/products/blender_copilot.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://replit.com/",
+    "category": "3D Models & Assets",
+    "link": "https://liberateyourmind.gumroad.com/l/blendercopilot",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OpenManus",
-    "description": "- Open-source autonomous agent for data analysis, trip planning, and content generation.",
+    "name": "Polycam",
+    "description": "- Generate 3D models from a photo using AI and LiDAR-based scanning.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/openmanus",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571607/toolzite/products/openmanus.png"
+        "public_id": "toolzite/products/polycam",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874131/toolzite/products/polycam.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://openmanus.github.io/",
+    "category": "3D Models & Assets",
+    "link": "https://poly.cam/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Play.ai",
-    "description": "- Voice interface with cloning features to create lifelike, personalized AI conversations.",
+    "name": "Cascadeur",
+    "description": "- AI-assisted 3D animation software with a wide range of design and modeling tools.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/play.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571629/toolzite/products/play.ai.png"
+        "public_id": "toolzite/products/cascadeur",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874146/toolzite/products/cascadeur.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://play.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://cascadeur.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Operator by OpenAI",
-    "description": "- ChatGPT-powered agent that books travel, orders groceries, and completes web tasks automatically.",
+    "name": "Webcam Motion Capture",
+    "description": "- Use your webcam to animate 3D avatars capturing your movements and facial expressions.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/operator_by_openai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571623/toolzite/products/operator_by_openai.png"
+        "public_id": "toolzite/products/webcam_motion_capture",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874135/toolzite/products/webcam_motion_capture.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://operator.chatgpt.com/",
+    "category": "3D Models & Assets",
+    "link": "https://webcammotioncapture.info/index.php",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Storm",
-    "description": "- Research AI assistant that generates structured articles using reliable online sources.",
+    "name": "Text-to-CAD UI",
+    "description": "- Automatically generate CAD-style 3D assets from text for UI/UX and design use.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/storm",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571622/toolzite/products/storm.png"
+        "public_id": "toolzite/products/text-to-cad_ui",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874128/toolzite/products/text-to-cad_ui.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://storm.genie.stanford.edu/",
+    "category": "3D Models & Assets",
+    "link": "https://text-to-cad.zoo.dev/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Do Browser",
-    "description": "- Chrome extension for voice/text AI commands to automate browser-based web tasks.",
+    "name": "4D Gaussian Splatting",
+    "description": "- Render realistic 3D visuals in real time on a single GPU with full motion.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/do_browser",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571623/toolzite/products/do_browser.png"
+        "public_id": "toolzite/products/4d_gaussian_splatting",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874239/toolzite/products/4d_gaussian_splatting.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.dobrowser.io/",
+    "category": "3D Models & Assets",
+    "link": "https://guanjunwu.github.io/4dgs/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "enso",
-    "description": "- enso offers simple, effective AI agents to handle business tasks effortlessly.",
+    "name": "L-MAGIC by Intel",
+    "description": "- Generate 360° AI panoramas from text, image or sketch in just a few clicks.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/enso",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571625/toolzite/products/enso.png"
+        "public_id": "toolzite/products/l-magic_by_intel",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874228/toolzite/products/l-magic_by_intel.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.enso.bot/",
+    "category": "3D Models & Assets",
+    "link": "https://zhipengcai.github.io/MMPano/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Relevance AI",
-    "description": "- No-code AI platform to build teams of agents for business task automation.",
+    "name": "Promethean AI",
+    "description": "- The first AI designed to help artists create virtual 3D worlds easily.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/relevance_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571646/toolzite/products/relevance_ai.png"
+        "public_id": "toolzite/products/promethean_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874192/toolzite/products/promethean_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://relevanceai.com/",
+    "category": "3D Models & Assets",
+    "link": "https://www.prometheanai.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Magentic-One",
-    "description": "- Multi-agent system that divides tasks for AI collaboration and smarter execution.",
+    "name": "Make-A-Character",
+    "description": "- Text-to-3D animated character generator powered by AI from Alibaba group.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/magentic-one",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571643/toolzite/products/magentic-one.png"
+        "public_id": "toolzite/products/make-a-character",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874216/toolzite/products/make-a-character.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/",
+    "category": "3D Models & Assets",
+    "link": "https://human3daigc.github.io/MACH/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "LoopGPT",
-    "description": "- Autonomous AI that supports multi-tasking and flexible interruptions during operation.",
+    "name": "Leo AI",
+    "description": "- Turn product ideas into 3D CAD models with engineering AI co-driver.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/loopgpt",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571641/toolzite/products/loopgpt.png"
+        "public_id": "toolzite/products/leo_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874191/toolzite/products/leo_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/farizrahman4u/loopgpt",
+    "category": "3D Models & Assets",
+    "link": "https://www.getleo.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "GoalGPT",
-    "description": "- AI powered by OpenAI API that independently executes varied tasks.",
+    "name": "Any Image to 3D",
+    "description": "- Transform 2D images into detailed 3D models for games, robotics or AR.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/goalgpt",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571680/toolzite/products/goalgpt.png"
+        "public_id": "toolzite/products/any_image_to_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874251/toolzite/products/any_image_to_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://beta.nando.ai/goalgpt.php",
+    "category": "3D Models & Assets",
+    "link": "https://3d.csm.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OpenDevin",
-    "description": "- Advanced autonomous AI agent for code creation and software development.",
+    "name": "MotionGPT",
+    "description": "- Define motions using text prompts and AI will animate them instantly in 3D.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/opendevin",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571642/toolzite/products/opendevin.png"
+        "public_id": "toolzite/products/motiongpt",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874265/toolzite/products/motiongpt.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/OpenDevin/OpenDevin",
+    "category": "3D Models & Assets",
+    "link": "https://motion-gpt.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "MetaGPT",
-    "description": "- AI simulating a team of experts to solve complex tasks via API.",
+    "name": "DreamGaussian",
+    "description": "- Innovative 3D generation using generative Gaussian splatting for stunning object creation.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/metagpt",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571693/toolzite/products/metagpt.png"
+        "public_id": "toolzite/products/dreamgaussian",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874261/toolzite/products/dreamgaussian.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/geekan/MetaGPT",
+    "category": "3D Models & Assets",
+    "link": "https://dreamgaussian.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Open Interpreter",
-    "description": "- Terminal-based voice assistant that accelerates computing through spoken commands.",
+    "name": "Sloyd",
+    "description": "- Simplify 3D model creation with access to a large model and texture library.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/open_interpreter",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571691/toolzite/products/open_interpreter.png"
+        "public_id": "toolzite/products/sloyd",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874254/toolzite/products/sloyd.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://openinterpreter.com/",
+    "category": "3D Models & Assets",
+    "link": "https://www.sloyd.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Cognosys 2.0",
-    "description": "- Data-focused AI agent making smart decisions through advanced analytics.",
+    "name": "Hiber 3D",
+    "description": "- Create 3D models with a chatbot that understands prompts and builds virtual worlds.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/cognosys_2.0",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571693/toolzite/products/cognosys_2.0.png"
+        "public_id": "toolzite/products/hiber_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874255/toolzite/products/hiber_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.cognosys.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://www.hiber3d.com/genai",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "SuperAGI",
-    "description": "- Open-source toolkit to build and launch custom AI agents from GitHub.",
+    "name": "InstantMesh 3D",
+    "description": "- Generate 3D models from one image in under 10 seconds using diffusion + reconstruction.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/superagi",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571705/toolzite/products/superagi.png"
+        "public_id": "toolzite/products/instantmesh_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874279/toolzite/products/instantmesh_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://superagi.com/",
+    "category": "3D Models & Assets",
+    "link": "https://github.com/TencentARC/InstantMesh",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Multi-GPT",
-    "description": "- AI project manager that forms expert agent teams to fulfill your goals.",
+    "name": "Rodin AI",
+    "description": "- Make hyperrealistic 3D faces or objects from text or images using parameter controls.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/multi-gpt",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571693/toolzite/products/multi-gpt.png"
+        "public_id": "toolzite/products/rodin_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874300/toolzite/products/rodin_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/rumpfmax/Multi-GPT",
+    "category": "3D Models & Assets",
+    "link": "https://hyperhuman.deemos.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Amelia.ai",
-    "description": "- Virtual assistant that enhances customer service and internal processes with AI automation.",
+    "name": "Depth Pro",
+    "description": "- Apple’s AI creates high-quality 3D depth maps from 2D images quickly and efficiently.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/amelia.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571720/toolzite/products/amelia.ai.png"
+        "public_id": "toolzite/products/depth_pro",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874277/toolzite/products/depth_pro.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://amelia.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://github.com/apple/ml-depth-pro",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Jace.ai",
-    "description": "- Fully autonomous AI agent that performs intricate tasks upon request.",
+    "name": "Recraft",
+    "description": "- Design vector images, icons and 3D illustrations using a single AI-powered tool.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/jace.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571719/toolzite/products/jace.ai.png"
+        "public_id": "toolzite/products/recraft",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874279/toolzite/products/recraft.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.jace.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://www.recraft.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Agent2Agent Protocol",
-    "description": "- Protocol allowing communication and teamwork between different AI agents.",
+    "name": "CSM",
+    "description": "- Offers open-source software, APIs and tools for new AI development and 3D projects.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/agent2agent_protocol",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571718/toolzite/products/agent2agent_protocol.png"
+        "public_id": "toolzite/products/csm",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874297/toolzite/products/csm.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://google.github.io/A2A/",
+    "category": "3D Models & Assets",
+    "link": "https://csm.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "BabyAgi",
-    "description": "- Self-prompting, autonomous multi-tasking AI agent for hands-free operations.",
+    "name": "Masterpiece Studio",
+    "description": "- Generate 3D models automatically with AI-powered design tools and no prior skills needed.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/babyagi",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571718/toolzite/products/babyagi.png"
+        "public_id": "toolzite/products/masterpiece_studio",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874320/toolzite/products/masterpiece_studio.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/oliveirabruno01/babyagi-asi",
+    "category": "3D Models & Assets",
+    "link": "https://masterpiecestudio.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Camel AI",
-    "description": "- AI agent with chatbot capabilities and intelligent decision-making skills.",
+    "name": "TripoSR",
+    "description": "- Create high-quality 3D models from images instantly using a GPU-free AI tool.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/camel_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571722/toolzite/products/camel_ai.png"
+        "public_id": "toolzite/products/triposr",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874321/toolzite/products/triposr.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.camel-ai.org/",
+    "category": "3D Models & Assets",
+    "link": "https://stability.ai/news/triposr-3d-generation",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "AgentGPT",
-    "description": "- User-friendly platform to build and run autonomous agents without coding.",
+    "name": "Stable Video 3D",
+    "description": "- Generate 3D videos from images using SV3D with orbital or trajectory viewing options.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/agentgpt",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571734/toolzite/products/agentgpt.png"
+        "public_id": "toolzite/products/stable_video_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874320/toolzite/products/stable_video_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://agentgpt.reworkd.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://stability.ai/news/introducing-stable-video-3d",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Emergence AI",
-    "description": "- AI agent system to automate workflows and business processes using “Agent E.”",
+    "name": "Depthify.ai",
+    "description": "- Convert images/videos into 3D formats for use in Vision Pro and Meta Quest.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/emergence_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571741/toolzite/products/emergence_ai.png"
+        "public_id": "toolzite/products/depthify.ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874318/toolzite/products/depthify.ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.emergence.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://www.depthify.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Paradigm AI",
-    "description": "- Use AI agent swarms to process and act on data accurately.",
+    "name": "Cartwheel",
+    "description": "- Animate 3D characters using only text prompts for games, VR, or cinematic content.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/paradigm_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571733/toolzite/products/paradigm_ai.png"
+        "public_id": "toolzite/products/cartwheel",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874319/toolzite/products/cartwheel.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.paradigmai.com/",
+    "category": "3D Models & Assets",
+    "link": "https://getcartwheel.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Genspark",
-    "description": "- Search tool powered by AI agents creating unbiased, personalized knowledge pages.",
+    "name": "Unique3D",
+    "description": "- Generate 3D meshes from images using ISOMER AI for fast and detailed results.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/genspark",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571739/toolzite/products/genspark.png"
+        "public_id": "toolzite/products/unique3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874334/toolzite/products/unique3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.genspark.com",
+    "category": "3D Models & Assets",
+    "link": "https://wukailu.github.io/Unique3D/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Agents SDK OpenAI",
-    "description": "- Dev toolbox for creating agents that browse, search, and analyze documents.",
+    "name": "LGM 3D",
+    "description": "- Project that uses Gaussian properties to create high-resolution 3D models from text/images.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/agents_sdk_openai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571736/toolzite/products/agents_sdk_openai.png"
+        "public_id": "toolzite/products/lgm_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874340/toolzite/products/lgm_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://openai.com/index/new-tools-for-building-agents/",
+    "category": "3D Models & Assets",
+    "link": "https://me.kiui.moe/lgm/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Convergence AI",
-    "description": "- Conversational AI automating everyday tasks like emails, summaries, and shopping.",
+    "name": "Retrovision App",
+    "description": "- Turn images into 3D mesh with extrusions using AI depth estimation and GLB export.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/convergence_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571754/toolzite/products/convergence_ai.png"
+        "public_id": "toolzite/products/retrovision_app",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874341/toolzite/products/retrovision_app.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://convergence.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://app.retrovisionlabs.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "KaneAI",
-    "description": "- Natural language testing assistant to write and manage end-to-end software tests.",
+    "name": "Vector to 3D",
+    "description": "- Generate 3D effects from SVGs with full control over bevels, shadows and angles.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/kaneai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571754/toolzite/products/kaneai.png"
+        "public_id": "toolzite/products/vector_to_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874333/toolzite/products/vector_to_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.lambdatest.com/kane-ai",
+    "category": "3D Models & Assets",
+    "link": "https://www.meimu.design/vector-to-3d/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Zapier Agents",
-    "description": "- Build AI agents to automate email, calendar, and lead management with integrations.",
+    "name": "GaussianObject",
+    "description": "- Generate 3D objects from four images with Gaussian Splatting for high quality.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/zapier_agents",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571753/toolzite/products/zapier_agents.png"
+        "public_id": "toolzite/products/gaussianobject",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874449/toolzite/products/gaussianobject.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://zapier.com/agents",
+    "category": "3D Models & Assets",
+    "link": "https://gaussianobject.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Bee Agent Framework",
-    "description": "- LLM-based agent framework with secure code tools, memory, and JavaScript/Python integration.",
+    "name": "Shap-e",
+    "description": "- Build 3D models from text or images — ideal for designers and architects.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/bee_agent_framework",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571751/toolzite/products/bee_agent_framework.png"
+        "public_id": "toolzite/products/shap-e",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874395/toolzite/products/shap-e.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://i-am-bee.github.io/bee-agent-framework/#/",
+    "category": "3D Models & Assets",
+    "link": "https://github.com/openai/shap-e",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Swarm by OpenAI",
-    "description": "- OpenAI's agent orchestration framework for learning multi-agent systems easily.",
+    "name": "MagiScan",
+    "description": "- Scan real objects with your phone and turn them into 3D models using AI.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/swarm_by_openai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571753/toolzite/products/swarm_by_openai.png"
+        "public_id": "toolzite/products/magiscan",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874430/toolzite/products/magiscan.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/openai/swarm",
+    "category": "3D Models & Assets",
+    "link": "https://magiscan.app/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Stripe Agentic Workflow",
-    "description": "- Secure payment automation API for AI agent workflows.",
+    "name": "Poly AI",
+    "description": "- Create realistic 3D textures in seconds by typing a descriptive prompt.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/stripe_agentic_workflow",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571765/toolzite/products/stripe_agentic_workflow.png"
+        "public_id": "toolzite/products/poly_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874453/toolzite/products/poly_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://stripe.dev/blog/adding-payments-to-your-agentic-workflows",
+    "category": "3D Models & Assets",
+    "link": "https://withpoly.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Portia Labs",
-    "description": "- Create structured, controllable agents for automating difficult multi-step tasks.",
+    "name": "Monster Mash",
+    "description": "- Sketch-based 3D modeling and animation tool powered by intuitive AI suggestions.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/portia_labs",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571765/toolzite/products/portia_labs.png"
+        "public_id": "toolzite/products/monster_mash",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874484/toolzite/products/monster_mash.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.portialabs.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://monstermash.zone/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Open Agent Studio",
-    "description": "- Agent builder for semantic, resilient automations with zero coding.",
+    "name": "PanoHead",
+    "description": "- Turn any 2D headshot into a full 360° 3D model automatically.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/open_agent_studio",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571769/toolzite/products/open_agent_studio.png"
+        "public_id": "toolzite/products/panohead",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874472/toolzite/products/panohead.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.openagent.studio/",
+    "category": "3D Models & Assets",
+    "link": "https://github.com/SizheAn/PanoHead",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Autotab AI",
-    "description": "- Teach a browser-based AI robot tasks—it repeats steps automatically.",
+    "name": "Texture Lab",
+    "description": "- Generate 3D textures for gaming and VFX projects quickly from simple prompts.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/autotab_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571765/toolzite/products/autotab_ai.png"
+        "public_id": "toolzite/products/texture_lab",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874469/toolzite/products/texture_lab.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.autotab.com/",
+    "category": "3D Models & Assets",
+    "link": "https://www.texturelab.xyz/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Aomni AI",
-    "description": "- Data extraction agent that boosts Auto-GPT performance significantly.",
+    "name": "Meshcapade",
+    "description": "- Create animated avatars using a character editor and generate movements from text or video.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/aomni_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571786/toolzite/products/aomni_ai.png"
+        "public_id": "toolzite/products/meshcapade",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874468/toolzite/products/meshcapade.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.aomni.com/",
+    "category": "3D Models & Assets",
+    "link": "https://meshcapade.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Hippocratic AI",
-    "description": "- Healthcare platform with 300+ AI agents for various medical specialties.",
+    "name": "Skibs.co",
+    "description": "- Animate 2D characters in 3D from videos or predefined models using single-frame AI.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/hippocratic_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571790/toolzite/products/hippocratic_ai.png"
+        "public_id": "toolzite/products/skibs.co",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874495/toolzite/products/skibs.co.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.hippocraticai.com/",
+    "category": "3D Models & Assets",
+    "link": "https://app.skibs.co/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Synthflow AI",
-    "description": "- Human-voiced AI assistant that manages calls for sales and scheduling.",
+    "name": "LargeSpatialModel (LSM)",
+    "description": "- Create semantic 3D models from 2D images using real-time reconstruction AI system.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/synthflow_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571783/toolzite/products/synthflow_ai.png"
+        "public_id": "toolzite/products/largespatialmodel_(lsm)",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874498/toolzite/products/largespatialmodel_%28lsm%29.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://synthflow.ai/",
+    "category": "3D Models & Assets",
+    "link": "https://largespatialmodel.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Fini AI",
-    "description": "- Turn knowledge bases into 24/7 conversational AI support agents.",
+    "name": "Dora",
+    "description": "- No-code tool to build websites with 3D animation features in just a few clicks.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/fini_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571783/toolzite/products/fini_ai.png"
+        "public_id": "toolzite/products/dora",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874500/toolzite/products/dora.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.usefini.com/",
+    "category": "3D Models & Assets",
+    "link": "https://www.dora.run/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "WestWorld Simulation",
-    "description": "- Simulation exploring autonomous AI interaction and social behavior.",
+    "name": "LLaMA-Mesh",
+    "description": "- Text-to-3D model generator that produces detailed meshes from language prompts.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/westworld_simulation",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571780/toolzite/products/westworld_simulation.png"
+        "public_id": "toolzite/products/llama-mesh",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874500/toolzite/products/llama-mesh.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://arxiv.org/pdf/2304.03442.pdf",
+    "category": "3D Models & Assets",
+    "link": "https://research.nvidia.com/labs/toronto-ai/LLaMA-Mesh/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "SWE-agent",
-    "description": "- AI tool to auto-debug GitHub repositories using GPT-4.",
+    "name": "Tripo AI",
+    "description": "- AI tool to make high-quality 3D models from text in just seconds.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/swe-agent",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571802/toolzite/products/swe-agent.png"
+        "public_id": "toolzite/products/tripo_ai",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874499/toolzite/products/tripo_ai.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://swe-agent.com/",
+    "category": "3D Models & Assets",
+    "link": "https://www.tripo3d.ai/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "AgentLLM",
-    "description": "- LLaMA-compatible free and open-source autonomous agent.",
+    "name": "Substance 3D Viewer",
+    "description": "- Free desktop app to view, edit and light 3D models in Photoshop.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/agentllm",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571804/toolzite/products/agentllm.png"
+        "public_id": "toolzite/products/substance_3d_viewer",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874514/toolzite/products/substance_3d_viewer.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/Josh-XT/Agent-LLM",
+    "category": "3D Models & Assets",
+    "link": "https://adobe.prf.hn/click/camref:1011l3LMys/destination:https%3A%2F%2Fhelpx.adobe.com%2Fsubstance-3d-viewer.html",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "DreamGPT",
-    "description": "- AI project that creates new ideas from creative hallucinations.",
+    "name": "Imagine 3D",
+    "description": "- Prototype that imagines and creates 3D models directly from descriptive text prompts.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/dreamgpt",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571804/toolzite/products/dreamgpt.png"
+        "public_id": "toolzite/products/imagine_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874519/toolzite/products/imagine_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/DivergentAI/dreamGPT",
+    "category": "3D Models & Assets",
+    "link": "https://captures.lumalabs.ai/imagine",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "OpenAGI",
-    "description": "- Experimental AI that manipulates and understands images autonomously.",
+    "name": "AdamCAD",
+    "description": "- Generate parametric 3D models via AI CAD co-driver with fast prototyping options.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/openagi",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571802/toolzite/products/openagi.png"
+        "public_id": "toolzite/products/adamcad",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874511/toolzite/products/adamcad.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/agiresearch/OpenAGI",
+    "category": "3D Models & Assets",
+    "link": "https://www.adamcad.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "ChatArena",
-    "description": "- Linguistic tool to study how AI agents interact through games.",
+    "name": "Kaedim 3D",
+    "description": "- Make 3D objects from 2D images in seconds — intuitive and beginner-friendly.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/chatarena",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571803/toolzite/products/chatarena.png"
+        "public_id": "toolzite/products/kaedim_3d",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874516/toolzite/products/kaedim_3d.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/chatarena/chatarena",
+    "category": "3D Models & Assets",
+    "link": "https://www.kaedim3d.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "Jarvis (Microsoft)",
-    "description": "- Microsoft-built AI assistant that manages tasks personally.",
+    "name": "WildGaussians",
+    "description": "- AI tool for rendering real-time 3D environments, even with occlusions and variable lighting.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/jarvis_(microsoft)",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571815/toolzite/products/jarvis_%28microsoft%29.png"
+        "public_id": "toolzite/products/wildgaussians",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874530/toolzite/products/wildgaussians.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://github.com/microsoft/JARVIS",
+    "category": "3D Models & Assets",
+    "link": "https://wild-gaussians.github.io/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []
   },
   {
-    "name": "CrewAI",
-    "description": "- Multi-agent coordination platform for efficient task management.",
+    "name": "Simulon",
+    "description": "- Mobile AI system that adds 3D VFX models into your videos with cinematic quality.",
     "ratings": 0,
     "images": [
       {
-        "public_id": "toolzite/products/crewai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571817/toolzite/products/crewai.png"
+        "public_id": "toolzite/products/simulon",
+        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744874541/toolzite/products/simulon.png"
       }
     ],
-    "category": "AI Agents",
-    "link": "https://www.crewai.com/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "MultiOn",
-    "description": "- Personal AI butler that schedules, books, and orders for you.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/multion",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571816/toolzite/products/multion.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://www.multion.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Devika AI",
-    "description": "- Open-source AI engineer that writes and debugs code independently.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/devika_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571817/toolzite/products/devika_ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://github.com/stitionai/devika",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Ninja AI",
-    "description": "- Ninja: all-in-one AI assistant with 20+ integrated top models.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/ninja_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571817/toolzite/products/ninja_ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://myninja.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Microsoft OmniParser",
-    "description": "- Innovative tool to analyze and understand interactive elements in screenshots.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/microsoft_omniparser",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571834/toolzite/products/microsoft_omniparser.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://microsoft.github.io/OmniParser/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Lindy.ai",
-    "description": "- Agent builder for managing emails, meetings, and support with business tool integration.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/lindy.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571832/toolzite/products/lindy.ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://www.lindy.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Claude Engineer",
-    "description": "- Claude-integrated CLI for autonomous coding, search, and project handling.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/claude_engineer",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571832/toolzite/products/claude_engineer.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://github.com/Doriandarko/claude-engineer",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Wordfare AI",
-    "description": "- Fast agent development IDE for text programming with loops, APIs, and hooks.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/wordfare_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571831/toolzite/products/wordfare_ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://www.wordware.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Conversational AI",
-    "description": "- Add natural voice to AI agents with this low-latency text-to-speech tool.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/conversational_ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571833/toolzite/products/conversational_ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://elevenlabs.io/conversational-ai",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "North by Cohere",
-    "description": "- Build AI for workflow automation with secure search and content generation.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/north_by_cohere",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571848/toolzite/products/north_by_cohere.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://cohere.com/north",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Abacus",
-    "description": "- Platform to build large-scale AI workflows, agents, and chatbots.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/abacus",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571847/toolzite/products/abacus.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://abacus.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Runner H",
-    "description": "- Web automation tool to create workflows using natural language—no coding needed.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/runner_h",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571844/toolzite/products/runner_h.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://www.hcompany.ai/blog/introducing-h",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Agent.ai",
-    "description": "- AI agent marketplace and development platform for hiring or creating assistants.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/agent.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571847/toolzite/products/agent.ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://agent.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AutoGen",
-    "description": "- Microsoft open-source system for high-efficiency, multi-agent AI deployments.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/autogen",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571845/toolzite/products/autogen.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://microsoft.github.io/autogen/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "MyShell.ai",
-    "description": "- Decentralized builder to create, share, and monetize AI agents and voices.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/myshell.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571860/toolzite/products/myshell.ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://myshell.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Sintra.ai",
-    "description": "- Platform automating tasks using specialized activity-based AI chatbots.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/sintra.ai",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571867/toolzite/products/sintra.ai.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://playosinc.pxf.io/QyVWNz",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Project Mariner",
-    "description": "- Chrome extension with Gemini 2.0 for AI-powered web navigation.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/project_mariner",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571863/toolzite/products/project_mariner.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://deepmind.google/technologies/project-mariner/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "AutoGPT",
-    "description": "- Open-source AI connected to the internet for autonomous task handling.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/autogpt",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571860/toolzite/products/autogpt.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://github.com/Torantulino/Auto-GPT",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Momen",
-    "description": "- No-code builder to scale and monetize AI agents using LLMs and data.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/momen",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571862/toolzite/products/momen.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://momen.app/ai",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Godmode",
-    "description": "- Generative agents like ChatGPT used to create original and creative results.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/godmode",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571878/toolzite/products/godmode.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://godmode.space/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Deep Research",
-    "description": "- OpenAI’s AI-powered search that compiles verified answers from thousands of sources.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/deep_research",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571891/toolzite/products/deep_research.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://openai.com/index/introducing-deep-research/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "HyperPilot",
-    "description": "- Test and compare top AI agents like CUA and Claude for web automation.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/hyperpilot",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571880/toolzite/products/hyperpilot.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://pilot.hyperbrowser.ai/",
-    "type": "",
-    "numOfReviews": 0,
-    "reviews": []
-  },
-  {
-    "name": "Adobe AI Agents",
-    "description": "- AI coordination platform to enhance content, sites, and customer experiences through agents.",
-    "ratings": 0,
-    "images": [
-      {
-        "public_id": "toolzite/products/adobe_ai_agents",
-        "url": "https://res.cloudinary.com/dn3nlbjux/image/upload/v1744571882/toolzite/products/adobe_ai_agents.png"
-      }
-    ],
-    "category": "AI Agents",
-    "link": "https://prf.hn/l/RlD9wvB/",
+    "category": "3D Models & Assets",
+    "link": "https://simulon.com/",
     "type": "",
     "numOfReviews": 0,
     "reviews": []

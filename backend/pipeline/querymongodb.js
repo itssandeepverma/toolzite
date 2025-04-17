@@ -34,4 +34,4 @@ export const connectDatabase = () => {
   });
 };
 
-// connectDatabase();
+connectDatabase();
