@@ -1,70 +1,182 @@
 name,desc,link,category
-Leonardo AI,"- A full design platform to generate 3D assets for games, fashion, architecture and more.",https://www.aixploria.com/out/LeonardoAI,3D Models & Assets
-Genie by Lumalabs,"- Design 3D models with animations, particles and share your creations on Discord easily.",https://www.aixploria.com/out/GeniebyLumalabs,3D Models & Assets
-Kinetix,- Create 3D animations without any prior knowledge using a beginner-friendly AI platform.,https://www.aixploria.com/out/Kinetix,3D Models & Assets
-Get3D Nvidia,- Generate realistic 3D models created by the Nvidia team for high-end visual applications.,https://www.aixploria.com/out/Get3DNvidia,3D Models & Assets
-DreamFusion 3D,- Generate 3D objects directly from text prompts using AI-based interpretation.,https://www.aixploria.com/out/DreamFusion3D,3D Models & Assets
-Hunyuan3D,- Create expressive characters and dynamic scenes with text-driven realistic 3D animation generation.,https://www.aixploria.com/out/Hunyuan3D,3D Models & Assets
-Krikey AI,- Automatically generate 3D avatars and explore a public gallery of AI-made designs.,https://www.aixploria.com/out/KrikeyAI,3D Models & Assets
-Edify 3D,- NVIDIA’s platform for ultra-realistic 3D models with 4K textures and PBR from text/images.,https://www.aixploria.com/out/Edify3D,3D Models & Assets
-DeepMotion,"- Transform any video into real-time, high-quality 3D animations instantly.",https://www.aixploria.com/out/DeepMotion,3D Models & Assets
-DimensionX,- AI that turns images into 3D/4D scenes with controllable camera and photo realism.,https://www.aixploria.com/out/DimensionX,3D Models & Assets
-Luma AI,- Capture reality and transform it into an immersive 3D format using AI.,https://www.aixploria.com/out/LumaAI,3D Models & Assets
-Move AI,- AI platform for motion capture and real-time 3D video character animation.,https://www.aixploria.com/out/MoveAI,3D Models & Assets
-Masterpiece X,- Transform text into 3D visual elements for rapid prototyping and quick design previews.,https://www.aixploria.com/out/MasterpieceX,3D Models & Assets
-Movmi AI,- Create humanoid animations with AI-powered motion capture for realistic 3D movement.,https://www.aixploria.com/out/MovmiAI,3D Models & Assets
-Blender Copilot,- GPT-based AI that simplifies 3D modeling in Blender with natural language commands.,https://www.aixploria.com/out/BlenderCopilot,3D Models & Assets
-Polycam,- Generate 3D models from a photo using AI and LiDAR-based scanning.,https://www.aixploria.com/out/Polycam,3D Models & Assets
-Plask AI,"- Animate 3D characters with intelligent, automated motion capture for realism and precision.",https://www.aixploria.com/out/PlaskAI,3D Models & Assets
-Cascadeur,- AI-assisted 3D animation software with a wide range of design and modeling tools.,https://www.aixploria.com/out/Cascadeur,3D Models & Assets
-Webcam Motion Capture,- Use your webcam to animate 3D avatars capturing your movements and facial expressions.,https://www.aixploria.com/out/WebcamMotionCapture,3D Models & Assets
-Text-to-CAD UI,- Automatically generate CAD-style 3D assets from text for UI/UX and design use.,https://www.aixploria.com/out/Text-to-CADUI,3D Models & Assets
-4D Gaussian Splatting,- Render realistic 3D visuals in real time on a single GPU with full motion.,https://www.aixploria.com/out/4DGaussianSplatting,3D Models & Assets
-L-MAGIC by Intel,"- Generate 360° AI panoramas from text, image or sketch in just a few clicks.",https://www.aixploria.com/out/L-MAGICbyIntel,3D Models & Assets
-Promethean AI,- The first AI designed to help artists create virtual 3D worlds easily.,https://www.aixploria.com/out/PrometheanAI,3D Models & Assets
-Make-A-Character,- Text-to-3D animated character generator powered by AI from Alibaba group.,https://www.aixploria.com/out/Make-A-Character,3D Models & Assets
-Leo AI,- Turn product ideas into 3D CAD models with engineering AI co-driver.,https://www.aixploria.com/out/LeoAI,3D Models & Assets
-Any Image to 3D,"- Transform 2D images into detailed 3D models for games, robotics or AR.",https://www.aixploria.com/out/AnyImageto3D,3D Models & Assets
-MotionGPT,- Define motions using text prompts and AI will animate them instantly in 3D.,https://www.aixploria.com/out/MotionGPT,3D Models & Assets
-DreamGaussian,- Innovative 3D generation using generative Gaussian splatting for stunning object creation.,https://www.aixploria.com/out/DreamGaussian,3D Models & Assets
-Sloyd,- Simplify 3D model creation with access to a large model and texture library.,https://www.aixploria.com/out/Sloyd,3D Models & Assets
-Hiber 3D,- Create 3D models with a chatbot that understands prompts and builds virtual worlds.,https://www.aixploria.com/out/Hiber3D,3D Models & Assets
-InstantMesh 3D,- Generate 3D models from one image in under 10 seconds using diffusion + reconstruction.,https://www.aixploria.com/out/InstantMesh3D,3D Models & Assets
-Rodin AI,- Make hyperrealistic 3D faces or objects from text or images using parameter controls.,https://www.aixploria.com/out/RodinAI,3D Models & Assets
-Depth Pro,- Apple’s AI creates high-quality 3D depth maps from 2D images quickly and efficiently.,https://www.aixploria.com/out/DepthPro,3D Models & Assets
-Recraft,"- Design vector images, icons and 3D illustrations using a single AI-powered tool.",https://www.aixploria.com/out/Recraft,3D Models & Assets
-CSM,"- Offers open-source software, APIs and tools for new AI development and 3D projects.",https://www.aixploria.com/out/CSM,3D Models & Assets
-Masterpiece Studio,- Generate 3D models automatically with AI-powered design tools and no prior skills needed.,https://www.aixploria.com/out/MasterpieceStudio,3D Models & Assets
-TripoSR,- Create high-quality 3D models from images instantly using a GPU-free AI tool.,https://www.aixploria.com/out/TripoSR,3D Models & Assets
-Stable Video 3D,- Generate 3D videos from images using SV3D with orbital or trajectory viewing options.,https://www.aixploria.com/out/StableVideo3D,3D Models & Assets
-Depthify.ai,- Convert images/videos into 3D formats for use in Vision Pro and Meta Quest.,https://www.aixploria.com/out/Depthify.ai,3D Models & Assets
-Cartwheel,"- Animate 3D characters using only text prompts for games, VR, or cinematic content.",https://www.aixploria.com/out/Cartwheel,3D Models & Assets
-Unique3D,- Generate 3D meshes from images using ISOMER AI for fast and detailed results.,https://www.aixploria.com/out/Unique3D,3D Models & Assets
-LGM 3D,- Project that uses Gaussian properties to create high-resolution 3D models from text/images.,https://www.aixploria.com/out/LGM3D,3D Models & Assets
-InsightFace,- AI tool for 2D and 3D face analysis to build immersive game characters.,https://www.aixploria.com/out/InsightFace,3D Models & Assets
-Retrovision App,- Turn images into 3D mesh with extrusions using AI depth estimation and GLB export.,https://www.aixploria.com/out/RetrovisionApp,3D Models & Assets
-Vector to 3D,"- Generate 3D effects from SVGs with full control over bevels, shadows and angles.",https://www.aixploria.com/out/Vectorto3D,3D Models & Assets
-MoMask,- Create 3D human movement from text using quantization and bidirectional transformers.,https://www.aixploria.com/out/MoMask,3D Models & Assets
-GaussianObject,- Generate 3D objects from four images with Gaussian Splatting for high quality.,https://www.aixploria.com/out/GaussianObject,3D Models & Assets
-Shap-e,- Build 3D models from text or images — ideal for designers and architects.,https://www.aixploria.com/out/Shap-e,3D Models & Assets
-MagiScan,- Scan real objects with your phone and turn them into 3D models using AI.,https://www.aixploria.com/out/MagiScan,3D Models & Assets
-Poly AI,- Create realistic 3D textures in seconds by typing a descriptive prompt.,https://www.aixploria.com/out/PolyAI,3D Models & Assets
-Monster Mash,- Sketch-based 3D modeling and animation tool powered by intuitive AI suggestions.,https://www.aixploria.com/out/MonsterMash,3D Models & Assets
-PanoHead,- Turn any 2D headshot into a full 360° 3D model automatically.,https://www.aixploria.com/out/PanoHead,3D Models & Assets
-Texture Lab,- Generate 3D textures for gaming and VFX projects quickly from simple prompts.,https://www.aixploria.com/out/TextureLab,3D Models & Assets
-2D&3D Video Converter,- Convert 2D videos into immersive 3D experiences using a professional AI tool.,https://www.aixploria.com/out/2D%26%23038%3B3DVideoConverter,3D Models & Assets
-Meshcapade,- Create animated avatars using a character editor and generate movements from text or video.,https://www.aixploria.com/out/Meshcapade,3D Models & Assets
-Skibs.co,- Animate 2D characters in 3D from videos or predefined models using single-frame AI.,https://www.aixploria.com/out/Skibs.co,3D Models & Assets
-LargeSpatialModel (LSM),- Create semantic 3D models from 2D images using real-time reconstruction AI system.,https://www.aixploria.com/out/LargeSpatialModel%28LSM%29,3D Models & Assets
-Dora,- No-code tool to build websites with 3D animation features in just a few clicks.,https://www.aixploria.com/out/Dora,3D Models & Assets
-LLaMA-Mesh,- Text-to-3D model generator that produces detailed meshes from language prompts.,https://www.aixploria.com/out/LLaMA-Mesh,3D Models & Assets
-Tripo AI,- AI tool to make high-quality 3D models from text in just seconds.,https://www.aixploria.com/out/TripoAI,3D Models & Assets
-Substance 3D Viewer,"- Free desktop app to view, edit and light 3D models in Photoshop.",https://www.aixploria.com/out/Substance3DViewer,3D Models & Assets
-Imagine 3D,- Prototype that imagines and creates 3D models directly from descriptive text prompts.,https://www.aixploria.com/out/Imagine3D,3D Models & Assets
-AdamCAD,- Generate parametric 3D models via AI CAD co-driver with fast prototyping options.,https://www.aixploria.com/out/AdamCAD,3D Models & Assets
-Kaedim 3D,- Make 3D objects from 2D images in seconds — intuitive and beginner-friendly.,https://www.aixploria.com/out/Kaedim3D,3D Models & Assets
-WildGaussians,"- AI tool for rendering real-time 3D environments, even with occlusions and variable lighting.",https://www.aixploria.com/out/WildGaussians,3D Models & Assets
-Simulon,- Mobile AI system that adds 3D VFX models into your videos with cinematic quality.,https://www.aixploria.com/out/Simulon,3D Models & Assets
-CGDream,- Generate AI visuals from 3D models using prompts and fine-tuned custom filters.,https://cgdream.ai/,3D Models & Assets
-ViewCrafter,- Use limited 2D images to generate full 3D environments and immersive experiences.,https://www.aixploria.com/out/ViewCrafter,3D Models & Assets
-3DFY.ai,"- Generate 3D characters from a single image with pose, texture and animation.",https://www.aixploria.com/out/3DFY.ai,3D Models & Assets
+VideoIdeas.ai,"- A platform for YouTube creators powered by AI, offering scripts, content ideas, and engagement strategies.",https://www.videoideas.ai/,Detection Tools
+PimEyes,- Upload a photo to AI and discover where it appears across the web.,https://www.aixploria.com/out/PimEyes,Detection Tools
+Undetectable AI,"- Humanize your AI-generated text to make it undetectable. Perfect for students, SEO, and journalism.",https://www.aixploria.com/out/UndetectableAI,Detection Tools
+Free Face Search Online,"- Reverse image search to see where your face appears online, safeguarding your digital identity.",https://www.aixploria.com/out/FreeFaceSearchOnline,Detection Tools
+GPTZero,- Revolutionary AI-powered plagiarism detection to quickly identify copied text.,https://www.aixploria.com/out/GPTZero,Detection Tools
+FaceCheck ID,- AI search engine that helps you find anyone online by searching for their name.,https://www.aixploria.com/out/FaceCheckID,Detection Tools
+Originality AI,"- A reliable AI plagiarism detector that checks documents, files, or URLs for copied content.",https://www.aixploria.com/out/OriginalityAI,Detection Tools
+ZeroGPT,"- Instantly identify if a text is written by a human or generated by AI, with extra AI tools.",https://www.aixploria.com/out/ZeroGPT,Detection Tools
+DeepFake Detector,- Quickly assess if an image is real or AI-generated with this fast detection tool.,https://www.aixploria.com/out/DeepFakeDetector,Detection Tools
+Lenso.ai,- A powerful reverse image search tool with AI-powered face recognition for location and person discovery.,https://lenso.ai/?utm_source=referral&utm_medium=referral&utm_campaign=aixploria,Detection Tools
+Copyleaks,"- A platform to check if your content is unique by detecting plagiarism, with API integration available.",https://www.aixploria.com/out/Copyleaks,Detection Tools
+TextGo AI,- A tool that makes AI-generated content pass authenticity tests by humanizing it to avoid detection.,https://www.textgo.ai/,Detection Tools
+Humanizer AI,"- An AI tool that turns machine-generated text into natural, human-like writing with features for expansion and shortening.",https://humanizerai.ai/,Detection Tools
+Content At Scale,"- Paste text to check if it’s truly written by a human, and detect AI-generated content.",https://www.aixploria.com/out/ContentAtScale,Detection Tools
+Illuminarty,"- An AI that detects and analyzes AI-generated, modified, and Deepfake images through complex algorithms.",https://www.aixploria.com/out/Illuminarty,Detection Tools
+GPTinf,- A tool that rewrites and paraphrases text to ensure it’s undetectable by AI detectors.,https://www.aixploria.com/out/GPTinf,Detection Tools
+Wasitai,- Check if an image is AI-generated or altered by simply uploading it for instant results.,https://www.aixploria.com/out/Wasitai,Detection Tools
+Bladerunner,"- A browser extension that identifies AI-generated content quickly, ideal for spotting fake articles and reviews.",https://www.aixploria.com/out/Bladerunner,Detection Tools
+Nuanced,- Detect AI-generated images with accuracy to maintain authenticity on business platforms with API integration.,https://www.aixploria.com/out/Nuanced,Detection Tools
+AICheatCheck,- A tool for teachers to identify AI-generated content in student work and assignments.,https://www.aixploria.com/out/AICheatCheck,Detection Tools
+Have I Been Encoded,- Discover what AI algorithms know about you and what information they gather online.,https://www.aixploria.com/out/HaveIBeenEncoded,Detection Tools
+Crossplag’s AI detector,- Use AI to trace the origin of a text and determine whether it was written by a human or machine.,https://www.aixploria.com/out/Crossplag%26%238217%3BsAIdetector,Detection Tools
+Is This Image NSFW,- Upload an image to verify if it is appropriate for work (NSFW check) using AI.,https://www.aixploria.com/out/IsThisImageNSFW,Detection Tools
+AI or Not,- An AI tool that identifies whether an image was created by AI or modified.,https://www.aixploria.com/out/AIorNot,Detection Tools
+GPT-2 Output Detector,- AI detects if your text is machine-generated and provides a percentage of certainty.,https://www.aixploria.com/out/GPT-2OutputDetector,Detection Tools
+Twelve Labs,"- APIs available for video search applications, such as content moderation, advertising, and media analysis.",https://www.aixploria.com/out/TwelveLabs,Detection Tools
+GPTKit,- Detect AI-generated text with ease using a dedicated AI detection system.,https://www.aixploria.com/out/GPTKit,Detection Tools
+Bypassgpt,- A rewriting tool for AI content to make it undetectable by plagiarism or AI detection tools.,https://www.aixploria.com/out/Bypassgpt,Detection Tools
+Copyright Check AI,- Safeguard your social media from copyright issues by detecting unauthorized music using AI.,https://www.aixploria.com/out/CopyrightCheckAI,Detection Tools
+Detect GPT,- Detect AI-generated text using a tool that checks for content created by systems like ChatGPT.,https://www.aixploria.com/out/DetectGPT,Detection Tools
+Turnitin,- Maintain academic integrity by using AI to detect assisted or AI-written content in student assignments.,https://www.aixploria.com/out/Turnitin,Detection Tools
+AudioSeal by Meta AI,"- Add an invisible watermark to AI-generated audio, with a built-in DeepFake audio detector.",https://www.aixploria.com/out/AudioSealbyMetaAI,Detection Tools
+Winston AI,"- Automatic AI detection for texts in PDF, Word, and other formats to prevent plagiarism.",https://www.aixploria.com/out/WinstonAI,Detection Tools
+Content Credentials,"- Anti-deepfake tool to verify the origins and edit history of online content, supporting all media types.",https://www.aixploria.com/out/ContentCredentials,Detection Tools
+AIundetect,- An expert text rewriting tool to craft content that bypasses AI detectors and reads naturally.,https://www.aixploria.com/out/AIundetect,Detection Tools
+FakerLabs,- A Deepfake detection site for easily identifying fake videos and verifying authenticity.,https://www.aixploria.com/out/FakerLabs,Detection Tools
+WriteHuman,- Transform AI-created text into handwriting that’s undetectable by detection systems.,https://www.aixploria.com/out/WriteHuman,Detection Tools
+ScrapX AI,"- A service that alerts you when a website changes, available via email or Slack notifications.",https://www.aixploria.com/out/ScrapXAI,Detection Tools
+PhotoGuard AI,- AI tool to detect if a photo has been created or modified by artificial intelligence quickly.,https://www.aixploria.com/out/PhotoGuardAI,Detection Tools
+Superbolt GeoSpy,"- Recognize any location from a single photo with AI, trained on millions of street images for pinpoint accuracy.",https://www.aixploria.com/out/SuperboltGeoSpy,Detection Tools
+Humanizer-AI-Text,"- A platform that humanizes AI-generated content, modifying vocabulary, style, and structure to maintain the original message.",https://www.humanizer-ai-text.com/,Detection Tools
+DeepFake Detector AI,- Instantly detect if a video or voice has been altered with DeepFake-style techniques.,https://www.aixploria.com/out/DeepFakeDetectorAI,Detection Tools
+StealthGPT,"- GPT3 prompt that makes AI-generated content invisible to detection systems, ideal for students.",https://www.aixploria.com/out/StealthGPT,Detection Tools
+Rephrasy,- This tool ensures your AI-generated text is undetectable by systems like GPTZero and Turnitin.,https://www.rephrasy.ai/,Detection Tools
+GeoSpy.ai,- A powerful AI tool for geotagging photos instantly and locating where an image was taken on a map.,https://www.aixploria.com/out/GeoSpy.ai,Detection Tools
+Humanize AI,- Convert AI-generated texts into human-sounding content that bypasses AI detection tools.,https://www.aixploria.com/out/HumanizeAI,Detection Tools
+TinEye,"- A search engine designed for reverse image recognition, useful for content moderation and fraud detection.",https://www.aixploria.com/out/TinEye,Detection Tools
+Real or Fake Text,- Quickly identify if a text is written by a human or machine using AI detection.,https://www.aixploria.com/out/RealorFakeText,Detection Tools
+Roboflow,- AI that detects objects and integrates seamlessly into various projects and applications.,https://www.aixploria.com/out/Roboflow,Detection Tools
+GPT-4V Online,"- A multimodal AI model that can interpret images, ideal for object recognition, OCR, and visual tasks.",https://www.aixploria.com/out/GPT-4VOnline,Detection Tools
+Daisy by O2,- An AI named Daisy that traps phone scammers by keeping them engaged in endless conversations to protect customers.,https://www.aixploria.com/out/DaisybyO2,Detection Tools
+Audiobox by Meta,"- Intelligent toolbox for audio editing: cloning, effects, fill, AI-based cleanup and enhancements.",https://www.aixploria.com/out/AudioboxbyMeta,Audio & Sound Editing
+Adobe Podcast,"- Auto-enhance podcasts with AI: remove silences, noise, echo, boost clarity and sound quality.",https://www.aixploria.com/out/AdobePodcast,Audio & Sound Editing
+Voicemy.ai,- Create AI song covers with hundreds of celebrity voices or clone any voice instantly.,https://www.aixploria.com/out/Voicemy.ai,Audio & Sound Editing
+Jammable,- Replace vocals in songs with your own voice and create personalized AI Covers easily.,https://www.aixploria.com/out/Jammable,Audio & Sound Editing
+Vocal Remover,- Use AI to separate vocals and instruments in any audio file instantly and accurately.,https://www.aixploria.com/out/VocalRemover,Audio & Sound Editing
+Emote Portrait Alive (EMO),- Upload a character image to generate a singing or speaking video (beta) using AI.,https://www.aixploria.com/out/EmotePortraitAlive%28EMO%29,Audio & Sound Editing
+CloneDub,- Translate voice recordings into other languages while preserving tone and vocal identity.,https://www.aixploria.com/out/CloneDub,Audio & Sound Editing
+Covers AI,"- Generate AI music covers from voice or track input, downloadable in MP3 format.",https://www.aixploria.com/out/CoversAI,Audio & Sound Editing
+MMAudio,- Open-source AI that syncs audio to your videos using scenes and text prompts.,https://www.aixploria.com/out/MMAudio,Audio & Sound Editing
+Video to Sounds Effects,"- Generate custom sound effects, ambience or music from a prompt using AI for video/audio.",https://www.aixploria.com/out/VideotoSoundsEffects,Audio & Sound Editing
+Play.ai,- Interactive voice AI for natural conversations using voice cloning and personalization features.,https://www.aixploria.com/out/Play.ai,Audio & Sound Editing
+Fineshare Singify,- Make AI Covers easily with dozens of pre-trained voices using a free online tool.,https://www.aixploria.com/out/FineshareSingify,Audio & Sound Editing
+AudioSeal by Meta AI,- Add invisible watermark to AI audio and detect audio deepfakes in real-time.,https://www.aixploria.com/out/AudioSealbyMetaAI,Audio & Sound Editing
+Ai|coustics,- Get studio-quality voice enhancements using advanced AI transformation tools.,https://www.aixploria.com/out/Ai%7Ccoustics,Audio & Sound Editing
+Magicast.ai,- Convert topics into educational podcast-style audio experiences automatically with AI.,https://www.aixploria.com/out/Magicast.ai,Audio & Sound Editing
+VoiceTrans Fineshare,- Real-time AI voice changer with sound effects for messaging and fun audio sharing.,https://www.aixploria.com/out/VoiceTransFineshare,Audio & Sound Editing
+Podsum,- Summarize audio podcasts using AI and download as short MP3 recaps.,https://www.aixploria.com/out/Podsum,Audio & Sound Editing
+Dubbing AI,- AI voice transformer for gaming/streaming supporting 40+ languages and 1000+ voice tones.,https://www.aixploria.com/out/DubbingAI,Audio & Sound Editing
+PodStash,- Summarize any short podcast site using a Chrome extension with AI voice reading.,https://www.aixploria.com/out/PodStash,Audio & Sound Editing
+SteosVoice,"- All-in-one AI platform for dubbing, podcast creation, content generation and monetization.",https://www.aixploria.com/out/SteosVoice,Audio & Sound Editing
+HitPaw,"- Multi-tool AI hub for editing and generating videos, images, sounds and more.",https://www.aixploria.com/out/HitPaw,Audio & Sound Editing
+Slayer,"- Create custom stories, meditations or podcasts from prompts using AI narration.",https://www.aixploria.com/out/Slayer,Audio & Sound Editing
+Audyo,- Generate and edit realistic synthetic voices with controllable emotion and human-like tone.,https://www.aixploria.com/out/Audyo,Audio & Sound Editing
+SpeakPerfect,- Enhance your voice quality using a mic or file with a professional AI voice assistant.,https://www.aixploria.com/out/SpeakPerfect,Audio & Sound Editing
+AudioStripe,- Remove vocals from songs and generate clean instrumentals using AI.,https://www.aixploria.com/out/AudioStripe,Audio & Sound Editing
+Fineshare Online Voice Changer,- Change your voice to celebrities or fictional characters using an online AI tool.,https://www.aixploria.com/out/FineshareOnlineVoiceChanger,Audio & Sound Editing
+FineVoice 2.0,- Transform your voice in real time for streaming or podcasting with professional quality.,https://www.aixploria.com/out/FineVoice2.0,Audio & Sound Editing
+Noise Eraser,- Clean recordings by reducing ambient noise and distractions using AI.,https://www.aixploria.com/out/NoiseEraser,Audio & Sound Editing
+Image2SFX,- Generate sound effects from a single image to enhance visual projects automatically.,https://www.aixploria.com/out/Image2SFX,Audio & Sound Editing
+Sync labs,"- Perfectly sync lips and audio using AI for dubbing, avatars, games, and more.",https://www.aixploria.com/out/Synclabs,Audio & Sound Editing
+OpenVINO by Audacity,"- AI plugins for Audacity: edit podcasts, remove noise, separate tracks, and transcribe.",https://www.aixploria.com/out/OpenVINObyAudacity,Audio & Sound Editing
+OptimizerAI,- Create sound effects instantly via prompt with Discord integration for easy sharing.,https://www.aixploria.com/out/OptimizerAI,Audio & Sound Editing
+Moises.ai,"- Remove vocals or instrumentals, change pitch or speed of music using this AI tool.",https://www.aixploria.com/out/Moises.ai,Audio & Sound Editing
+Dolby On,- Turn your phone into a Dolby-quality live recording and broadcasting studio.,https://www.aixploria.com/out/DolbyOn,Audio & Sound Editing
+SonixTw by Fineshare,"- Clone your voice to create a digital double for reading, singing, or speaking.",https://www.aixploria.com/out/SonixTwbyFineshare,Audio & Sound Editing
+ElevenLabs Voice Design,"- Generate custom synthetic voices with detailed control over tone, emotion, and pitch.",https://www.aixploria.com/out/ElevenLabsVoiceDesign,Audio & Sound Editing
+Vocalist.ai,- AI tool turns your voice into royalty-free vocals with studio sound instantly.,https://www.aixploria.com/out/Vocalist.ai,Audio & Sound Editing
+Altered,- Enhance and professionalize your voice recordings with a few clicks using AI.,https://www.aixploria.com/out/Altered,Audio & Sound Editing
+Krisp,- Remove background noise and summarize business calls for efficient remote work.,https://www.aixploria.com/out/Krisp,Audio & Sound Editing
+Clipchamp,"- Edit videos with no skills: add subtitles, resize, dub with AI voices, and more.",https://www.aixploria.com/out/Clipchamp,Audio & Sound Editing
+AI Voice Changer by ElevenLabs,- Customize AI voices while keeping emotion and tone for any creative project.,https://www.aixploria.com/out/AIVoiceChangerbyElevenLabs,Audio & Sound Editing
+Text to Sound Effects,"- Create sound effects from simple text for games, films, and commercial use.",https://www.aixploria.com/out/TexttoSoundEffects,Audio & Sound Editing
+Morpho by Neutone,- Real-time AI transformation for applying new tones and styles to your voice.,https://www.aixploria.com/out/MorphobyNeutone,Audio & Sound Editing
+V2A by Google DeepMind,- Generate realistic soundtracks from video and prompts using visual-to-audio AI tech.,https://www.aixploria.com/out/V2AbyGoogleDeepMind,Audio & Sound Editing
+Castmagic,- Turn podcasts into social-ready clips with transcription and optimization features.,https://www.aixploria.com/out/Castmagic,Audio & Sound Editing
+Koolio.ai,- Add transitions and sound effects to improve your podcasts automatically.,https://www.aixploria.com/out/Koolio.ai,Audio & Sound Editing
+CleanVoice,"- Remove stuttering, background noise, and silences from podcast audio with AI.",https://www.aixploria.com/out/CleanVoice,Audio & Sound Editing
+Audio Editor by Veed,"- Online AI audio editor: cut, arrange, remove noise, add music, export as MP3/WAV.",https://www.aixploria.com/out/AudioEditorbyVeed,Audio & Sound Editing
+AI Dubbing by ElevenLabs,- AI dubbing and video translation tool with 60+ realistic voice languages.,https://www.aixploria.com/out/AIDubbingbyElevenLabs,Audio & Sound Editing
+Voice AI,"- Real-time AI voice changer for games or streaming (Zoom, Discord, WhatsApp etc.).",https://www.aixploria.com/out/VoiceAI,Audio & Sound Editing
+Sketch2Sound Adobe,"- Create rich audio from text with controls for tone, brightness, and rhythm.",https://www.aixploria.com/out/Sketch2SoundAdobe,Audio & Sound Editing
+Fugatto Nvidia,"- Generate unique soundscapes, modify voices, and music with a massive AI audio model.",https://www.aixploria.com/out/FugattoNvidia,Audio & Sound Editing
+TTSLabs,"- Twitch-friendly AI tool to modify voices, effects, and text-to-speech live.",https://www.aixploria.com/out/TTSLabs,Audio & Sound Editing
+LatentSync ByteDance,- Sync lip movements to audio using AI preserving identity and facial expressions.,https://www.aixploria.com/out/LatentSyncByteDance,Audio & Sound Editing
+ElevenLabs Voice Isolator,"- Remove noise and clean dialogue in podcasts, interviews or video content automatically.",https://www.aixploria.com/out/ElevenLabsVoiceIsolator,Audio & Sound Editing
+Audio Cleaner AI,"- Improve podcast and education audio with noise removal, silence trimming, and clarity boost.",https://audiocleaner.ai/,Audio & Sound Editing
+Podcastle,"- Full AI-assisted podcast editing for automation, cleanup, and production.",https://www.aixploria.com/out/Podcastle,Audio & Sound Editing
+AI Sound Copilot,"- Generate perfect-fit sound effects for your video uploads using AI, all royalty-free.",https://www.aixploria.com/out/AISoundCopilot,Audio & Sound Editing
+Voicemod,- Use AI to transform your voice in real time with zero lag.,https://www.aixploria.com/out/Voicemod,Audio & Sound Editing
+VideoIdeas.ai,"- AI platform for YouTube creators to create scripts, suggest content, and maximize engagement.",https://www.videoideas.ai/,Utility Apps
+Notion AI,"- Boost creativity, write faster, and stay organized for more effective content creation.",https://www.aixploria.com/out/NotionAI,Utility Apps
+Deepl,- High-quality translation tool for accurate and seamless translations across languages.,https://www.aixploria.com/out/Deepl,Utility Apps
+Anychat,"- Platform that integrates ChatGPT, Grok, Claude, and Gemini for easy model comparison.",https://www.aixploria.com/out/Anychat,Utility Apps
+Similar Songs Finder,- Easily discover and create playlists based on songs similar to your favorites.,https://www.aixploria.com/out/SimilarSongsFinder,Utility Apps
+Zapier,- Automate daily tasks and increase productivity by quickly connecting applications.,https://www.aixploria.com/out/Zapier,Utility Apps
+SpyGPT,- Analyze 250 million ChatGPT responses to optimize brand perception and AI presence.,https://www.spyfu.com/spygpt,Utility Apps
+Owlift,"- AI that explains complex concepts in simple terms, tailored for young audiences.",https://www.aixploria.com/out/Owlift,Utility Apps
+Shop.app,"- Simplify online shopping with one-click payment, real-time tracking, and rewards.",https://www.aixploria.com/out/Shop.app,Utility Apps
+AI Social Bio,- AI-powered tool to create personalized and engaging social network bios for free.,https://www.aixploria.com/out/AISocialBio,Utility Apps
+Illuminate by Google,"- Convert content into AI-generated audio discussions, ideal for easy-to-listen-to podcasts.",https://www.aixploria.com/out/IlluminatebyGoogle,Utility Apps
+AI Services by Fiverr,"- Connect with over 10,000 AI human experts for services like digital art and development.",https://www.aixploria.com/out/AIServicesbyFiverr,Utility Apps
+DistroKid,- AI music distributor with functions like lyric transcription and album cover generation.,https://www.aixploria.com/out/DistroKid,Utility Apps
+Jumprun,"- Interactive AI canvases for news following, compatible with websites, YouTube, and Twitter.",https://www.aixploria.com/out/Jumprun,Utility Apps
+DupDub,"- Multifunctional platform offering tools for idea generation, text-to-speech, and video editing.",https://www.aixploria.com/out/DupDub,Utility Apps
+Voice Control for ChatGPT,- Voice control ChatGPT conversations for a more interactive and hands-free experience.,https://www.aixploria.com/out/VoiceControlforChatGPT,Utility Apps
+GitPodcast,- Convert GitHub repositories into audio podcasts by replacing “hub” with “podcast” in URLs.,https://www.aixploria.com/out/GitPodcast,Utility Apps
+Elsa Speak,- Personal AI English teacher for continuous learning and improvement in language skills.,https://www.aixploria.com/out/ElsaSpeak,Utility Apps
+PlantIdentify,"- Identify over 17,000 plant species from a photo using a free mobile app.",https://www.aixploria.com/out/PlantIdentify,Utility Apps
+Summarize Tech,"- AI tool that summarizes YouTube videos with easy-to-read, concise insights.",https://www.aixploria.com/out/SummarizeTech,Utility Apps
+AI Homework,- Get instant homework assistance with an AI tutor available 24/7.,https://www.aixploria.com/out/AIHomework,Utility Apps
+Tidalflow,- Personalized sports coach AI offering advice based on real scientific studies and progress.,https://www.aixploria.com/out/Tidalflow,Utility Apps
+Token Counter,- Tool for estimating token costs and managing API usage with efficient budget optimization.,https://www.aixploria.com/out/TokenCounter,Utility Apps
+Adobe Content Credentials,- Adobe’s free web app to protect digital creations and manage image metadata.,https://www.aixploria.com/out/AdobeContentCredentials,Utility Apps
+Materiom,"- Open database of bio-based materials, enabling collaboration and generative AI research.",https://www.aixploria.com/out/Materiom,Utility Apps
+Upstract,- Customizable AI that manages and displays global news from various sources on one page.,https://www.aixploria.com/out/Upstract,Utility Apps
+Photomyne,- Scan and enhance old photos and memories into digital albums to share with others.,https://www.aixploria.com/out/Photomyne,Utility Apps
+ChefGPT,- Suggests recipes based on available ingredients and creates delicious meals for you.,https://www.aixploria.com/out/ChefGPT,Utility Apps
+TextGPT,- Access top text and image generators via email applications for quick content creation.,https://www.aixploria.com/out/TextGPT,Utility Apps
+AI Dictionary by Sider,"- Multilingual AI dictionary offering definitions, examples, and translations in 100+ languages.",https://www.aixploria.com/out/AIDictionarybySider,Utility Apps
+Pinokio,- Install multiple AI models on your local PC with just one click for seamless use.,https://www.aixploria.com/out/Pinokio,Utility Apps
+BlueGPT,"- All-in-one AI platform for generating text, images, diagrams, and analyzing documents.",https://www.aixploria.com/out/BlueGPT,Utility Apps
+Glitter AI,"- Turn complex processes into easy-to-follow, step-by-step guides with voice input.",https://www.aixploria.com/out/GlitterAI,Utility Apps
+Ollama,"- Chat with local language models (Llama2, Mixtral) on macOS, Linux, and soon Windows.",https://www.aixploria.com/out/Ollama,Utility Apps
+ElevenLabs Studio,- Create ultra-realistic synthetic voices with easy editing tools and long-lasting audio files.,https://www.aixploria.com/out/ElevenLabsStudio,Utility Apps
+Deepl Write,- Deepl’s AI tool for improving English writing through spelling correction and synonym suggestions.,https://www.aixploria.com/out/DeeplWrite,Utility Apps
+Exportify,- Export Spotify playlists into CSV format for easy management and preservation of selections.,https://www.aixploria.com/out/Exportify,Utility Apps
+WatchNow,"- AI suggesting personalized movie lists based on your preferences, like Netflix recommendations.",https://www.aixploria.com/out/WatchNow,Utility Apps
+Perplexity Shopping,- Shopping assistant blending conversational AI and visual search to find products and compare prices.,https://www.aixploria.com/out/PerplexityShopping,Utility Apps
+Reddit Scout AI,- Reddit-based tool to recommend the best buys by analyzing product comments and discussions.,https://www.aixploria.com/out/RedditScoutAI,Utility Apps
+Upscale.media,"- Dramatically enhance the resolution of your photos by up to 4x, supporting various formats.",https://www.aixploria.com/out/Upscale.media,Utility Apps
+Image to Prompt,- Convert images into detailed prompts for text-to-image generation tools like Midjourney.,https://imageprompt.org/image-to-prompt,Utility Apps
+Mindmap.ai,"- AI creates visual maps based on ideas, helping with organization and improved planning.",https://www.aixploria.com/out/Mindmap.ai,Utility Apps
+Learn About by Google,- Google’s experimental AI tool adapting to your understanding level while answering questions.,https://www.aixploria.com/out/LearnAboutbyGoogle,Utility Apps
+Machine Translation,"- AI offering translations in over 75 languages using Deepl, Google Translate, and more.",https://www.aixploria.com/out/MachineTranslation,Utility Apps
+Labs by Perplexity,"- Chat freely with recent LLM models (Mistral, Code Llama) for better answers and insights.",https://www.aixploria.com/out/LabsbyPerplexity,Utility Apps
+PDF2Audio,"- Convert PDF documents into audio files, transforming articles, books, or reports into podcasts.",https://www.aixploria.com/out/PDF2Audio,Utility Apps
+ChatALL,- Interact with 25+ AI chatbots simultaneously for enhanced responses in a single query.,https://www.aixploria.com/out/ChatALL,Utility Apps
+ElevenLabs Projects,"- Create professional-quality audio from texts, including audiobooks and podcasts in 32 languages.",https://www.aixploria.com/out/ElevenLabsProjects,Utility Apps
+AI Shopping Guides,"- Personalized shopping guides, product recommendations, and answers through Amazon's AI assistant.",https://www.aixploria.com/out/AIShoppingGuides,Utility Apps
+The StoryGraph,- AI-powered reading recommendation platform analyzing habits and helping discover books based on mood.,https://www.aixploria.com/out/TheStoryGraph,Utility Apps
+Fal AI,"- Cloud platform for easy deployment of AI models, integrating vision and language processing.",https://www.aixploria.com/out/FalAI,Utility Apps
+VideoIdeas.ai,"- AI platform for YouTube creators to create scripts, suggest content, and maximize engagement.",https://www.videoideas.ai/,Virtual AI  Characters
+Character AI,- Chat with favorite characters and explore new possibilities of AI in conversations.,https://www.aixploria.com/out/CharacterAI,Virtual AI  Characters
+Janitor AI,- Chat with a range of characters from celebrities to manga heroes; create your own.,https://www.aixploria.com/out/JanitorAI,Virtual AI  Characters
+PolyBuzz,- Free AI chat platform with thousands of characters and sculpins; choose genre and generate images.,https://www.aixploria.com/out/PolyBuzz,Virtual AI  Characters
+Joyland.ai,"- Chat with AI characters from anime, cartoons, friends; create characters and trend them.",https://www.aixploria.com/out/Joyland.ai,Virtual AI  Characters
+Yodayo,- Generate unique anime illustrations and chat with characters on an interactive community platform.,https://www.aixploria.com/out/Yodayo,Virtual AI  Characters
+Talkie AI,- Chat with thousands of fictional AI characters and create virtual companions with long memories.,https://www.aixploria.com/out/TalkieAI,Virtual AI  Characters
+Sakura AI,"- Popular site for scenario creation and role-playing with AI characters, large Discord community.",https://www.aixploria.com/out/SakuraAI,Virtual AI  Characters
+CHAI AI,- Mobile and web app for chatting with millions of AI characters; discover endless options.,https://www.aixploria.com/out/CHAIAI,Virtual AI  Characters
+Privee AI,- Chat with fantastic AI characters in private messages or group sessions to create stories.,https://www.aixploria.com/out/PriveeAI,Virtual AI  Characters
+Charstar,"- Unlimited chat with AI characters, customize companions, and share creations with enthusiasts.",https://www.aixploria.com/out/Charstar,Virtual AI  Characters
+Dippy.ai,"- Role-playing game platform with virtual characters, available on mobiles via a free app.",https://www.aixploria.com/out/Dippy.ai,Virtual AI  Characters
+Museland AI,- Talk to AI characters and create real stories for online role-playing games and imagination.,https://www.aixploria.com/out/MuselandAI,Virtual AI  Characters
+Dopple.ai,"- Meet and chat with AI characters from pop culture, create companions, and join active community.",https://www.aixploria.com/out/Dopple.ai,Virtual AI  Characters
+Kajiwoto AI,- Create AI companions (Kajis) and integrate them into chat rooms with strong community support.,https://www.aixploria.com/out/KajiwotoAI,Virtual AI  Characters
+Kamoto.AI,"- Train, create, and monetize your own AI characters; share creations on the marketplace.",https://www.aixploria.com/out/Kamoto.AI,Virtual AI  Characters
+ChatFAI,"- Chat with favorite characters from TV shows, movies, history, and more for unique experiences.",https://www.aixploria.com/out/ChatFAI,Virtual AI  Characters
+Dolores,"- AI girlfriend with memory, constantly improving, evolving, and customizable to your preferences.",https://www.aixploria.com/out/Dolores,Virtual AI  Characters
+Ghola,- Create customizable chatbots to explore thoughts and emotions in peace of mind.,https://www.aixploria.com/out/Ghola,Virtual AI  Characters

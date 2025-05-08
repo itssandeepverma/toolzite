@@ -26,6 +26,6 @@ async function seedDatabase() {
   }
 }
 
-// seedDatabase();
+seedDatabase();
 
 export { seedDatabase};
