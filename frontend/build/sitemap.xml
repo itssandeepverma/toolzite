@@ -1,16 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Home -->
+  <url>
+    <loc>https://www.toolzite.com/</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://toolzite.com/</loc>
-  <lastmod>1980-01-01T00:00:01+00:00</lastmod>
-</url>
+  <!-- Core Pages -->
+  <url>
+    <loc>https://www.toolzite.com/products</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.toolzite.com/allcategory</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
 
+  <url>
+    <loc>https://www.toolzite.com/login</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/register</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/password/forgot</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/comingsoon</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Categories -->
+  <url>
+    <loc>https://www.toolzite.com/products?category=AI%20Agents</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Video%20Generators</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Chat%20%26%20Assistants</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Voice%20Cloning%20%26%20Synthesis</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=3D%20Models%20%26%20Assets</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Virtual%20AI%20Characters</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Detection%20Tools</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Utility%20Apps</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Code%20Assistance</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Assistive Technology can be added later if live -->
+  <!--
+  <url>
+    <loc>https://www.toolzite.com/products?category=Assistive%20Technology</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  -->
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Audio%20%26%20Sound%20Editing</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.toolzite.com/products?category=Image%20Generators</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
