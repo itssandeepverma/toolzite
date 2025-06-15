@@ -53,7 +53,7 @@ const FAQ = () => {
               )}
             </div>
             <div className={`faq-content ${openFAQ === faq.id ? "open" : ""}`}>
-              <p className="faq-answer">{faq.answer}</p>
+              <p className="faq-answer typing-animation">{faq.answer}</p>
             </div>
           </div>
         ))}
@@ -64,13 +64,12 @@ const FAQ = () => {
 
 // CSS Styles (Inline)
 const styles = `
-
   .faq-item {
     background: rgba(169, 166, 166, 0.5);
     border-radius: 8px;
     margin-bottom: 15px;
     padding: 15px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .faq-item.open {
@@ -83,6 +82,11 @@ const styles = `
     align-items: center;
     cursor: pointer;
     padding: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-header:hover {
+    transform: translateX(5px);
   }
 
   .faq-left {
@@ -102,18 +106,19 @@ const styles = `
 
   .faq-icon {
     font-size: 24px;
-    opacity: 0.5; /* Makes the icons transparent */
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
   }
 
   .faq-item:hover .faq-icon {
     opacity: 1;
+    transform: scale(1.1);
   }
 
   .icon {
     font-size: 20px;
     color: white;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 5px;
     border-radius: 50%;
   }
@@ -123,18 +128,44 @@ const styles = `
   }
 
   .faq-content {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
   }
 
   .faq-content.open {
-    max-height: 100px;
-    padding-top: 10px;
+    height: auto;
+    opacity: 1;
   }
 
   .faq-answer {
     color: white;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  /* Typing Animation */
+  .typing-animation {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    animation: reveal 1s ease-out;
+  }
+
+  @keyframes reveal {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  /* Reset animation when FAQ is closed */
+  .faq-content:not(.open) .typing-animation {
+    animation: none;
+    clip-path: inset(0 100% 0 0);
   }
 `;
 
