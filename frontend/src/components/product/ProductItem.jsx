@@ -24,33 +24,30 @@ const ProductItem = ({ product, columnSize }) => {
 
         {/* Card Body */}
         <div
-          className="card-body text-center d-flex flex-column"
+          className="card-body text-center d-flex flex-column justify-content-center"
           style={{ height: "70%" }}
         >
-          {/* Title Section with Fixed Height */}
-          <div style={{ height: "25%" }}>
-            <h5 className="card-title mb-2">{product?.name || "Card title"}</h5>
-            {/* Gradient Underline */}
-            <div
-              style={{
-                height: "2px",
-                width: "80%",
-                background: "linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32))",
-                margin: "0 auto",
-              }}
-            ></div>
-          </div>
+          {/* Product Name */}
+          <h5 className="card-title">{product?.name || "Card title"}</h5>
+          {/* Gradient Underline */}
+          <div
+            style={{
+              height: "2px",
+              width: "80%",
+              background: "linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32))",
+              margin: "0.5rem auto",
+            }}
+          ></div>
 
-          {/* Description Section with Fixed Height */}
-          <div style={{ height: "45%", overflow: "hidden" }}>
-            <p className="card-text" style={{ margin: "0 1rem" }}>
-              {product?.description ||
-                "Some quick example text to build on the card title and make up the bulk of the card's content."}
-            </p>
-          </div>
+          {/* Product Description with equal side margins */}
+          <p className="card-text" style={{ margin: "0 1rem" }}>
+            {product?.description ||
+              "Some quick example text to build on the card title and make up the bulk of the card's content."}
+          </p>
 
-          {/* Button Section with Fixed Height */}
-          <div style={{ height: "20%", marginBottom: "0.5rem" }} className="d-flex align-items-center justify-content-center">
+          {/* Margin between description and explore button */}
+          <div className="my-4">
+            {/* Explore Button with Hover Effect */}
             <a
               href={product?.link || "#"}
               rel="nofollow"
@@ -77,12 +74,12 @@ const ProductItem = ({ product, columnSize }) => {
             </a>
           </div>
 
-          {/* Category Section with Fixed Height */}
-          <div style={{ height: "10%" }} className="d-flex align-items-center justify-content-center">
-            {product?.category && (
+          {/* Product Category at the Bottom */}
+          {product?.category && (
+            <div className="mt-2">
               <span className="badge bg-secondary">#{product.category}</span>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
 

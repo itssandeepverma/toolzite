@@ -60,7 +60,7 @@ const ListProducts = () => {
         className="d-flex justify-content-center align-items-center"
         style={{ marginTop: "110px" }}
       >
-        <div className="col-6 col-md-6">
+        <div className="col-10 col-md-8">
           <Search />
         </div>
       </div>
@@ -86,22 +86,23 @@ const ListProducts = () => {
 
       {/* Main Container: Left = Filters, Right = Products */}
       <div className="row mx-0 mt-4 mb-4">
-        {/* Filters Section (Sticky Left) */}
+        {/* Filters Section */}
         <div
-          className="col-md-3"
+          className="col-12 col-md-3 mb-4"
           style={{
             position: "sticky",
-            top: "120px", // Adjust as needed so it doesn't overlap the search bar
-            maxHeight: "calc(100vh - 130px)", // Enough space to show full filter area
-            overflowY: "auto", // Allows scrolling if filters are too long
+            top: "120px",
+            maxHeight: "calc(100vh - 130px)",
+            overflowY: "auto",
             padding: "0 20px",
+            zIndex: 1000,
           }}
         >
           <Filters />
         </div>
 
-        {/* Product Listing Section (Right) */}
-        <div className="col-md-9">
+        {/* Product Listing Section */}
+        <div className="col-12 col-md-9">
           <section id="products" className="mt-3">
             <div className="row">
               {shuffledProducts.length > 0 ? (
@@ -125,6 +126,24 @@ const ListProducts = () => {
           />
         </div>
       </div>
+
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .row {
+              display: flex;
+              flex-direction: column;
+            }
+            
+            .col-12 {
+              width: 100%;
+              position: relative !important;
+              top: 0 !important;
+              max-height: none !important;
+            }
+          }
+        `}
+      </style>
     </>
   );
 };

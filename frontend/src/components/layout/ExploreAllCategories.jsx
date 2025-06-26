@@ -86,6 +86,7 @@ const CategorySection = () => {
       >
         <a
           href="/allcategory"
+          className="explore-all-btn"
           style={{
             background: "linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32, 0.7))",
             color: "#fff",
@@ -99,13 +100,81 @@ const CategorySection = () => {
             display: "flex",
             alignItems: "center",
             gap: "12px",
-            textDecoration: "none", // make sure it's not underlined
+            textDecoration: "none",
+            position: "relative",
+            overflow: "hidden",
           }}
         >
-          <Rocket size={22} style={{ color: "white" }} />
+          <Rocket size={22} style={{ color: "white" }} className="rocket-icon" />
           Explore All Categories
         </a>
 
+        <style>
+          {`
+            .explore-all-btn {
+              animation: pulse 2s ease-in-out infinite, glow 3s ease-in-out infinite alternate;
+              transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .explore-all-btn:hover {
+              transform: translateY(-3px) scale(1.05);
+              box-shadow: 0 8px 25px rgba(0, 156, 62, 0.4);
+              animation: none;
+            }
+
+            .explore-all-btn:hover .rocket-icon {
+              animation: rocketShake 0.6s ease-in-out infinite;
+            }
+
+            @keyframes pulse {
+              0% {
+                transform: scale(1);
+              }
+              50% {
+                transform: scale(1.02);
+              }
+              100% {
+                transform: scale(1);
+              }
+            }
+
+            @keyframes glow {
+              from {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 156, 62, 0.3);
+              }
+              to {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 30px rgba(172, 236, 32, 0.5);
+              }
+            }
+
+            @keyframes rocketShake {
+              0%, 100% {
+                transform: rotate(0deg);
+              }
+              25% {
+                transform: rotate(-3deg);
+              }
+              75% {
+                transform: rotate(3deg);
+              }
+            }
+
+            .explore-all-btn::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+              transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .explore-all-btn:hover::before {
+              left: 100%;
+            }
+          `}
+        </style>
       </div>
     </div>
   );

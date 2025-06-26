@@ -39,6 +39,22 @@ app.use(
 );
 app.use(cookieParser());
 
+// Bot blocking middleware
+app.use((req, res, next) => {
+  const badPaths = [
+    /\.php$/,           // block *.php
+    /^\/wp-/,           // block /wp-includes, /wp-admin, etc.
+    /xmlrpc\.php$/,     // block XML-RPC
+    /^\/feed/,          // optional: block /feeds
+  ];
+
+  if (badPaths.some(pattern => pattern.test(req.path))) {
+    return res.status(403).send('Forbidden');
+  }
+
+  next();
+});
+
 // Import all routes
 import productRoutes from "./routes/products.js";
 import authRoutes from "./routes/auth.js";

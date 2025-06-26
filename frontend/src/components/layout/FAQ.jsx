@@ -69,7 +69,7 @@ const styles = `
     border-radius: 8px;
     margin-bottom: 15px;
     padding: 15px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease-in-out;
   }
 
   .faq-item.open {
@@ -82,11 +82,6 @@ const styles = `
     align-items: center;
     cursor: pointer;
     padding: 10px;
-    transition: transform 0.3s ease;
-  }
-
-  .faq-header:hover {
-    transform: translateX(5px);
   }
 
   .faq-left {
@@ -107,18 +102,17 @@ const styles = `
   .faq-icon {
     font-size: 24px;
     opacity: 0.5;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .faq-item:hover .faq-icon {
     opacity: 1;
-    transform: scale(1.1);
   }
 
   .icon {
     font-size: 20px;
     color: white;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
     padding: 5px;
     border-radius: 50%;
   }
@@ -128,44 +122,44 @@ const styles = `
   }
 
   .faq-content {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
   }
 
   .faq-content.open {
-    height: auto;
-    opacity: 1;
+    max-height: 100px;
+    padding-top: 10px;
   }
 
   .faq-answer {
     color: white;
     margin: 0;
-    padding-top: 10px;
+    white-space: pre-wrap;
   }
 
   /* Typing Animation */
   .typing-animation {
-    display: block;
+    display: inline-block;
     position: relative;
     overflow: hidden;
-    animation: reveal 1s ease-out;
+    white-space: nowrap;
+    animation: typing 1s steps(40, end);
   }
 
-  @keyframes reveal {
+  @keyframes typing {
     0% {
-      clip-path: inset(0 100% 0 0);
+      width: 0;
     }
     100% {
-      clip-path: inset(0 0 0 0);
+      width: 100%;
     }
   }
 
   /* Reset animation when FAQ is closed */
   .faq-content:not(.open) .typing-animation {
     animation: none;
-    clip-path: inset(0 100% 0 0);
+    width: 0;
   }
 `;
 
