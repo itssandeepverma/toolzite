@@ -70,15 +70,15 @@ const Header = () => {
                 style={{ backgroundColor: "#4a4a4a" }}
               >
                 {[
-                  { name: "AI Jobs", link: "/comingsoon" },
-                  { name: "AI Newsletters", link: "/comingsoon" },
+                  { name: "AI Jobs", link: "/ai-jobs" },
+                  { name: "AI Newsletters", link: "/ai-newsletters" },
                   { name: "AI Magazines", link: "/comingsoon" },
-                  { name: "AI News", link: "/comingsoon" },
+                  { name: "AI News", link: "/ai-news" },
                 ].map((item, index) => (
                   <li key={index}>
-                    <a href={item.link} className="dropdown-item">
+                    <Link to={item.link} className="dropdown-item">
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

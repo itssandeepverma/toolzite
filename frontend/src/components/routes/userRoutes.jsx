@@ -22,6 +22,8 @@ import Home from "../Home";
 import ListProducts from "../product/ListProducts";
 import ListAllCard from "../layout/category/ListAllCard";
 import ComingSoon from "../layout/ComingSoon";
+import AINewsletters from "../news/AINewsletters";
+import AIJobs from "../news/AIJobs";
 
 const userRoutes = () => {
   return (
@@ -36,9 +38,6 @@ const userRoutes = () => {
       <Route path="/allcategory" element={<ListAllCard/>} />
 
       <Route path='/comingsoon' element = {<ComingSoon/>}></Route>
-
-
-
 
       <Route path="/password/forgot" element={<ForgotPassword />} />
       <Route path="/password/reset/:token" element={<ResetPassword />} />
@@ -131,6 +130,9 @@ const userRoutes = () => {
           </ProtectedRoute>
         }
       />
+
+      <Route key="newsletters" path="/ai-newsletters" element={<AINewsletters />} />
+      <Route key="jobs" path="/ai-jobs" element={<AIJobs />} />
     </>
   );
 };

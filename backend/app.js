@@ -2,11 +2,14 @@ import express from "express";
 const app = express();
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
+import rateLimit from "express-rate-limit";
 import { connectDatabase } from "./config/dbConnect.js";
 import errorMiddleware from "./middlewares/errors.js";
+import { botBlockingMiddleware, securityLoggingMiddleware, strictRateLimitMiddleware, SECURITY_CONFIG } from "./config/security.js";
 
 import path from "path";
-// import { fileURLToPath } from "url";
+import { fileURLToPath } from "url";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -17,14 +20,15 @@ process.on("uncaughtException", (err) => {
   process.exit(1);
 });
 
-// if (process.env.NODE_ENV !== "PRODUCTION") {
+// Load environment variables
+if (process.env.NODE_ENV !== "PRODUCTION") {
   dotenv.config({ path: "backend/config/config.env" });
-// }
+} else {
+  dotenv.config();
+}
 
-
-console.log(process.env.CLOUDINARY_API_KEY);
-console.log(   process.env.CLOUDINARY_API_SECRET);
-console.log(process.env.CLOUDINARY_CLOUD_NAME);
+console.log(`Environment: ${process.env.NODE_ENV}`);
+console.log(`Port: ${process.env.PORT}`);
 
 // Connecting to database
 connectDatabase();
@@ -39,39 +43,79 @@ app.use(
 );
 app.use(cookieParser());
 
-// Bot blocking middleware
-app.use((req, res, next) => {
-  const badPaths = [
-    /\.php$/,           // block *.php
-    /^\/wp-/,           // block /wp-includes, /wp-admin, etc.
-    /xmlrpc\.php$/,     // block XML-RPC
-    /^\/feed/,          // optional: block /feeds
-  ];
+// Rate limiting middleware (only for API routes in production)
+if (process.env.NODE_ENV === "PRODUCTION") {
+  const limiter = rateLimit(SECURITY_CONFIG.rateLimit);
+  app.use("/api", limiter); // Only apply to API routes
+} else {
+  const limiter = rateLimit(SECURITY_CONFIG.rateLimit);
+  app.use(limiter);
+}
 
-  if (badPaths.some(pattern => pattern.test(req.path))) {
-    return res.status(403).send('Forbidden');
-  }
-
-  next();
-});
+// Security middleware (only for API routes in production)
+if (process.env.NODE_ENV === "PRODUCTION") {
+  app.use("/api", securityLoggingMiddleware);
+  app.use("/api", botBlockingMiddleware);
+  app.use("/api", strictRateLimitMiddleware);
+} else {
+  app.use(securityLoggingMiddleware);
+  app.use(botBlockingMiddleware);
+  app.use(strictRateLimitMiddleware);
+}
 
 // Import all routes
 import productRoutes from "./routes/products.js";
 import authRoutes from "./routes/auth.js";
 import orderRoutes from "./routes/order.js";
 import paymentRoutes from "./routes/payment.js";
-import { fileURLToPath } from "url";
 
 app.use("/api/v1", productRoutes);
 app.use("/api/v1", authRoutes);
 app.use("/api/v1", orderRoutes);
 app.use("/api/v1", paymentRoutes);
 
+// Production static file serving
 if (process.env.NODE_ENV === "PRODUCTION") {
-  app.use(express.static(path.join(__dirname, "../frontend/build")));
+  const frontendBuildPath = path.join(__dirname, "../frontend/build");
+  
+  // Check if frontend build exists
+  const fs = await import('fs');
+  if (!fs.existsSync(frontendBuildPath)) {
+    console.error("❌ Frontend build not found at:", frontendBuildPath);
+    console.error("Please run 'npm run build' in the frontend directory");
+  } else {
+    console.log("✅ Frontend build found at:", frontendBuildPath);
+  }
 
+  // Serve static files
+  app.use(express.static(frontendBuildPath, {
+    maxAge: '1y',
+    etag: true,
+    lastModified: true
+  }));
+
+  // Handle all other routes by serving index.html
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+    const indexPath = path.resolve(frontendBuildPath, "index.html");
+    
+    // Check if index.html exists
+    if (!fs.existsSync(indexPath)) {
+      console.error("❌ index.html not found at:", indexPath);
+      return res.status(404).json({
+        error: "Frontend build not found",
+        message: "Please ensure the frontend is built correctly"
+      });
+    }
+    
+    res.sendFile(indexPath, (err) => {
+      if (err) {
+        console.error("❌ Error serving index.html:", err);
+        res.status(500).json({
+          error: "Internal server error",
+          message: "Error serving frontend application"
+        });
+      }
+    });
   });
 }
 
@@ -80,8 +124,9 @@ app.use(errorMiddleware);
 
 const server = app.listen(process.env.PORT, () => {
   console.log(
-    `Server started on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode.`
+    `🚀 Server started on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode.`
   );
+  console.log(`📁 Frontend build path: ${path.join(__dirname, "../frontend/build")}`);
 });
 
 //Handle Unhandled Promise rejections

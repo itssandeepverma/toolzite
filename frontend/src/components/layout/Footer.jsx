@@ -50,12 +50,17 @@ export default function Footer() {
                   </a>
                 </p>
                 <p>
-                  <a href="/comingsoon" className="footer-link">
+                  <a href="/ai-news" className="footer-link">
                     AI News
                   </a>
                 </p>
                 <p>
-                  <a href="/comingsoon" className="footer-link">
+                  <a href="/ai-newsletters" className="footer-link">
+                    AI Newsletters
+                  </a>
+                </p>
+                <p>
+                  <a href="/ai-jobs" className="footer-link">
                     AI Jobs
                   </a>
                 </p>
