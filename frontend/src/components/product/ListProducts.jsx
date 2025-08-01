@@ -16,17 +16,13 @@ const ListProducts = () => {
   // Get query params
   const page = searchParams.get("page") || 1;
   const keyword = searchParams.get("keyword") || "";
-  const min = searchParams.get("min");
-  const max = searchParams.get("max");
   const category = searchParams.get("category");
-  const ratings = searchParams.get("ratings");
+  // Removed min, max, ratings
 
   // Build params object for the query
   const params = { page, keyword };
-  if (min !== null) params.min = min;
-  if (max !== null) params.max = max;
   if (category !== null) params.category = category;
-  if (ratings !== null) params.ratings = ratings;
+  // Removed min, max, ratings
 
   // Fetch products
   const { data, isLoading, error, isError } = useGetProductsQuery(params);

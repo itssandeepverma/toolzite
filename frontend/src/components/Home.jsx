@@ -19,10 +19,7 @@ const Home = () => {
   const { data, isLoading, error, isError } = useGetProductsQuery({
     page: searchParams.get("page") || 1,
     keyword: searchParams.get("keyword") || "",
-    min: searchParams.get("min"),
-    max: searchParams.get("max"),
     category: searchParams.get("category"),
-    ratings: searchParams.get("ratings"),
   });
 
   useEffect(() => {

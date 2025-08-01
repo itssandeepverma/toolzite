@@ -4,23 +4,22 @@ export const productApi = createApi({
   reducerPath: "productApi",
 
 
-  baseQuery: fetchBaseQuery({ baseUrl: "/api/v1" }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_API_URL || "/api/v1" }),
   
 
   tagTypes: ["Product", "AdminProducts", "Reviews"],
   endpoints: (builder) => ({
     getProducts: builder.query({
-      query: (params) => ({
-        url: "/products",
-        params: {
-          page: params?.page,
-          keyword: params?.keyword,
-          category: params?.category,
-          "price[gte]": params.min,
-          "price[lte]": params.max,
-          "ratings[gte]": params?.ratings,
-        },
-      }),
+      query: (params) => {
+        const queryParams = {};
+        if (params?.page) queryParams.page = params.page;
+        if (params?.keyword) queryParams.keyword = params.keyword;
+        if (params?.category) queryParams.category = params.category;
+        return {
+          url: "/products",
+          params: queryParams,
+        };
+      },
     }),
     getProductDetails: builder.query({
       query: (id) => `/products/${id}`,
