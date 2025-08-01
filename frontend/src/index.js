@@ -5,8 +5,6 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 
-// ① Import the CRA service-worker registration helper
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,5 +15,4 @@ root.render(
   </React.StrictMode>
 );
 
-// ② Tell it to unregister any existing SW so clients always load the fresh build:
-serviceWorkerRegistration.unregister();
+

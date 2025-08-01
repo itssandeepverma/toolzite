@@ -3,6 +3,7 @@ const app = express();
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import rateLimit from "express-rate-limit";
+import cors from "cors";
 import { connectDatabase } from "./config/dbConnect.js";
 import errorMiddleware from "./middlewares/errors.js";
 import { botBlockingMiddleware, securityLoggingMiddleware, strictRateLimitMiddleware, SECURITY_CONFIG } from "./config/security.js";
@@ -33,6 +34,14 @@ console.log(`Port: ${process.env.PORT}`);
 // Connecting to database
 connectDatabase();
 
+// CORS middleware for development
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  app.use(cors({
+    origin: 'http://localhost:3000',
+    credentials: true
+  }));
+}
+
 app.use(
   express.json({
     limit: "10mb",
@@ -47,9 +56,6 @@ app.use(cookieParser());
 if (process.env.NODE_ENV === "PRODUCTION") {
   const limiter = rateLimit(SECURITY_CONFIG.rateLimit);
   app.use("/api", limiter); // Only apply to API routes
-} else {
-  const limiter = rateLimit(SECURITY_CONFIG.rateLimit);
-  app.use(limiter);
 }
 
 // Security middleware (only for API routes in production)
@@ -57,10 +63,6 @@ if (process.env.NODE_ENV === "PRODUCTION") {
   app.use("/api", securityLoggingMiddleware);
   app.use("/api", botBlockingMiddleware);
   app.use("/api", strictRateLimitMiddleware);
-} else {
-  app.use(securityLoggingMiddleware);
-  app.use(botBlockingMiddleware);
-  app.use(strictRateLimitMiddleware);
 }
 
 // Import all routes

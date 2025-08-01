@@ -28,6 +28,11 @@ export const SECURITY_CONFIG = {
     },
     standardHeaders: true,
     legacyHeaders: false,
+    skipSuccessfulRequests: true,
+    skipFailedRequests: false,
+    keyGenerator: (req) => {
+      return req.ip || req.connection.remoteAddress || 'unknown';
+    },
     handler: (req, res) => {
       console.log(`🚨 Rate limit exceeded for IP: ${req.ip}`);
       res.status(429).json({
@@ -48,6 +53,11 @@ export const SECURITY_CONFIG = {
     },
     standardHeaders: true,
     legacyHeaders: false,
+    skipSuccessfulRequests: true,
+    skipFailedRequests: false,
+    keyGenerator: (req) => {
+      return req.ip || req.connection.remoteAddress || 'unknown';
+    },
     handler: (req, res) => {
       console.log(`🚨 Strict rate limit exceeded for IP: ${req.ip} on path: ${req.path}`);
       res.status(429).json({

@@ -25,6 +25,13 @@ class APIFilters {
     const fieldsToRemove = ["keyword", "page"];
     fieldsToRemove.forEach((el) => delete queryCopy[el]);
 
+    // Remove null values and convert "null" strings to undefined
+    Object.keys(queryCopy).forEach((key) => {
+      if (queryCopy[key] === "null" || queryCopy[key] === null || queryCopy[key] === "") {
+        delete queryCopy[key];
+      }
+    });
+
     // Advance filter for price, ratings etc
     let queryStr = JSON.stringify(queryCopy);
     queryStr = queryStr.replace(/\b(gt|gte|lt|lte)\b/g, (match) => `$${match}`);
