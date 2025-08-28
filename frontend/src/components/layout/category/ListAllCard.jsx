@@ -1,4 +1,5 @@
 import React from "react";
+import MetaData from "../../layout/MetaData";
 import CategoryCard from "./CategoryCard";
 import { PRODUCT_CATEGORIES } from "../../../constants/constants";
 
@@ -35,6 +36,11 @@ const ListAllCard = () => {
 
   return (
     <div style={styles.container}>
+      <MetaData 
+        title="All AI Categories – Explore"
+        description="Explore AI Agents, Image Generators, Voice, Code Assistance, and more across ToolZite’s curated categories."
+        canonical="https://www.toolzite.com/allcategory"
+      />
       <h2 style={styles.title }>All Categories</h2>
       <div style={styles.gridContainer}>
         {PRODUCT_CATEGORIES.map((category, index) => (

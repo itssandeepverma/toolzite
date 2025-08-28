@@ -45,8 +45,8 @@ export default function Footer() {
                   </a>
                 </p>
                 <p>
-                  <a href="/comingsoon" className="footer-link">
-                    AI Magazines
+                  <a href="/ai-papers" className="footer-link">
+                    AI Research Papers
                   </a>
                 </p>
                 <p>

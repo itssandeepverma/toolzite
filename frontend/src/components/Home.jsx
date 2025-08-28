@@ -32,7 +32,13 @@ const Home = () => {
 
   return (
     <>
-      <MetaData title="ToolZite - Your Ultimate AI Toolkit" />
+      <MetaData 
+        title="AI Tools Library – ToolZite"
+        description="Discover AI agents, image/video generators, voice cloning, and more across 25+ categories. Curated tools updated regularly."
+        canonical="https://www.toolzite.com/"
+        image="https://www.toolzite.com/images/og-default.jpg"
+        keywords="AI tools, AI agents, image generators, voice cloning, productivity tools"
+      />
 
       <div className="container-fluid px-0" style={{ marginTop: "100px" }}>
         <HeroSection />

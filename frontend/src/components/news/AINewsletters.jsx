@@ -1,4 +1,5 @@
 import React from "react";
+import MetaData from "../layout/MetaData";
 import { FaEnvelope, FaExternalLinkAlt, FaRss } from "react-icons/fa";
 
 const newsletters = [
@@ -35,6 +36,11 @@ const newsletters = [
 
 const AINewsletters = () => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+    <MetaData 
+      title="AI Newsletters – Top AI Digest Subscriptions"
+      description="Curated list of AI newsletters with topics, frequency, and links. Stay informed with daily and weekly digests."
+      canonical="https://www.toolzite.com/ai-newsletters"
+    />
     <div className="container mx-auto px-4 py-8" style={{ marginTop: "110px" }}>
       <div className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">

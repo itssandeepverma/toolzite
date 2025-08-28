@@ -16,9 +16,7 @@ const Header = () => {
     navigate(0);
   };
 
-  const handleAllProductsClick = () => {
-    navigate("/products");
-  };
+  // Removed client-side navigation for full reload via anchor links
 
   return (
     <nav
@@ -70,15 +68,15 @@ const Header = () => {
                 style={{ backgroundColor: "#4a4a4a" }}
               >
                 {[
-                  { name: "AI Jobs", link: "/ai-jobs" },
-                  { name: "AI Newsletters", link: "/ai-newsletters" },
-                  { name: "AI Magazines", link: "/comingsoon" },
-                  { name: "AI News", link: "/ai-news" },
+                  { name: "AI Jobs", href: "/ai-jobs" },
+                  { name: "AI Newsletters", href: "/ai-newsletters" },
+                  { name: "AI News", href: "/ai-news" },
+                  { name: "AI Research Papers", href: "/ai-papers" },
                 ].map((item, index) => (
                   <li key={index}>
-                    <Link to={item.link} className="dropdown-item">
+                    <a href={item.href} className="dropdown-item">
                       {item.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -87,16 +85,16 @@ const Header = () => {
 
             {/* All Products */}
             <li className="nav-item">
-              <button className="nav-link btn nav-btn" onClick={handleAllProductsClick}>
+              <a href="/products" className="nav-link nav-btn">
                 All Tools
-              </button>
+              </a>
             </li>
 
             {/* All Categories */}
             <li className="nav-item">
-              <Link to="/allcategory" className="nav-link nav-btn">
+              <a href="/allcategory" className="nav-link nav-btn">
                 All Categories
-              </Link>
+              </a>
             </li>
 
             {/* Submit an AI Tool */}

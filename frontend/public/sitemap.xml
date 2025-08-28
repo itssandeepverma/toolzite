@@ -46,6 +46,28 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- News / Content Hubs -->
+  <url>
+    <loc>https://www.toolzite.com/ai-news</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.toolzite.com/ai-newsletters</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.toolzite.com/ai-jobs</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.toolzite.com/ai-papers</loc>
+    <lastmod>2025-04-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Categories -->
   <url>
     <loc>https://www.toolzite.com/products?category=AI%20Agents</loc>

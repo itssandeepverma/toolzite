@@ -24,6 +24,8 @@ import ListAllCard from "../layout/category/ListAllCard";
 import ComingSoon from "../layout/ComingSoon";
 import AINewsletters from "../news/AINewsletters";
 import AIJobs from "../news/AIJobs";
+import AINews from "../news/AINews";
+import AIPapers from "../news/AIPapers";
 
 const userRoutes = () => {
   return (
@@ -133,6 +135,11 @@ const userRoutes = () => {
 
       <Route key="newsletters" path="/ai-newsletters" element={<AINewsletters />} />
       <Route key="jobs" path="/ai-jobs" element={<AIJobs />} />
+      <Route key="news" path="/ai-news" element={<AINews />} />
+      <Route key="news" path="/ai-papers" element={<AIPapers />} />
+
+
+
     </>
   );
 };

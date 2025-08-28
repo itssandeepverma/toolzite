@@ -1,4 +1,5 @@
 import React from "react";
+import MetaData from "../layout/MetaData";
 import { FaBriefcase, FaExternalLinkAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const jobBoards = [
@@ -41,6 +42,11 @@ const jobBoards = [
 
 const AIJobs = () => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+    <MetaData 
+      title="AI Jobs – ML, Data, and Research Roles"
+      description="Curated AI roles across ML engineering, data science, and research from top companies worldwide."
+      canonical="https://www.toolzite.com/ai-jobs"
+    />
     <div className="container mx-auto px-4 py-8" style={{ marginTop: "110px" }}>
       <div className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">

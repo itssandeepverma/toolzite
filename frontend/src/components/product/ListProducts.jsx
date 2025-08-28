@@ -47,9 +47,38 @@ const ListProducts = () => {
 
   const columnSize = 4; // For ProductItem layout
 
+  // Build dynamic SEO
+  const pageNum = Number(page) || 1;
+  const base = "https://www.toolzite.com";
+  const path = "/products";
+  const canonicalParams = new URLSearchParams();
+  if (category) canonicalParams.set("category", category);
+  if (keyword) canonicalParams.set("keyword", keyword);
+  if (pageNum > 1) canonicalParams.set("page", String(pageNum));
+  const canonicalUrl = `${base}${path}${
+    canonicalParams.toString() ? `?${canonicalParams.toString()}` : ""
+  }`;
+
+  const dynamicTitle = category
+    ? `Browse ${category} Tools – Page ${pageNum}`
+    : keyword
+    ? `Results for "${keyword}" – Page ${pageNum}`
+    : `All AI Tools – Page ${pageNum}`;
+
+  const descriptionText = category
+    ? `Explore the best ${category} tools on ToolZite. Browse features, links, and more.`
+    : keyword
+    ? `Search results for "${keyword}" on ToolZite. Discover AI tools that match your query.`
+    : `Browse all AI tools on ToolZite across popular categories like Agents, Image/Video generators, and more.`;
+
   return (
     <>
-      <MetaData title="ToolZite - Your Ultimate AI Toolkit" />
+      <MetaData 
+        title={dynamicTitle}
+        description={descriptionText}
+        canonical={canonicalUrl}
+        keywords={`${category || keyword || "AI tools"}, ToolZite`}
+      />
 
       {/* Search Box at the top */}
       <div
