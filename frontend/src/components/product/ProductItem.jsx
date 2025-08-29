@@ -1,12 +1,49 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { useToggleBookmarkMutation } from "../../redux/api/userApi";
+import { FaBookmark, FaRegBookmark } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
-const ProductItem = ({ product, columnSize }) => {
+const ProductItem = ({ product, columnSize, onRemove }) => {
+  const navigate = useNavigate();
+  const { user, isAuthenticated } = useSelector((state) => state.auth);
+  const [toggleBookmark] = useToggleBookmarkMutation();
+
+  const isBookmarked = !!user?.bookmarks?.some?.((id) => String(id) === String(product?._id));
+
+  const onToggleBookmark = async () => {
+    if (!isAuthenticated) {
+      toast("Login to manage bookmarks", { icon: "🔒" });
+      navigate("/login");
+      return;
+    }
+    try {
+      const res = await toggleBookmark(product._id).unwrap();
+      toast.success(res.bookmarked ? "Added to bookmarks" : "Removed from bookmarks");
+    } catch (e) {
+      toast.error("Could not update bookmark");
+    }
+  };
   return (
     <div className={`col-sm-12 col-md-6 col-lg-${columnSize} my-3`}>
       <div
         className="card product-card bg-dark text-light mx-auto"
         style={{ width: "18rem", height: "24rem" }}
       >
+        {/* Bookmark toggle */}
+        <button
+          aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+          onClick={onToggleBookmark}
+          className="bookmark-btn"
+          title={isBookmarked ? "Bookmarked" : "Add to bookmarks"}
+        >
+          {isBookmarked ? (
+            <FaBookmark size={18} />
+          ) : (
+            <FaRegBookmark size={18} />
+          )}
+        </button>
         {/* Product Image */}
         <img
           src={
@@ -80,12 +117,38 @@ const ProductItem = ({ product, columnSize }) => {
               <span className="badge bg-secondary">#{product.category}</span>
             </div>
           )}
+
+          {onRemove && (
+            <div className="mt-2">
+              <button
+                className="btn btn-outline-danger btn-sm"
+                onClick={() => onRemove(product._id)}
+                type="button"
+              >
+                Remove
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
       {/* CSS Styles */}
       <style>
         {`
+          .bookmark-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            border-radius: 9999px;
+            width: 34px; height: 34px;
+            display: inline-flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            z-index: 2;
+          }
+          .bookmark-btn:hover { background: rgba(0,0,0,0.55); }
           .explore-btn {
             background: linear-gradient(to right, rgb(67, 67, 67), gray);
             border: none;

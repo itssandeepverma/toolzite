@@ -4,7 +4,7 @@ import { setIsAuthenticated, setLoading, setUser } from "../features/userSlice";
 export const userApi = createApi({
   reducerPath: "userApi",
   baseQuery: fetchBaseQuery({ baseUrl: "/api/v1" }),
-  tagTypes: ["User", "AdminUsers", "AdminUser"],
+  tagTypes: ["User", "AdminUsers", "AdminUser", "Bookmarks"],
   endpoints: (builder) => ({
     getMe: builder.query({
       query: () => `/me`,
@@ -96,6 +96,21 @@ export const userApi = createApi({
       },
       invalidatesTags: ["AdminUsers"],
     }),
+    // Bookmarks
+    getMyBookmarks: builder.query({
+      query: () => `/me/bookmarks`,
+      transformResponse: (result) => result.bookmarks,
+      providesTags: ["Bookmarks"],
+    }),
+    toggleBookmark: builder.mutation({
+      query(productId) {
+        return {
+          url: `/me/bookmarks/${productId}`,
+          method: "POST",
+        };
+      },
+      invalidatesTags: ["Bookmarks", "User"],
+    }),
   }),
 });
 
@@ -110,4 +125,6 @@ export const {
   useGetUserDetailsQuery,
   useUpdateUserMutation,
   useDeleteUserMutation,
+  useGetMyBookmarksQuery,
+  useToggleBookmarkMutation,
 } = userApi;

@@ -6,23 +6,23 @@ const NewsMagJob = () => {
     <StyledWrapper>
       <div className="container">
         {/* AI News Section */}
-        <a href="/ai-news" className="glass" style={{ '--r': -20 }} data-text="AI News">
+        <a href="/ai-news" className="glass news" style={{ '--r': -20, '--grad': 'linear-gradient(135deg, #00b894 0%, #0984e3 100%)' }} data-text="AI News">
           <img src="/images/news.png" alt="AI News" className="icon" />
         </a>
 
         {/* AI Newsletters Section */}
-        <a href="/ai-newsletters" className="glass" style={{ '--r': -7 }} data-text="AI Newsletters">
+        <a href="/ai-newsletters" className="glass newsletters" style={{ '--r': -7, '--grad': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }} data-text="AI Newsletters">
           <img src="/images/magazine.png" alt="AI Newsletters" className="icon" />
         </a>
 
         {/* AI Jobs Section */}
-        <a href="/ai-jobs" className="glass" style={{ '--r': 7 }} data-text="AI Jobs">
+        <a href="/ai-jobs" className="glass jobs" style={{ '--r': 7, '--grad': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }} data-text="AI Jobs">
           <img src="/images/jobs.png" alt="AI Jobs" className="icon" />
         </a>
 
-        {/* AI Magazines Section */}
-        <a href="/comingsoon" className="glass" style={{ '--r': 20 }} data-text="AI Magazines">
-          <img src="/images/magazine.png" alt="AI Magazines" className="icon" />
+        {/* AI Papers Section */}
+        <a href="/ai-papers" className="glass papers" style={{ '--r': 20, '--grad': 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)' }} data-text="AI Papers">
+          <img src="/images/magazine.png" alt="AI Papers" className="icon" />
         </a>
       </div>
     </StyledWrapper>
@@ -67,14 +67,13 @@ const StyledWrapper = styled.div`
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--grad, rgba(255, 255, 255, 0.05));
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    background: linear-gradient(to right, rgba(24, 173, 84, 0.5), rgba(163, 215, 51, 0.5)); 
   }
 
   .container .glass .icon {

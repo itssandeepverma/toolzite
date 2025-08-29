@@ -10,6 +10,9 @@ import MetaData from "../layout/MetaData";
 import NewReview from "../reviews/NewReview";
 import ListReviews from "../reviews/ListReviews";
 import NotFound from "../layout/NotFound";
+import { useToggleBookmarkMutation } from "../../redux/api/userApi";
+import { FaBookmark, FaRegBookmark } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ProductDetails = () => {
   const params = useParams();
@@ -22,7 +25,10 @@ const ProductDetails = () => {
     params?.id
   );
   const product = data?.product;
-  const { isAuthenticated } = useSelector((state) => state.auth);
+  const navigate = useNavigate();
+  const { isAuthenticated, user } = useSelector((state) => state.auth);
+  const [toggleBookmark] = useToggleBookmarkMutation();
+  const isBookmarked = !!user?.bookmarks?.some?.((id) => id === product?._id);
 
   useEffect(() => {
     setActiveImg(
@@ -70,6 +76,20 @@ const ProductDetails = () => {
     toast.success("Item added to Cart");
   };
 
+  const onToggleBookmark = async () => {
+    if (!isAuthenticated) {
+      toast("Login to manage bookmarks", { icon: "🔒" });
+      navigate("/login");
+      return;
+    }
+    try {
+      const res = await toggleBookmark(product._id).unwrap();
+      toast.success(res.bookmarked ? "Added to bookmarks" : "Removed from bookmarks");
+    } catch (e) {
+      toast.error("Could not update bookmark");
+    }
+  };
+
   if (isLoading) return <Loader />;
 
   if (error && error?.status == 404) {
@@ -88,6 +108,16 @@ const ProductDetails = () => {
               width="340"
               height="390"
             />
+            {/* Bookmark toggle over image */}
+            <button
+              type="button"
+              className="btn btn-sm btn-dark"
+              onClick={onToggleBookmark}
+              style={{ position: "absolute", top: 20, right: 30, opacity: 0.9 }}
+              title={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+            >
+              {isBookmarked ? <FaBookmark /> : <FaRegBookmark />}
+            </button>
           </div>
           <div className="row justify-content-start mt-5">
             {product?.images?.map((img) => (
@@ -154,6 +184,14 @@ const ProductDetails = () => {
             onClick={setItemToCart}
           >
             Add to Cart
+          </button>
+
+          <button
+            type="button"
+            className="btn btn-outline-secondary d-inline ms-2"
+            onClick={onToggleBookmark}
+          >
+            {isBookmarked ? "Bookmarked" : "Bookmark"}
           </button>
 
           <hr />

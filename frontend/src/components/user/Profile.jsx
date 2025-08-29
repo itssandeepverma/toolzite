@@ -8,7 +8,7 @@ const Profile = () => {
   return (
     <UserLayout>
       <MetaData title={"Your Profile"} />
-      <div className="row justify-content-around mt-5 user-info">
+      <div className="row justify-content-around mt-5 user-info" style={{ marginBottom: "120px", color: "#e0e0e0" }}>
         <div className="col-12 col-md-3">
           <figure className="avatar avatar-profile">
             <img

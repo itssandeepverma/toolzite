@@ -3,13 +3,14 @@ import { useGetMeQuery } from "../../redux/api/userApi";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { useLazyLogoutQuery } from "../../redux/api/authApi";
-import Button from "./LoginButton";
+// import Button from "./LoginButton";
 
 const Header = () => {
   const navigate = useNavigate();
   const { isLoading } = useGetMeQuery();
   const [logout] = useLazyLogoutQuery();
   const { user } = useSelector((state) => state.auth);
+  const bookmarksCount = user?.bookmarks?.length || 0;
 
   const logoutHandler = () => {
     logout();
@@ -97,18 +98,31 @@ const Header = () => {
               </a>
             </li>
 
-            {/* Submit an AI Tool */}
+
+            {/* News Hubs */}
             <li className="nav-item">
-              <a
-                href="https://docs.google.com/forms/d/1YgUtr8ekr7SR4k8HhyxIfgQztW0DnRvLPw-OfhwyRaI/edit"
-                className="nav-link nav-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ marginRight: "20px" }}
-              >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>➕</span> Submit an AI Tool
-              </a>
+              <a href="/ai-news" className="nav-link nav-btn">AI News</a>
             </li>
+            <li className="nav-item">
+              <a href="/ai-newsletters" className="nav-link nav-btn">AI Newsletters</a>
+            </li>
+            <li className="nav-item">
+              <a href="/ai-papers" className="nav-link nav-btn">AI Papers</a>
+            </li>
+            <li className="nav-item">
+              <a href="/ai-jobs" className="nav-link nav-btn">AI Jobs</a>
+            </li>
+            
+
+              {/* My Bookmarks (visible after login) */}
+            {user && (
+              <li className="nav-item">
+                <a href="/me/bookmarks" className="nav-link nav-btn">
+                  My Bookmarks {bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
+                </a>
+              </li>
+            )}
+
 
             {/* User Section */}
             {user ? (
@@ -133,13 +147,26 @@ const Header = () => {
                   aria-labelledby="userDropdown"
                   style={{ backgroundColor: "#4a4a4a" }}
                 >
-                  {["Dashboard", "Orders", "Profile"].map((item, index) => (
-                    <li key={index}>
-                      <Link className="dropdown-item" to={`/me/${item.toLowerCase()}`}>
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
+                  {/* Show admin links only for admin */}
+                  {user?.role === 'admin' && (
+                    <>
+                      <li>
+                        <Link className="dropdown-item" to="/me/dashboard">Dashboard</Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/me/orders">Orders</Link>
+                      </li>
+                    </>
+                  )}
+                  {/* Always show Profile */}
+                  <li>
+                    <a className="dropdown-item" href="/me/profile">Profile</a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/me/bookmarks">
+                      Bookmarks {bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
+                    </a>
+                  </li>
                   <li>
                     <button className="dropdown-item text-danger" onClick={logoutHandler}>
                       Logout
@@ -150,7 +177,7 @@ const Header = () => {
             ) : (
               !isLoading && (
                 <li className="nav-item">
-                  <Button text="Login" onClick={() => navigate("/login")} />
+                  <a href="/login" className="nav-link nav-btn">Login</a>
                 </li>
               )
             )}
@@ -183,6 +210,15 @@ const Header = () => {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-color: rgba(255, 255, 255, 0.1);
+          }
+          .dropdown-menu .dropdown-item:active,
+          .dropdown-menu .dropdown-item:focus {
+            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-color: rgba(255,255,255,0.1) !important;
+            outline: none;
+            box-shadow: none;
           }
 
           .login-btn {

@@ -26,6 +26,7 @@ import AINewsletters from "../news/AINewsletters";
 import AIJobs from "../news/AIJobs";
 import AINews from "../news/AINews";
 import AIPapers from "../news/AIPapers";
+import Bookmarks from "../user/Bookmarks";
 
 const userRoutes = () => {
   return (
@@ -137,6 +138,15 @@ const userRoutes = () => {
       <Route key="jobs" path="/ai-jobs" element={<AIJobs />} />
       <Route key="news" path="/ai-news" element={<AINews />} />
       <Route key="news" path="/ai-papers" element={<AIPapers />} />
+
+      <Route
+        path="/me/bookmarks"
+        element={
+          <ProtectedRoute>
+            <Bookmarks />
+          </ProtectedRoute>
+        }
+      />
 
 
 
