@@ -13,6 +13,8 @@ import {
   updateProfile,
   updateUser,
   uploadAvatar,
+  toggleBookmark,
+  getMyBookmarks,
 } from "../controllers/authControllers.js";
 const router = express.Router();
 
@@ -29,6 +31,10 @@ router.route("/me").get(isAuthenticatedUser, getUserProfile);
 router.route("/me/update").put(isAuthenticatedUser, updateProfile);
 router.route("/password/update").put(isAuthenticatedUser, updatePassword);
 router.route("/me/upload_avatar").put(isAuthenticatedUser, uploadAvatar);
+
+// Bookmarks
+router.route("/me/bookmarks").get(isAuthenticatedUser, getMyBookmarks);
+router.route("/me/bookmarks/:productId").post(isAuthenticatedUser, toggleBookmark);
 
 router
   .route("/admin/users")

@@ -6,6 +6,7 @@ import sendToken from "../utils/sendToken.js";
 import sendEmail from "../utils/sendEmail.js";
 import crypto from "crypto";
 import { delete_file, upload_file } from "../utils/cloudinary.js";
+import Product from "../models/product.js";
 
 // Register user   =>  /api/v1/register
 export const registerUser = catchAsyncErrors(async (req, res, next) => {
@@ -254,5 +255,48 @@ export const deleteUser = catchAsyncErrors(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
+  });
+});
+
+// ===== Bookmarks (User) =====
+// Toggle bookmark for a product => POST /api/v1/me/bookmarks/:productId
+export const toggleBookmark = catchAsyncErrors(async (req, res, next) => {
+  const { productId } = req.params;
+  if (!productId) {
+    return next(new ErrorHandler("Product ID is required", 400));
+  }
+
+  // Ensure product exists (optional but nicer UX)
+  const exists = await Product.exists({ _id: productId });
+  if (!exists) return next(new ErrorHandler("Product not found", 404));
+
+  const user = await User.findById(req.user._id).select("bookmarks");
+  const idStr = productId.toString();
+  const has = (user.bookmarks || []).some((b) => b.toString() === idStr);
+
+  if (has) {
+    user.bookmarks = user.bookmarks.filter((b) => b.toString() !== idStr);
+  } else {
+    user.bookmarks.push(productId);
+  }
+  await user.save();
+
+  res.status(200).json({
+    success: true,
+    bookmarked: !has,
+    bookmarks: user.bookmarks,
+  });
+});
+
+// Get all bookmarked products => GET /api/v1/me/bookmarks
+export const getMyBookmarks = catchAsyncErrors(async (req, res, next) => {
+  const user = await User.findById(req.user._id).populate({
+    path: "bookmarks",
+    select: "name description images link category",
+  });
+
+  res.status(200).json({
+    success: true,
+    bookmarks: user?.bookmarks || [],
   });
 });

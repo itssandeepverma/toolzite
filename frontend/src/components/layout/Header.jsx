@@ -133,7 +133,7 @@ const Header = () => {
                   aria-expanded="false"
                 >
                   <img
-                    src={user?.avatar?.url || "/images/default_avatar.jpg"}
+                    src={(user?.avatar?.url || "/images/default_avatar.jpg").replace('http://','https://')}
                     alt="User Avatar"
                     className="rounded-circle me-2"
                     style={{ width: "30px", height: "30px" }}

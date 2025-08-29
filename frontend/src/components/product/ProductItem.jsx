@@ -47,8 +47,8 @@ const ProductItem = ({ product, columnSize, onRemove }) => {
         {/* Product Image */}
         <img
           src={
-            product?.images?.[0]?.url ||
-            "https://res.cloudinary.com/dn3nlbjux/image/upload/v1739725471/toolzite/cosine.png"
+            (product?.images?.[0]?.url ||
+            "https://res.cloudinary.com/dn3nlbjux/image/upload/v1739725471/toolzite/cosine.png").replace('http://','https://')
           }
           className="card-img-top"
           alt={product?.name || "Product Image"}

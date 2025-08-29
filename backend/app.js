@@ -89,6 +89,14 @@ if (process.env.NODE_ENV === "PRODUCTION") {
     console.log("✅ Frontend build found at:", frontendBuildPath);
   }
 
+  // Map legacy CRA PWA icon paths to current images to avoid 404s from cached manifests
+  app.get('/logo192.png', (req, res) => {
+    res.sendFile(path.join(frontendBuildPath, 'images', 'icon.png'));
+  });
+  app.get('/logo512.png', (req, res) => {
+    res.sendFile(path.join(frontendBuildPath, 'images', 'toolzite.png'));
+  });
+
   // Serve static files
   app.use(express.static(frontendBuildPath, {
     maxAge: '1y',
