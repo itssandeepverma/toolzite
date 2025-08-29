@@ -3,7 +3,7 @@ import { useGetMeQuery } from "../../redux/api/userApi";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { useLazyLogoutQuery } from "../../redux/api/authApi";
-// import Button from "./LoginButton";
+import Button from "./LoginButton";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -177,7 +177,7 @@ const Header = () => {
             ) : (
               !isLoading && (
                 <li className="nav-item">
-                  <a href="/login" className="nav-link nav-btn">Login</a>
+                  <Button text="Login" onClick={() => (window.location.href = "/login")} />
                 </li>
               )
             )}
