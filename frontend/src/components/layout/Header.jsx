@@ -114,14 +114,12 @@ const Header = () => {
             </li>
             
 
-              {/* My Bookmarks (visible after login) */}
-            {user && (
-              <li className="nav-item">
-                <a href="/me/bookmarks" className="nav-link nav-btn">
-                  My Bookmarks {bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
-                </a>
-              </li>
-            )}
+              {/* My Bookmarks */}
+            <li className="nav-item">
+              <a href={user ? "/me/bookmarks" : "/login"} className="nav-link nav-btn">
+                My Bookmarks {user && bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
+              </a>
+            </li>
 
 
             {/* User Section */}
