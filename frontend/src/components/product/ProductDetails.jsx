@@ -28,7 +28,13 @@ const ProductDetails = () => {
   const navigate = useNavigate();
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   const [toggleBookmark] = useToggleBookmarkMutation();
-  const isBookmarked = !!user?.bookmarks?.some?.((id) => id === product?._id);
+  const reduxBookmarked = !!user?.bookmarks?.some?.((id) => String(id) === String(product?._id));
+  const [bookmarked, setBookmarked] = useState(reduxBookmarked);
+
+  useEffect(() => {
+    setBookmarked(reduxBookmarked);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reduxBookmarked, product?._id]);
 
   useEffect(() => {
     setActiveImg(
@@ -83,9 +89,13 @@ const ProductDetails = () => {
       return;
     }
     try {
+      // Optimistic UI
+      setBookmarked((prev) => !prev);
       const res = await toggleBookmark(product._id).unwrap();
       toast.success(res.bookmarked ? "Added to bookmarks" : "Removed from bookmarks");
     } catch (e) {
+      // Revert on fail
+      setBookmarked((prev) => !prev);
       toast.error("Could not update bookmark");
     }
   };
@@ -114,9 +124,9 @@ const ProductDetails = () => {
               className="btn btn-sm btn-dark"
               onClick={onToggleBookmark}
               style={{ position: "absolute", top: 20, right: 30, opacity: 0.9 }}
-              title={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+              title={bookmarked ? "Remove bookmark" : "Add bookmark"}
             >
-              {isBookmarked ? <FaBookmark /> : <FaRegBookmark />}
+              {bookmarked ? <FaBookmark /> : <FaRegBookmark />}
             </button>
           </div>
           <div className="row justify-content-start mt-5">
@@ -191,7 +201,7 @@ const ProductDetails = () => {
             className="btn btn-outline-secondary d-inline ms-2"
             onClick={onToggleBookmark}
           >
-            {isBookmarked ? "Bookmarked" : "Bookmark"}
+            {bookmarked ? "Bookmarked" : "Bookmark"}
           </button>
 
           <hr />

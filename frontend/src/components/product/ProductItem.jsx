@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useToggleBookmarkMutation } from "../../redux/api/userApi";
 import { FaBookmark, FaRegBookmark } from "react-icons/fa";
@@ -10,7 +10,14 @@ const ProductItem = ({ product, columnSize, onRemove }) => {
   const { user, isAuthenticated } = useSelector((state) => state.auth);
   const [toggleBookmark] = useToggleBookmarkMutation();
 
-  const isBookmarked = !!user?.bookmarks?.some?.((id) => String(id) === String(product?._id));
+  const reduxBookmarked = !!user?.bookmarks?.some?.((id) => String(id) === String(product?._id));
+  const [bookmarked, setBookmarked] = useState(reduxBookmarked);
+
+  // keep local state in sync if redux value changes (e.g., after invalidation refetch)
+  useEffect(() => {
+    setBookmarked(reduxBookmarked);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reduxBookmarked, product?._id]);
 
   const onToggleBookmark = async () => {
     if (!isAuthenticated) {
@@ -19,9 +26,13 @@ const ProductItem = ({ product, columnSize, onRemove }) => {
       return;
     }
     try {
+      // Optimistic UI: flip immediately
+      setBookmarked((prev) => !prev);
       const res = await toggleBookmark(product._id).unwrap();
       toast.success(res.bookmarked ? "Added to bookmarks" : "Removed from bookmarks");
     } catch (e) {
+      // Revert if failed
+      setBookmarked((prev) => !prev);
       toast.error("Could not update bookmark");
     }
   };
@@ -33,12 +44,12 @@ const ProductItem = ({ product, columnSize, onRemove }) => {
       >
         {/* Bookmark toggle */}
         <button
-          aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+          aria-label={bookmarked ? "Remove bookmark" : "Add bookmark"}
           onClick={onToggleBookmark}
           className="bookmark-btn"
-          title={isBookmarked ? "Bookmarked" : "Add to bookmarks"}
+          title={bookmarked ? "Bookmarked" : "Add to bookmarks"}
         >
-          {isBookmarked ? (
+          {bookmarked ? (
             <FaBookmark size={18} />
           ) : (
             <FaRegBookmark size={18} />
