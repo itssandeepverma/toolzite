@@ -97,17 +97,42 @@ if (process.env.NODE_ENV === "PRODUCTION") {
     res.sendFile(path.join(frontendBuildPath, 'images', 'toolzite.png'));
   });
 
-  // Serve static files
-  app.use(express.static(frontendBuildPath, {
-    maxAge: '1y',
-    etag: true,
-    lastModified: true
-  }));
+  // Serve static files with cache-control tailored per file
+  app.use(
+    express.static(frontendBuildPath, {
+      etag: true,
+      lastModified: true,
+      setHeaders: (res, filePath) => {
+        // Never cache index.html (ensures latest bundle references are fetched)
+        if (filePath.endsWith(path.sep + 'index.html')) {
+          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+          res.setHeader('Pragma', 'no-cache');
+          res.setHeader('Expires', '0');
+          return;
+        }
 
-  // Handle all other routes by serving index.html
+        // Long-cache hashed static assets
+        const isStatic = /\/(static|assets)\//.test(filePath);
+        const isHashedAsset = /\.(js|css|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot)$/.test(filePath);
+        if (isStatic && isHashedAsset) {
+          res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+          return;
+        }
+
+        // Default: short cache for other files
+        res.setHeader('Cache-Control', 'public, max-age=3600');
+      }
+    })
+  );
+
+  // Handle SPA routes: serve index.html only for non-static, extension-less paths
   app.get("*", (req, res) => {
     const indexPath = path.resolve(frontendBuildPath, "index.html");
-    
+    // If the request looks like a static asset (has a file extension) and wasn't found above, return 404
+    if (/\.[a-zA-Z0-9]+$/.test(req.path) || req.path.startsWith('/static/')) {
+      return res.status(404).end();
+    }
+
     // Check if index.html exists
     if (!fs.existsSync(indexPath)) {
       console.error("❌ index.html not found at:", indexPath);
@@ -116,7 +141,12 @@ if (process.env.NODE_ENV === "PRODUCTION") {
         message: "Please ensure the frontend is built correctly"
       });
     }
-    
+
+    // Explicitly disable caching on SPA shell
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+
     res.sendFile(indexPath, (err) => {
       if (err) {
         console.error("❌ Error serving index.html:", err);
