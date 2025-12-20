@@ -71,10 +71,10 @@ export default function Footer() {
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold text-white">Contact</h6>
                 <p>
-                  <i className="fas fa-home mr-3"></i> Bengaluru, India
+                  <i className="fas fa-home mr-3"></i> Noida, India
                 </p>
                 <p>
-                  <i className="fas fa-envelope mr-3"></i> toolzite@gmail.com
+                  <i className="fas fa-envelope mr-3"></i> sandeep@toolzite.com
                 </p>
               </div>
 
@@ -91,7 +91,7 @@ export default function Footer() {
                 </a>
                 <a
                   className="social-icon"
-                  href="https://www.instagram.com/toolzite"
+                  href="https://www.instagram.com/toolzite.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
