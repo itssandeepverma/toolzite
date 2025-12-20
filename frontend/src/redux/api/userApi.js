@@ -21,7 +21,7 @@ export const userApi = createApi({
           console.log(error);
         }
       },
-      providesTags: ["User"],
+      providesTags: ["User"], //added comment
     }),
     updateProfile: builder.mutation({
       query(body) {
