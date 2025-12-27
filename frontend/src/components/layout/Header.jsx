@@ -31,7 +31,7 @@ const Header = () => {
         zIndex: 1000,
       }}
     >
-      <div className="container-fluid">
+      <div className="container header-container">
         
         <a className="navbar-brand brand-animate" href="/">
           <span className="brand-text">ToolZite.</span>
@@ -244,6 +244,11 @@ const Header = () => {
           /* Fix for button hover state */
           .nav-link.btn:hover {
             color: rgba(206, 206, 206, 0.67) !important;
+          }
+
+          /* Constrain header width */
+          .header-container {
+            max-width: 1320px;
           }
 
           /* Brand layout and flowing text */
