@@ -24,7 +24,7 @@ const Header = () => {
       className="navbar navbar-expand-lg"
       style={{
         background: "#1c1c1c",
-        position: "fixed",
+        position: "sticky",
         top: 0,
         width: "100%",
         opacity: 0.95,
@@ -32,13 +32,17 @@ const Header = () => {
       }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          <img
-            src="/images/toolzite.png"
-            alt="toolZite"
-            style={{ width: "170px", height: "50px" }}
-          />
+        
+        <a className="navbar-brand brand-animate" href="/">
+          <span className="brand-text">ToolZite.</span>
+          <span className="brand-logo">
+            <img
+              src="/images/icon.png"
+              alt="toolZite"
+            />
+          </span>
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -240,6 +244,48 @@ const Header = () => {
           /* Fix for button hover state */
           .nav-link.btn:hover {
             color: rgba(206, 206, 206, 0.67) !important;
+          }
+
+          /* Brand layout and flowing text */
+          .brand-animate {
+            display: inline-flex;
+            align-items: center;
+            gap: 0;
+            text-decoration: none;
+          }
+          .brand-text {
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+            background: linear-gradient(
+              90deg,
+              rgba(255, 255, 255, 0.95) 30%,
+              rgba(0, 156, 62, 0.95) 45%,
+              rgba(172, 236, 32, 0.95) 75%,
+              rgba(255, 255, 255, 0.95) 100%
+            );
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: brandFlow 7s linear infinite;
+          }
+          .brand-logo {
+            display: inline-block;
+            width: 44px;
+            height: 65px;
+            line-height: 0;
+            margin-left: -9px;
+          }
+          .brand-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+          }
+          @keyframes brandFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
           }
         `}
       </style>

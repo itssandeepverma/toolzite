@@ -74,7 +74,10 @@ export default function Footer() {
                   <i className="fas fa-home mr-3"></i> Noida, India
                 </p>
                 <p>
-                  <i className="fas fa-envelope mr-3"></i> sandeep@toolzite.com
+                  <i className="fas fa-envelope mr-3"></i>{" "}
+                  <a className="footer-link" href="mailto:sandeep@toolzite.com">
+                    sandeep@toolzite.com
+                  </a>
                 </p>
               </div>
 
@@ -113,8 +116,16 @@ export default function Footer() {
                 >
                   <i className="fab fa-medium-m"></i>
                 </a>
-
-
+                <p style={{ marginTop: "12px" }}>
+                  <a
+                    className="footer-link"
+                    href="https://internshala.com/company/toolzite-1766167755/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Careers
+                  </a>
+                </p>
               </div>
             </div>
           </section>
