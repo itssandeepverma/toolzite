@@ -1,104 +1,21 @@
 import React, { useEffect, useState } from "react";
 import MetaData from "../layout/MetaData";
-import { FaExternalLinkAlt, FaNewspaper, FaClock, FaGlobe } from "react-icons/fa";
+import { FaExternalLinkAlt, FaNewspaper, FaGlobe } from "react-icons/fa";
 
-// ---------- Feeds ----------
-const FEEDS = [
-  { name: "MIT Technology Review – AI", url: "https://www.technologyreview.com/feed/tag/ai/" },
-  { name: "TechCrunch – AI", url: "https://techcrunch.com/tag/artificial-intelligence/feed/" },
-  { name: "The Verge – AI", url: "https://www.theverge.com/artificial-intelligence/rss/index.xml" },
-  { name: "VentureBeat – AI", url: "https://venturebeat.com/category/ai/feed/" },
-  { name: "Ars Technica – AI", url: "https://arstechnica.com/information-technology/feed/" },
-  { name: "NYT – AI", url: "https://rss.nytimes.com/services/xml/rss/nyt/ArtificialIntelligence.xml" },
+const API_ENDPOINT = "/api/v1/ai-news";
+const CACHE_KEY = "aiNewsCacheV2";
+const CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6 hours
 
-  { name: "Google DeepMind", url: "https://deepmind.google/discover/blog/rss.xml" },
-  { name: "Google AI Blog", url: "https://ai.googleblog.com/feeds/posts/default?alt=rss" },
-  { name: "Meta AI", url: "https://ai.meta.com/blog/rss/" },
-  { name: "OpenAI", url: "https://openai.com/blog/rss.xml" },
-  { name: "Microsoft Research Blog", url: "https://www.microsoft.com/en-us/research/feed/" },
-  { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
+const normalizeItems = (items = []) =>
+  Array.isArray(items)
+    ? items.map((item) => ({
+        ...item,
+        pubDate: item?.pubDate ? new Date(item.pubDate) : null,
+        description: item?.description || "",
+      }))
+    : [];
 
-  { name: "NVIDIA Technical Blog (AI)", url: "https://developer.nvidia.com/blog/tag/ai/feed/" },
-  { name: "Stability AI", url: "https://stability.ai/blog/rss.xml" },
-  { name: "Hugging Face Blog", url: "https://huggingface.co/blog/feed.xml" },
-
-  { name: "AI Policy – Brookings", url: "https://www.brookings.edu/topic/artificial-intelligence/feed/" },
-  { name: "The Gradient", url: "https://thegradient.pub/rss/" },
-  { name: "Alignment Forum (Hot)", url: "https://www.alignmentforum.org/feed.xml?view=curated" },
-];
-
-// Public CORS helper
-const proxy = (url) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
-
-// Helpers
-const stripHTML = (html) => {
-  const div = document.createElement("div");
-  div.innerHTML = html || "";
-  return (div.textContent || div.innerText || "").trim();
-};
-
-const parseRSS = (xmlText, fallbackSource) => {
-  const parser = new DOMParser();
-  const xml = parser.parseFromString(xmlText, "text/xml");
-  const items = Array.from(xml.querySelectorAll("item, entry")).map((node) => {
-    const title =
-      node.querySelector("title")?.textContent?.trim() ||
-      node.querySelector("dc\\:title")?.textContent?.trim() ||
-      "Untitled";
-
-    const link =
-      node.querySelector("link")?.getAttribute?.("href") ||
-      node.querySelector("link")?.textContent?.trim() ||
-      "";
-
-    const description =
-      node.querySelector("description")?.textContent ||
-      node.querySelector("content")?.textContent ||
-      node.querySelector("content\\:encoded")?.textContent ||
-      node.querySelector("summary")?.textContent ||
-      "";
-
-    const pubRaw =
-      node.querySelector("pubDate")?.textContent ||
-      node.querySelector("updated")?.textContent ||
-      node.querySelector("dc\\:date")?.textContent ||
-      node.querySelector("published")?.textContent ||
-      "";
-
-    const source =
-      xml.querySelector("channel > title")?.textContent?.trim() ||
-      xml.querySelector("feed > title")?.textContent?.trim() ||
-      fallbackSource ||
-      "Unknown";
-
-    const pubDate = pubRaw ? new Date(pubRaw) : null;
-
-    return {
-      title: stripHTML(title),
-      link,
-      description: stripHTML(description).replace(/\s+/g, " ").slice(0, 260),
-      pubDate,
-      source,
-    };
-  });
-
-  return items;
-};
-
-const dedupeBy = (arr, keyFn) => {
-  const seen = new Set();
-  return arr.filter((item) => {
-    const k = keyFn(item);
-    if (seen.has(k)) return false;
-    seen.add(k);
-    return true;
-  });
-};
-
-const withinLastDays = (dt, days = 5) => {
-  if (!dt) return false;
-  return Date.now() - dt.getTime() <= days * 24 * 60 * 60 * 1000;
-};
+const isFresh = (ts) => ts && Date.now() - ts.getTime() < CACHE_TTL_MS;
 
 const dateFormat = (d) =>
   d
@@ -127,58 +44,14 @@ const Spinner = () => (
   />
 );
 
-const CACHE_KEY = "aiNewsCacheV1";
-const CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6 hours
-
 const AINews = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true); // first mount = true
   const [lastUpdated, setLastUpdated] = useState(null);
   const [firstLoadDone, setFirstLoadDone] = useState(false); // controls initial button hide
+  const [error, setError] = useState("");
 
-  // Core fetch (with one retry if too few)
-  const fetchNews = async () => {
-    setLoading(true);
-    const run = async () => {
-      const all = [];
-
-      await Promise.all(
-        FEEDS.map(async (feed) => {
-          try {
-            const res = await fetch(proxy(feed.url));
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            const text = await res.text();
-            const parsed = parseRSS(text, feed.name);
-            all.push(...parsed);
-          } catch {
-            // silent per your request
-          }
-        })
-      );
-
-      const recent = all.filter((x) => withinLastDays(x.pubDate, 5));
-      const deduped = dedupeBy(recent, (x) =>
-        (x.link || x.title).toLowerCase().replace(/\W+/g, "")
-      ).sort((a, b) => (b.pubDate?.getTime() || 0) - (a.pubDate?.getTime() || 0));
-
-      return deduped.slice(0, 20);
-    };
-
-    let data = await run();
-
-    // If the proxy hiccups, retry once after a short delay
-    if (data.length < 6) {
-      await new Promise((r) => setTimeout(r, 1200));
-      data = await run();
-    }
-
-    setItems(data);
-    const ts = new Date();
-    setLastUpdated(ts);
-    setLoading(false);
-    setFirstLoadDone(true);
-
-    // Cache it
+  const saveCache = (data, ts) => {
     try {
       localStorage.setItem(
         CACHE_KEY,
@@ -187,23 +60,55 @@ const AINews = () => {
     } catch {}
   };
 
-  // On mount: 1) hydrate from cache if fresh, 2) always refresh in background
-  useEffect(() => {
+  const hydrateFromCache = () => {
     try {
       const raw = localStorage.getItem(CACHE_KEY);
-      if (raw) {
-        const { items: cached, lastUpdated: lu } = JSON.parse(raw);
-        const ts = lu ? new Date(lu) : null;
-        const fresh = ts && Date.now() - ts.getTime() < CACHE_TTL_MS;
-        if (cached?.length && fresh) {
-          setItems(cached);
-          setLastUpdated(ts);
-          setLoading(false);      // show loaded UI immediately
-          setFirstLoadDone(true); // show Refresh button immediately
+      if (!raw) return;
+
+      const { items: cached, lastUpdated: lu } = JSON.parse(raw);
+      const ts = lu ? new Date(lu) : null;
+
+      if (cached?.length) {
+        const normalized = normalizeItems(cached);
+        setItems(normalized);
+        setLastUpdated(ts);
+        setLoading(false);      // show loaded UI immediately
+        setFirstLoadDone(true); // show Refresh button immediately
+        if (!isFresh(ts)) {
+          setError("Showing cached stories while we fetch the latest.");
         }
       }
     } catch {}
+  };
 
+  // Core fetch (server proxy)
+  const fetchNews = async () => {
+    setLoading(true);
+    setError("");
+
+    try {
+      const res = await fetch(API_ENDPOINT);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const payload = await res.json();
+      const normalized = normalizeItems(payload?.items || []);
+      const ts = payload?.lastUpdated ? new Date(payload.lastUpdated) : new Date();
+
+      setItems(normalized);
+      setLastUpdated(ts);
+      saveCache(normalized, ts);
+    } catch (err) {
+      console.warn("AI news fetch failed", err);
+      setError("Unable to refresh right now. Showing cached stories if available.");
+    } finally {
+      setLoading(false);
+      setFirstLoadDone(true);
+    }
+  };
+
+  // On mount: hydrate from cache, then refresh in background
+  useEffect(() => {
+    hydrateFromCache();
     fetchNews(); // always refresh
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -251,10 +156,21 @@ const AINews = () => {
             <div className="status-text">
               {loading && !firstLoadDone
                 ? "Fetching latest…"
-                : `${count} stories · Updated ${dateFormat(lastUpdated)}`}
+                : `${count} stories · Updated ${dateFormat(lastUpdated) || "just now"}`}
+              {error && (
+                <div className="text-red-300 text-sm mt-1">
+                  {error}
+                </div>
+              )}
             </div>
           </div>
         </div>
+
+        {!loading && count === 0 && (
+          <div className="text-center text-gray-400 mb-3">
+            No stories available right now. Please try again shortly.
+          </div>
+        )}
 
         {/* Cards */}
         <div className="row">
