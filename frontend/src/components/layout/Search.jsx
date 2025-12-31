@@ -36,7 +36,7 @@ const Search = () => {
 
   return (
     <form onSubmit={submitHandler} className="position-relative">
-      <div className="input-group">
+      <div className="input-group search-input-group">
         <input
           type="text"
           id="search_field"
@@ -53,10 +53,30 @@ const Search = () => {
             transition: "all 0.3s ease-in-out",
           }}
         />
-        <button id="search_btn" className="btn" type="submit">
+        <button
+          id="search_btn"
+          className="btn search-btn"
+          type="submit"
+          style={{ minWidth: "68px", padding: "0 16px", fontWeight: "600" }}
+        >
           <i className="fa fa-search" aria-hidden="true"></i>
         </button>
       </div>
+
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .search-input-group {
+              width: 100%;
+            }
+            .search-btn {
+              min-width: 78px;
+              padding: 0 20px;
+              font-size: 16px;
+            }
+          }
+        `}
+      </style>
     </form>
   );
 };

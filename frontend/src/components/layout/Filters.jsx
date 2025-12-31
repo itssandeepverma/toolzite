@@ -27,6 +27,13 @@ const Filters = () => {
     searchParams.set("page", "1");
 
     navigate(`${window.location.pathname}?${searchParams.toString()}`);
+
+    // On mobile, jump to the first result after applying filters
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      setTimeout(() => {
+        document.getElementById("products")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
+    }
   };
 
   // Handle Category & Ratings filter
@@ -49,6 +56,12 @@ const Filters = () => {
     searchParams.set("page", "1");
 
     navigate(`${window.location.pathname}?${searchParams.toString()}`);
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      setTimeout(() => {
+        document.getElementById("products")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
+    }
   };
 
   const defaultCheckHandler = (checkboxType, checkboxValue) => {

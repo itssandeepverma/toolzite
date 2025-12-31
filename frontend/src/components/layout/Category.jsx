@@ -50,6 +50,14 @@ const StyledWrapper = styled.div`
   .card:active {
     transform: scale(0.95) rotateZ(1.7deg);
   }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 190px;
+      height: 150px;
+      font-size: 1rem;
+    }
+  }
 `;
 
 export default Card;

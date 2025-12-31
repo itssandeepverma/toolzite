@@ -2,46 +2,12 @@ import React, { useMemo } from "react";
 import { useNavigate } from "react-router-dom"; // Import for navigation
 import CardsRow from "./Row";
 import { Rocket } from "lucide-react"; // Import rocket icon from lucide-react
+import { FEATURED_CATEGORIES } from "./categoriesData";
 
 const CategorySection = () => {
   const navigate = useNavigate(); // Hook for redirection
 
-  // Category list
-  const categories = useMemo(
-    () => [
-      "AI Agents",
-      "Video Generators",
-      "Chat & Assistants",
-      "Voice Cloning & Synthesis",
-      "3D Models & Assets",
-      "Virtual Agents",
-      "Detection Tools",
-      "Utility Apps",
-      "Featured Picks",
-      "Creative Tools",
-      "Digital Art & Design",
-      "Code Assistance",
-      "Assistive Technology",
-      "Audio & Sound Editing",
-      "Automation & Workflows",
-      "Avatar & Character Creators",
-      "Business Solutions",
-      "Chatbot Builders",
-      "Customer Support",
-      "Data & Insights",
-      "Dating & Relationships",
-      "Developer Resources",
-      "E-Commerce & Shops",
-      "Email Tools & Automation",
-      "Education & Learning",
-      "Software Extensions",
-      "Face Swap & Deepfake",
-      "Fashion & Style",
-      "Files & Spreadsheet Tools",
-      "Finance & Budgeting",
-    ],
-    []
-  );
+  const categories = useMemo(() => FEATURED_CATEGORIES, []);
 
   // Function to split categories into chunks of 10
   const chunkArray = (array, chunkSize) => {
@@ -106,7 +72,7 @@ const CategorySection = () => {
           }}
         >
           <Rocket size={22} style={{ color: "white" }} className="rocket-icon" />
-          Explore All Categories
+          Click here to explore all categories
         </a>
 
         <style>
@@ -114,6 +80,10 @@ const CategorySection = () => {
             .explore-all-btn {
               animation: pulse 2s ease-in-out infinite, glow 3s ease-in-out infinite alternate;
               transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+              max-width: none;
+              width: auto;
+              text-align: center;
+              white-space: nowrap;
             }
 
             .explore-all-btn:hover {
@@ -124,6 +94,18 @@ const CategorySection = () => {
 
             .explore-all-btn:hover .rocket-icon {
               animation: rocketShake 0.6s ease-in-out infinite;
+            }
+
+            @media (max-width: 768px) {
+              .explore-all-btn {
+                font-size: 16px;
+                padding: 12px 18px;
+                gap: 10px;
+                line-height: 1.2;
+                max-width: 320px;
+                width: 90vw;
+                white-space: normal;
+              }
             }
 
             @keyframes pulse {

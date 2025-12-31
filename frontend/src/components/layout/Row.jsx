@@ -59,4 +59,11 @@ const Row = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    padding: 12px 6px;
+    gap: 8px;
+  }
 `;

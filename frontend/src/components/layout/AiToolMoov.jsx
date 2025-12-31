@@ -8,10 +8,11 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     position: relative;
     margin-bottom: 1.5rem; /* Increased space between rows */
+    width: 100%;
   }
   .marquee-content {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.8rem;
     min-width: 100%;
     animation: marquee 35s linear infinite; /* Slower movement */
   }
@@ -33,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 4px; /* Less rounded */
     font-size: 1rem;
     display: inline-block;
+    white-space: nowrap;
   }
   .gradient-text {
     background: linear-gradient(to right, rgb(24, 173, 83), rgb(163, 215, 51));
@@ -41,9 +43,34 @@ const GlobalStyle = createGlobalStyle`
   }
   .card-container {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 0;
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+<<<<<<< ours
+      padding: 2;
+    }
+    .marquee {
+      padding: 3 4px;
+=======
+      padding: 0.85rem;
+    }
+    .marquee {
+      padding: 0 8px;
+>>>>>>> theirs
+    }
+    .marquee-content {
+      gap: 0.5rem;
+      animation-duration: 28s;
+    }
+    .badge-custom {
+      padding: 0.46rem 0.95rem;
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -72,8 +99,8 @@ export default function AiToolsMarquee() {
   return (
     <>
       <GlobalStyle />
-      <div className="container text-white p-4">
-        <div className="card-container" style={{padding: "1rem"}}>
+      <div className="container-fluid text-white p-4">
+        <div className="card-container">
           <h2 className="text-center mb-4">Trending AI Tools</h2>
           <div className="overflow-hidden">
             {tools.map((row, index) => (
