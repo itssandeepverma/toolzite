@@ -27,6 +27,9 @@ import AIJobs from "../news/AIJobs";
 import AINews from "../news/AINews";
 import AIPapers from "../news/AIPapers";
 import Bookmarks from "../user/Bookmarks";
+import BlogList from "../blog/BlogList";
+import BlogDetail from "../blog/BlogDetail";
+import BlogCreate from "../blog/BlogCreate";
 
 const userRoutes = () => {
   return (
@@ -138,6 +141,8 @@ const userRoutes = () => {
       <Route key="jobs" path="/ai-jobs" element={<AIJobs />} />
       <Route key="news" path="/ai-news" element={<AINews />} />
       <Route key="news" path="/ai-papers" element={<AIPapers />} />
+      <Route key="blogs" path="/ai-blogs" element={<BlogList />} />
+      <Route key="blog-detail" path="/ai-blogs/:slug" element={<BlogDetail />} />
 
       <Route
         path="/me/bookmarks"
@@ -148,6 +153,14 @@ const userRoutes = () => {
         }
       />
 
+      <Route
+        path="/me/blogs/new"
+        element={
+          <ProtectedRoute admin>
+            <BlogCreate />
+          </ProtectedRoute>
+        }
+      />
 
 
     </>

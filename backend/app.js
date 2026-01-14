@@ -10,6 +10,8 @@ import { botBlockingMiddleware, securityLoggingMiddleware, strictRateLimitMiddle
 
 import path from "path";
 import { fileURLToPath } from "url";
+import newsRoutes from "./routes/news.js";
+import blogRoutes from "./routes/blogs.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -75,6 +77,8 @@ app.use("/api/v1", productRoutes);
 app.use("/api/v1", authRoutes);
 app.use("/api/v1", orderRoutes);
 app.use("/api/v1", paymentRoutes);
+app.use("/api/v1", newsRoutes);
+app.use("/api/v1", blogRoutes);
 
 // Production static file serving
 if (process.env.NODE_ENV === "PRODUCTION") {

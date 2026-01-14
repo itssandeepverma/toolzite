@@ -77,6 +77,7 @@ const Header = () => {
                   { name: "AI Newsletters", href: "/ai-newsletters" },
                   { name: "AI News", href: "/ai-news" },
                   { name: "AI Research Papers", href: "/ai-papers" },
+                  { name: "AI Blogs", href: "/ai-blogs" },
                 ].map((item, index) => (
                   <li key={index}>
                     <a href={item.href} className="dropdown-item">
@@ -115,6 +116,9 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <a href="/ai-jobs" className="nav-link nav-btn">AI Jobs</a>
+            </li>
+            <li className="nav-item">
+              <a href="/ai-blogs" className="nav-link nav-btn">AI Blogs</a>
             </li>
             
 
