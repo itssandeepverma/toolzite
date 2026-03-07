@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import MetaData from "../layout/MetaData";
 import Loader from "../layout/Loader";
+import MetaData from "../layout/MetaData";
 
 const WORKSPACE_CONFIG = {
   code: {
@@ -9,20 +9,22 @@ const WORKSPACE_CONFIG = {
     subtitle: "Algorithm walkthroughs, readable code, and visual interview prep inside the ToolZite shell.",
     badge: "TOOLZITE WORKSPACE",
     section: "Code Tools",
-    origin: "https://code.toolzite.com",
+    origin: "http://localhost:8083/",
     defaultChildPath: "/algorithms/two-sum",
     internalBasePath: "/code-tools",
     childBasePath: "/algorithms/",
+    minFrameHeight: 520,
   },
   pdf: {
     title: "ToolZite PDF Tools",
     subtitle: "Document, image, and browser-side utility workflows embedded directly into ToolZite.",
     badge: "TOOLZITE WORKSPACE",
     section: "PDF Tools",
-    origin: "https://pdf.toolzite.com",
+    origin: "http://localhost:8082/",
     defaultChildPath: "/tools/compress",
     internalBasePath: "/pdf-tools",
     childBasePath: "/tools/",
+    minFrameHeight: 980,
   },
 };
 
@@ -51,7 +53,7 @@ const EmbeddedWorkspace = ({ kind }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const iframeRef = useRef(null);
-  const [frameHeight, setFrameHeight] = useState(1180);
+  const [frameHeight, setFrameHeight] = useState(config.minFrameHeight);
   const [isLoaded, setIsLoaded] = useState(false);
 
   const slug = kind === "code" ? params.slug : params.toolId;
@@ -66,7 +68,7 @@ const EmbeddedWorkspace = ({ kind }) => {
       if (event.data.type === "toolzite:embed-height" && event.data.kind === kind) {
         const nextHeight = Number(event.data.height);
         if (Number.isFinite(nextHeight) && nextHeight > 0) {
-          setFrameHeight(Math.max(980, Math.ceil(nextHeight) + 8));
+          setFrameHeight(Math.max(config.minFrameHeight, Math.ceil(nextHeight) + 8));
         }
       }
 
@@ -80,7 +82,7 @@ const EmbeddedWorkspace = ({ kind }) => {
 
     window.addEventListener("message", handleMessage);
     return () => window.removeEventListener("message", handleMessage);
-  }, [kind, location.pathname, navigate]);
+  }, [config.minFrameHeight, kind, location.pathname, navigate]);
 
   useEffect(() => {
     setIsLoaded(false);
@@ -110,6 +112,7 @@ const EmbeddedWorkspace = ({ kind }) => {
               title={config.title}
               src={iframeSrc}
               className="tz-embed-frame"
+              scrolling="no"
               style={{ height: `${frameHeight}px`, opacity: isLoaded ? 1 : 0 }}
               onLoad={() => setIsLoaded(true)}
             />
