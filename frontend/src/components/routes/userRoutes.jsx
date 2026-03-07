@@ -30,6 +30,7 @@ import Bookmarks from "../user/Bookmarks";
 import BlogList from "../blog/BlogList";
 import BlogDetail from "../blog/BlogDetail";
 import BlogCreate from "../blog/BlogCreate";
+import EmbeddedWorkspace from "../workspace/EmbeddedWorkspace";
 
 const userRoutes = () => {
   return (
@@ -143,6 +144,10 @@ const userRoutes = () => {
       <Route key="news" path="/ai-papers" element={<AIPapers />} />
       <Route key="blogs" path="/ai-blogs" element={<BlogList />} />
       <Route key="blog-detail" path="/ai-blogs/:slug" element={<BlogDetail />} />
+      <Route path="/code-tools" element={<EmbeddedWorkspace kind="code" />} />
+      <Route path="/code-tools/algorithms/:slug" element={<EmbeddedWorkspace kind="code" />} />
+      <Route path="/pdf-tools" element={<EmbeddedWorkspace kind="pdf" />} />
+      <Route path="/pdf-tools/tools/:toolId" element={<EmbeddedWorkspace kind="pdf" />} />
 
       <Route
         path="/me/bookmarks"

@@ -1,6 +1,7 @@
 import React from "react";
+import { FaBriefcase, FaMapMarkerAlt } from "react-icons/fa";
 import MetaData from "../layout/MetaData";
-import { FaBriefcase, FaExternalLinkAlt, FaMapMarkerAlt } from "react-icons/fa";
+import ResourceCard from "../layout/ResourceCard";
 
 const jobBoards = [
   { name: "AI Jobs", link: "https://aijobs.ai/", description: "The leading job board for AI, ML, and Data Science roles.", location: "Global" },
@@ -37,82 +38,49 @@ const jobBoards = [
   { name: "AI Design Jobs", link: "https://aidesignjobs.com/", description: "AI design and user experience jobs.", location: "Global" },
   { name: "AI Testing Jobs", link: "https://aitestingjobs.com/", description: "AI testing and QA jobs.", location: "Global" },
   { name: "AI Support Jobs", link: "https://aisupportjobs.com/", description: "AI customer and technical support jobs.", location: "Global" },
-  { name: "AI Freelance", link: "https://aifreelance.com/", description: "Freelance and contract AI opportunities.", location: "Global" }
+  { name: "AI Freelance", link: "https://aifreelance.com/", description: "Freelance and contract AI opportunities.", location: "Global" },
 ];
 
 const AIJobs = () => (
-  <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
-    <MetaData 
+  <>
+    <MetaData
       title="AI Jobs – ML, Data, and Research Roles"
       description="Curated AI roles across ML engineering, data science, and research from top companies worldwide."
       canonical="https://www.toolzite.com/ai-jobs"
     />
-    <div className="container mx-auto px-4 py-8" style={{ marginTop: "110px" }}>
-      <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-          AI Jobs
-        </h1>
-        <p className="text-gray-400 text-lg">
-          Discover AI job opportunities from top companies worldwide
-        </p>
-      </div>
-      <div className="mb-6 text-center">
-        <p className="text-gray-400">
-          {jobBoards.length} curated job boards
-        </p>
-      </div>
-      <div className="row">
-        {jobBoards.map((jobBoard, index) => (
-          <div key={index} className="col-sm-12 col-md-6 col-lg-4 my-3">
-            <div
-              className="card product-card bg-dark text-light mx-auto"
-              style={{ width: "18rem", height: "24rem", cursor: "pointer" }}
-              onClick={() => window.open(jobBoard.link, "_blank", "noopener,noreferrer")}
-            >
-              <div className="card-img-top d-flex align-items-center justify-content-center" style={{ height: "30%", background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
-                <FaBriefcase className="text-white" style={{ fontSize: "3rem" }} />
-              </div>
-              <div className="card-body text-center d-flex flex-column" style={{ height: "70%" }}>
-                <div style={{ height: "25%" }}>
-                  <h5 className="card-title mb-2">{jobBoard.name}</h5>
-                  <div style={{ height: "2px", width: "80%", background: "linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32))", margin: "0 auto" }}></div>
-                </div>
-                <div style={{ height: "45%", overflow: "hidden" }}>
-                  <p className="card-text" style={{ margin: "0 1rem" }}>{jobBoard.description}</p>
-                </div>
-                <div style={{ height: "20%", marginBottom: "0.5rem" }} className="d-flex align-items-center justify-content-center">
-                  <div className="text-center">
-                    <div className="mb-1">
-                      <span className="badge bg-secondary">Job Board</span>
-                    </div>
-                    <div className="text-muted small d-flex align-items-center justify-content-center">
-                      <FaMapMarkerAlt className="me-1" />
-                      {jobBoard.location}
-                    </div>
-                  </div>
-                </div>
-                <div style={{ height: "10%" }} className="d-flex align-items-center justify-content-center">
-                  <span className="badge bg-primary d-inline-flex align-items-center gap-1">
-                    Browse Jobs
-                    <FaExternalLinkAlt className="text-xs" />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <style>{`
-              .product-card { width: 300px; height: 380px; border-radius: 30px; background: #212121; box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); overflow: hidden; position: relative; transition: all 0.3s ease-in-out; text-align: center; }
-              .product-card:hover { box-shadow: 10px 10px 20px rgb(20, 20, 20), -10px -10px 20px rgb(50, 50, 50); transform: translateY(-5px); }
-              .product-card .card-img-top { width: 100%; height: 120px; object-fit: cover; border-top-left-radius: 30px; border-top-right-radius: 30px; }
-              .product-card .card-title { font-size: 16px; font-weight: bold; color: #ffffff; margin-top: 10px; }
-              .product-card .card-text { font-size: 12px; color: #b0b0b0; opacity: 0.8; margin: 5px 0; }
-              .badge:hover { background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32)) !important; color: white !important; }
-              @media (max-width: 768px) { .product-card { width: 100%; max-width: 300px; } }
-            `}</style>
-          </div>
-        ))}
+
+    <div className="tz-resource-page">
+      <div className="tz-resource-page-inner">
+        <div className="tz-resource-page-hero">
+          <h1>AI Jobs</h1>
+          <p>Discover AI job opportunities from top companies worldwide.</p>
+        </div>
+
+        <p className="tz-resource-count">{jobBoards.length} curated job boards</p>
+
+        <div className="tz-card-grid">
+          {jobBoards.map((jobBoard) => (
+            <ResourceCard
+              key={jobBoard.name}
+              title={jobBoard.name}
+              description={jobBoard.description}
+              href={jobBoard.link}
+              ctaLabel="Browse jobs"
+              tag="Job Board"
+              meta={
+                <span className="d-inline-flex align-items-center gap-2">
+                  <FaMapMarkerAlt aria-hidden="true" />
+                  <span>{jobBoard.location}</span>
+                </span>
+              }
+              Icon={FaBriefcase}
+              gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+            />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
-export default AIJobs; 
+export default AIJobs;

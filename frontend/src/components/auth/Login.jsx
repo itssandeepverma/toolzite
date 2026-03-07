@@ -11,7 +11,7 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const [login, { isLoading, error, data }] = useLoginMutation();
+  const [login, { isLoading, error }] = useLoginMutation();
   const { isAuthenticated } = useSelector((state) => state.auth);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Login = () => {
     if (error) {
       toast.error(error?.data?.message);
     }
-  }, [error, isAuthenticated]);
+  }, [error, isAuthenticated, navigate]);
 
   const isValidEmail = (val) => /[^\s@]+@[^\s@]+\.[^\s@]+/.test(val);
 
@@ -44,86 +44,53 @@ const Login = () => {
   return (
     <>
       <MetaData title={"Login"} />
-      <div style={{ marginTop: "140px", marginBottom: "120px" }} className="row wrapper">
-        <div className="col-10 col-lg-5">
-          <form
-            className="shadow rounded form-dark"
-            onSubmit={submitHandler}
-            style={{ backgroundColor: "rgba(30,30,30,0.6)", color: "#e0e0e0", padding: 20 }}
-          >
-            <h2 className="mb-4">Login</h2>
-            <div className="mb-3">
-              <label htmlFor="email_field" className="form-label">
-                Email
-              </label>
+      <div className="tz-auth-page">
+        <div className="tz-auth-surface">
+          <div className="tz-auth-header">
+            <span className="tz-auth-chip">WELCOME BACK</span>
+            <h1>Login to Toolzite</h1>
+            <p>Continue with your account to manage bookmarks and discover curated tools.</p>
+          </div>
+
+          <form className="tz-auth-form" onSubmit={submitHandler}>
+            <div className="tz-auth-field">
+              <label htmlFor="email_field">Email</label>
               <input
                 type="email"
                 id="email_field"
-                className="form-control"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder="you@example.com"
+                autoComplete="email"
               />
             </div>
 
-            <div className="mb-3">
-              <label htmlFor="password_field" className="form-label">
-                Password
-              </label>
+            <div className="tz-auth-field">
+              <label htmlFor="password_field">Password</label>
               <input
                 type="password"
                 id="password_field"
-                className="form-control"
                 name="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter password"
+                autoComplete="current-password"
               />
             </div>
 
-            <a href="/password/forgot" className="float-end mb-4">
-              Forgot Password?
-            </a>
+            <div className="tz-auth-meta">
+              <a href="/password/forgot">Forgot password?</a>
+            </div>
 
-            <button
-              id="login_button"
-              type="submit"
-              className="btn btn-gradient w-100 py-2"
-              disabled={isLoading}
-            >
-              {isLoading ? "Authenticating..." : "LOGIN"}
+            <button id="login_button" type="submit" className="tz-auth-submit" disabled={isLoading}>
+              {isLoading ? "Authenticating..." : "Login"}
             </button>
 
-            <div className="my-3">
-              <a href="/register" className="float-end">
-                New User?
-              </a>
-            </div>
+            <p className="tz-auth-switch">
+              New to Toolzite? <a href="/register">Create account</a>
+            </p>
           </form>
-          <style>{`
-            .form-dark .form-label, .form-dark h2 { color: #eaeaea; }
-            .form-dark .form-control {
-              background-color: #f1f3f5; /* light gray */
-              color: #111;
-              border: 1px solid rgba(255,255,255,0.15);
-            }
-            .form-dark .form-control:focus {
-              outline: none;
-              box-shadow: none;
-            }
-            .form-dark .form-control::placeholder { color: #cfcfcf; }
-            .btn-gradient {
-              background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-              color: #111;
-              border: none;
-              transition: transform .15s ease, box-shadow .15s ease, filter .2s;
-            }
-            .btn-gradient:hover {
-              filter: brightness(1.05);
-              box-shadow: 0 8px 24px rgba(0,0,0,0.35);
-              color: #111;
-            }
-            .btn-gradient:focus, .btn-gradient:active { outline: none; box-shadow: none; }
-          `}</style>
         </div>
       </div>
     </>

@@ -1,9 +1,8 @@
-import React from "react";
-import { useGetMeQuery } from "../../redux/api/userApi";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useLazyLogoutQuery } from "../../redux/api/authApi";
-import Button from "./LoginButton";
+import { useGetMeQuery } from "../../redux/api/userApi";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -11,76 +10,91 @@ const Header = () => {
   const [logout] = useLazyLogoutQuery();
   const { user } = useSelector((state) => state.auth);
   const bookmarksCount = user?.bookmarks?.length || 0;
+  const [scrolled, setScrolled] = useState(false);
+  const resourceLinks = [
+    { name: "AI Jobs", href: "/ai-jobs" },
+    { name: "AI Newsletters", href: "/ai-newsletters" },
+    { name: "AI News", href: "/ai-news" },
+    { name: "AI Research Papers", href: "/ai-papers" },
+    { name: "AI Blogs", href: "/ai-blogs" },
+  ];
 
   const logoutHandler = () => {
     logout();
     navigate(0);
   };
 
-  // Removed client-side navigation for full reload via anchor links
+  const navLinkClass = ({ isActive }) =>
+    `nav-link tz-nav-link${isActive ? " tz-nav-link-active" : ""}`;
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav
-      className="navbar navbar-expand-lg"
-      style={{
-        background: "#1c1c1c",
-        position: "sticky",
-        top: 0,
-        width: "100%",
-        opacity: 0.95,
-        zIndex: 1000,
-      }}
-    >
-      <div className="container header-container">
-        
-        <a className="navbar-brand brand-animate" href="/">
-          <span className="brand-text">ToolZite.</span>
-          <span className="brand-logo">
-            <img
-              src="/images/icon.png"
-              alt="toolZite"
-            />
-          </span>
-        </a>
+    <nav className={`navbar navbar-expand-xl tz-nav${scrolled ? " tz-nav-scrolled" : ""}`}>
+      <div className="container tz-nav-container tz-nav-shell">
+        <Link className="navbar-brand tz-brand" to="/">
+          <img src="/images/icon.png" alt="" aria-hidden="true" className="tz-brand-icon" />
+          <span className="tz-brand-text" data-text="ToolZite">ToolZite</span>
+        </Link>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            {/* Explore Dropdown */}
+        <div className="tz-nav-mobile-controls d-xl-none ms-auto">
+          <Link to="/products" className="tz-search-btn tz-search-btn-mobile" aria-label="Search tools">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" stroke="currentColor" strokeWidth="2" />
+              <path d="m20 20-3.5-3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </Link>
+          <button
+            className="navbar-toggler tz-nav-toggler d-xl-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#toolziteMobileMenu"
+            aria-controls="toolziteMobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div className="collapse navbar-collapse d-none d-xl-flex" id="toolziteNavbar">
+          <ul className="navbar-nav ms-auto align-items-xl-center tz-nav-links">
+            <li className="nav-item">
+              <NavLink to="/products" className={navLinkClass}>
+                AI Tools
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <a href="/code-tools" className="nav-link tz-nav-link">
+                Code Tools
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/pdf-tools" className="nav-link tz-nav-link">
+                PDF Tools
+              </a>
+            </li>
             <li className="nav-item dropdown">
               <button
-                className="btn dropdown-toggle text-white"
+                className="btn dropdown-toggle tz-nav-link tz-nav-btn"
                 type="button"
                 id="exploreDropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Explore
+                Resources
               </button>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="exploreDropdown"
-                style={{ backgroundColor: "#4a4a4a" }}
-              >
-                {[
-                  { name: "AI Jobs", href: "/ai-jobs" },
-                  { name: "AI Newsletters", href: "/ai-newsletters" },
-                  { name: "AI News", href: "/ai-news" },
-                  { name: "AI Research Papers", href: "/ai-papers" },
-                  { name: "AI Blogs", href: "/ai-blogs" },
-                ].map((item, index) => (
+              <ul className="dropdown-menu tz-dropdown" aria-labelledby="exploreDropdown">
+                {resourceLinks.map((item, index) => (
                   <li key={index}>
-                    <a href={item.href} className="dropdown-item">
+                    <a href={item.href} className="dropdown-item tz-dropdown-item">
                       {item.name}
                     </a>
                   </li>
@@ -88,53 +102,27 @@ const Header = () => {
               </ul>
             </li>
 
-
-            {/* All Products */}
             <li className="nav-item">
-              <a href="/products" className="nav-link nav-btn">
-                All Tools
-              </a>
+              <NavLink to="/allcategory" className={navLinkClass}>All Categories</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to={user ? "/me/bookmarks" : "/login"} className={navLinkClass}>
+                Bookmarks {user && bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
+              </NavLink>
+            </li>
+            <li className="nav-item d-none d-xl-flex">
+              <Link to="/products" className="tz-search-btn" aria-label="Search tools">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" stroke="currentColor" strokeWidth="2" />
+                  <path d="m20 20-3.5-3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </Link>
             </li>
 
-            {/* All Categories */}
-            <li className="nav-item">
-              <a href="/allcategory" className="nav-link nav-btn">
-                All Categories
-              </a>
-            </li>
-
-
-            {/* News Hubs */}
-            <li className="nav-item">
-              <a href="/ai-news" className="nav-link nav-btn">AI News</a>
-            </li>
-            <li className="nav-item">
-              <a href="/ai-newsletters" className="nav-link nav-btn">AI Newsletters</a>
-            </li>
-            <li className="nav-item">
-              <a href="/ai-papers" className="nav-link nav-btn">AI Papers</a>
-            </li>
-            <li className="nav-item">
-              <a href="/ai-jobs" className="nav-link nav-btn">AI Jobs</a>
-            </li>
-            <li className="nav-item">
-              <a href="/ai-blogs" className="nav-link nav-btn">AI Blogs</a>
-            </li>
-            
-
-              {/* My Bookmarks */}
-            <li className="nav-item">
-              <a href={user ? "/me/bookmarks" : "/login"} className="nav-link nav-btn">
-                My Bookmarks {user && bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
-              </a>
-            </li>
-
-
-            {/* User Section */}
             {user ? (
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown tz-user-menu-wrap">
                 <button
-                  className="btn dropdown-toggle text-white"
+                  className="btn dropdown-toggle tz-user-btn"
                   type="button"
                   id="userDropdown"
                   data-bs-toggle="dropdown"
@@ -143,38 +131,31 @@ const Header = () => {
                   <img
                     src={(user?.avatar?.url || "/images/default_avatar.jpg").replace('http://','https://')}
                     alt="User Avatar"
-                    className="rounded-circle me-2"
-                    style={{ width: "30px", height: "30px" }}
+                    className="rounded-circle me-2 tz-user-avatar"
                   />
-                  {user?.name}
+                  <span className="tz-user-name">{user?.name}</span>
                 </button>
-                <ul
-                  className="dropdown-menu"
-                  aria-labelledby="userDropdown"
-                  style={{ backgroundColor: "#4a4a4a" }}
-                >
-                  {/* Show admin links only for admin */}
+                <ul className="dropdown-menu tz-dropdown" aria-labelledby="userDropdown">
                   {user?.role === 'admin' && (
                     <>
                       <li>
-                        <Link className="dropdown-item" to="/me/dashboard">Dashboard</Link>
+                        <Link className="dropdown-item tz-dropdown-item" to="/me/dashboard">Dashboard</Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/me/orders">Orders</Link>
+                        <Link className="dropdown-item tz-dropdown-item" to="/me/orders">Orders</Link>
                       </li>
                     </>
                   )}
-                  {/* Always show Profile */}
                   <li>
-                    <a className="dropdown-item" href="/me/profile">Profile</a>
+                    <a className="dropdown-item tz-dropdown-item" href="/me/profile">Profile</a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/me/bookmarks">
+                    <a className="dropdown-item tz-dropdown-item" href="/me/bookmarks">
                       Bookmarks {bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
                     </a>
                   </li>
                   <li>
-                    <button className="dropdown-item text-danger" onClick={logoutHandler}>
+                    <button className="dropdown-item tz-dropdown-item tz-logout-btn" onClick={logoutHandler}>
                       Logout
                     </button>
                   </li>
@@ -182,8 +163,11 @@ const Header = () => {
               </li>
             ) : (
               !isLoading && (
-                <li className="nav-item">
-                  <Button text="Login" onClick={() => (window.location.href = "/login")} />
+                <li className="nav-item d-flex gap-2 tz-auth-actions">
+                  <Link to="/login" className="tz-login-text">Sign in</Link>
+                  <Link to="/register" className="tz-nav-auth tz-nav-auth-solid">
+                    Get Started <span className="tz-cta-arrow" aria-hidden="true">→</span>
+                  </Link>
                 </li>
               )
             )}
@@ -191,117 +175,85 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Custom CSS for Hover Effects & Active Link Fix */}
-      <style>
-        {`
-          .nav-btn {
-            color: rgba(206, 206, 206, 0.67) !important;  /* ✅ Keeps original color after click */
-            text-decoration: none;
-            transition: 0.3s ease-in-out;
-          }
+      <div
+        className="offcanvas offcanvas-start tz-offcanvas d-xl-none"
+        tabIndex="-1"
+        id="toolziteMobileMenu"
+        aria-labelledby="toolziteMobileMenuLabel"
+      >
+        <div className="offcanvas-header tz-offcanvas-header">
+          <Link className="tz-offcanvas-brand" to="/" data-bs-dismiss="offcanvas">
+            <img src="/images/icon.png" alt="" aria-hidden="true" className="tz-brand-icon" />
+            <span className="tz-brand-text" id="toolziteMobileMenuLabel">ToolZite</span>
+          </Link>
+          <button
+            type="button"
+            className="btn-close tz-offcanvas-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close menu"
+          ></button>
+        </div>
+        <div className="offcanvas-body tz-offcanvas-body">
+          <div className="tz-offcanvas-links">
+            <NavLink to="/products" className={navLinkClass} data-bs-dismiss="offcanvas">
+              AI Tools
+            </NavLink>
+            <a href="/code-tools" className="nav-link tz-nav-link">
+              Code Tools
+            </a>
+            <a href="/pdf-tools" className="nav-link tz-nav-link">
+              PDF Tools
+            </a>
+            <NavLink to="/allcategory" className={navLinkClass} data-bs-dismiss="offcanvas">
+              All Categories
+            </NavLink>
+            <NavLink
+              to={user ? "/me/bookmarks" : "/login"}
+              className={navLinkClass}
+              data-bs-dismiss="offcanvas"
+            >
+              Bookmarks {user && bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
+            </NavLink>
+          </div>
 
-          .nav-btn:hover {
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
+          <div className="tz-offcanvas-subhead">Resources</div>
+          <div className="tz-offcanvas-resource-list">
+            {resourceLinks.map((item, index) => (
+              <Link key={index} to={item.href} className="tz-offcanvas-resource" data-bs-dismiss="offcanvas">
+                {item.name}
+              </Link>
+            ))}
+          </div>
 
-          .dropdown-menu .dropdown-item {
-            color: rgba(206, 206, 206, 0.67);
-            transition: 0.3s ease-in-out;
-          }
-
-          .dropdown-menu .dropdown-item:hover {
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-color: rgba(255, 255, 255, 0.1);
-          }
-          .dropdown-menu .dropdown-item:active,
-          .dropdown-menu .dropdown-item:focus {
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-color: rgba(255,255,255,0.1) !important;
-            outline: none;
-            box-shadow: none;
-          }
-
-          .login-btn {
-            border: 2px solid rgba(206, 206, 206, 0.67);
-            color: rgba(206, 206, 206, 0.67);
-            transition: 0.3s ease-in-out;
-          }
-
-          .login-btn:hover {
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            border-color: transparent;
-          }
-
-          /* Fix for active link turning black */
-          .nav-link:focus, .nav-link:active {
-            color: rgba(206, 206, 206, 0.67) !important;
-          }
-
-          /* Fix for button hover state */
-          .nav-link.btn:hover {
-            color: rgba(206, 206, 206, 0.67) !important;
-          }
-
-          /* Constrain header width */
-          .header-container {
-            max-width: 1320px;
-          }
-
-          /* Brand layout and flowing text */
-          .brand-animate {
-            display: inline-flex;
-            align-items: center;
-            gap: 0;
-            text-decoration: none;
-          }
-          .brand-text {
-            font-size: 1.3rem;
-            font-weight: 800;
-            letter-spacing: 0.3px;
-            background: linear-gradient(
-              90deg,
-              rgba(255, 255, 255, 0.95) 30%,
-              rgba(0, 156, 62, 0.95) 45%,
-              rgba(172, 236, 32, 0.95) 75%,
-              rgba(255, 255, 255, 0.95) 100%
-            );
-            background-size: 300% 100%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: brandFlow 7s linear infinite;
-          }
-          .brand-logo {
-            display: inline-block;
-            width: 44px;
-            height: 65px;
-            line-height: 0;
-            margin-left: -9px;
-          }
-          .brand-logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-          }
-          @keyframes brandFlow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-          }
-        `}
-      </style>
+          {user ? (
+            <div className="tz-offcanvas-auth">
+              <Link to="/me/profile" className="tz-nav-auth tz-nav-auth-ghost" data-bs-dismiss="offcanvas">
+                Profile
+              </Link>
+              <button
+                type="button"
+                className="tz-nav-auth tz-nav-auth-solid tz-offcanvas-logout"
+                onClick={logoutHandler}
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            !isLoading && (
+              <div className="tz-offcanvas-auth">
+                <Link to="/login" className="tz-login-text" data-bs-dismiss="offcanvas">
+                  Sign in
+                </Link>
+                <Link to="/register" className="tz-nav-auth tz-nav-auth-solid" data-bs-dismiss="offcanvas">
+                  Get Started <span className="tz-cta-arrow" aria-hidden="true">→</span>
+                </Link>
+              </div>
+            )
+          )}
+        </div>
+      </div>
     </nav>
   );
 };
-
-
 
 export default Header;

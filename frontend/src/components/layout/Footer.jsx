@@ -1,181 +1,109 @@
 import React from "react";
-import ComingSoon from "./ComingSoon";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <div className="container-fluid p-0">
-      {/* Full-width container */}
-      <footer
-        className="text-center text-lg-start"
-        style={{ backgroundColor: "#1c1c1c", color: "rgba(206, 206, 206, 0.67)" }}
-      >
-        <div className="container p-4 pb-0">
-          <section className="">
-            <div className="row">
-              {/* Company Logo */}
-              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <a href="/" className="text-decoration-none">
-                  <img
-                    src="/images/toolzite.png"
-                    alt="ToolZite"
-                    style={{ width: "170px", height: "50px", marginLeft: "-20px" }}
-                  />
-                </a>
-                <p style={{ marginTop: "10px" }}>
-                  The Ultimate Library of AI Tools. Access the most extensive collection of AI tools available online.
-                </p>
-              </div>
-              <hr className="w-100 clearfix d-md-none" />
-
-              {/* Useful Links */}
-              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold text-white">Useful Links</h6>
-                <p>
-                  <a
-                    href="https://docs.google.com/forms/d/1YgUtr8ekr7SR4k8HhyxIfgQztW0DnRvLPw-OfhwyRaI/edit"
-                    target="_blank"
-                    className="footer-link"
-                  >
-                    Submit an AI Tool
-                  </a>
-                </p>
-                <p>
-                  <a href="/allcategory" className="footer-link">
-                    All Categories
-                  </a>
-                </p>
-                <p>
-                  <a href="/ai-papers" className="footer-link">
-                    AI Research Papers
-                  </a>
-                </p>
-                <p>
-                  <a href="/ai-news" className="footer-link">
-                    AI News
-                  </a>
-                </p>
-                <p>
-                  <a href="/ai-newsletters" className="footer-link">
-                    AI Newsletters
-                  </a>
-                </p>
-                <p>
-                  <a href="/ai-jobs" className="footer-link">
-                    AI Jobs
-                  </a>
-                </p>
-              </div>
-              <hr className="w-100 clearfix d-md-none" />
-
-              {/* Contact */}
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold text-white">Contact</h6>
-                <p>
-                  <i className="fas fa-home mr-3"></i> Noida, India
-                </p>
-                <p>
-                  <i className="fas fa-envelope mr-3"></i>{" "}
-                  <a className="footer-link" href="mailto:sandeep@toolzite.com">
-                    sandeep@toolzite.com
-                  </a>
-                </p>
-              </div>
-
-              {/* Social Links */}
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold text-white">Follow us</h6>
-                <a
-                  className="social-icon"
-                  href="https://www.linkedin.com/company/105916174/admin/dashboard/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  className="social-icon"
-                  href="https://www.instagram.com/toolzite.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a
-                  className="social-icon"
-                  href="https://www.youtube.com/@ToolZite"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-youtube"></i>
-                </a>
-                <a
-                  className="social-icon"
-                  href="https://medium.com/@toolzite"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-medium-m"></i>
-                </a>
-                <p style={{ marginTop: "12px" }}>
-                  <a
-                    className="footer-link"
-                    href="https://internshala.com/company/toolzite-1766167755/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Careers
-                  </a>
-                </p>
-              </div>
-            </div>
-          </section>
+    <footer className="tz-footer">
+      <div className="container tz-footer-grid">
+        <div className="tz-footer-brand">
+          <Link to="/" className="tz-footer-logo-link">
+            <img src="/images/icon.png" alt="" aria-hidden="true" className="tz-footer-logo-icon" />
+            <span className="tz-footer-logo-text">ToolZite</span>
+          </Link>
+          <p>
+            Every tool you need to ship faster. One ecosystem for AI discovery, code visuals, PDF workflows, and image utilities.
+          </p>
+          <div className="tz-footer-pills">
+            <a href="/code-tools">Code Tools</a>
+            <a href="/pdf-tools">PDF Tools</a>
+            <Link to="/products">AI Tools</Link>
+          </div>
         </div>
 
-        {/* Copyright Section */}
-        <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
-          &copy; 2025 Copyright:{" "}
-          <a className="footer-brand" href="https://toolzite.com/">
-            toolzite.com
-          </a>
+        <div>
+          <h6>Discover</h6>
+          <ul>
+            <li><Link to="/products">All AI Tools</Link></li>
+            <li><Link to="/allcategory">All Categories</Link></li>
+            <li><Link to="/ai-news">AI News</Link></li>
+            <li><Link to="/ai-newsletters">AI Newsletters</Link></li>
+            <li><Link to="/ai-papers">AI Research Papers</Link></li>
+            <li><Link to="/ai-jobs">AI Jobs</Link></li>
+            <li><Link to="/ai-blogs">AI Blogs</Link></li>
+          </ul>
         </div>
-      </footer>
 
-      {/* Custom Styles */}
-      <style>
-        {`
-          .footer-link {
-            color: rgba(206, 206, 206, 0.67);
-            text-decoration: none;
-            transition: 0.3s ease-in-out;
-          }
-          .footer-link:hover {
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          .footer-brand {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s ease-in-out;
-          }
-          .footer-brand:hover {
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          .social-icon {
-            font-size: 24px;
-            margin: 0 10px;
-            color: rgba(206, 206, 206, 0.67);
-            transition: 0.3s;
-          }
-          .social-icon:hover {
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-        `}
-      </style>
-    </div>
+        <div>
+          <h6>Company</h6>
+          <ul>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/1YgUtr8ekr7SR4k8HhyxIfgQztW0DnRvLPw-OfhwyRaI/edit"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Submit an AI Tool
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://internshala.com/company/toolzite-1766167755/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Careers
+              </a>
+            </li>
+            <li><a href="mailto:sandeep@toolzite.com">sandeep@toolzite.com</a></li>
+            <li><span>Noida, India</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6>Follow</h6>
+          <div className="tz-footer-socials">
+            <a
+              href="https://www.linkedin.com/company/105916174/admin/dashboard/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/toolzite.ai"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@ToolZite"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+            >
+              <i className="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://medium.com/@toolzite"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Medium"
+            >
+              <i className="fab fa-medium-m"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="tz-footer-bottom">
+        <span>&copy; {year} Toolzite. All rights reserved.</span>
+        <a href="https://toolzite.com/">toolzite.com</a>
+      </div>
+    </footer>
   );
 }

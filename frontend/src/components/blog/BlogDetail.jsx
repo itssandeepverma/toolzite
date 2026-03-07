@@ -6,6 +6,11 @@ import { useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import BlogEditor from "./BlogEditor";
 
+const pageBackground = {
+  background:
+    "radial-gradient(circle at 10% 10%, rgba(90, 206, 122, 0.18), transparent 40%), radial-gradient(circle at 95% 0%, rgba(255, 180, 78, 0.16), transparent 42%), linear-gradient(180deg, #f3f5ef 0%, #eef2ea 100%)",
+};
+
 const BlogDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -43,27 +48,27 @@ const BlogDetail = () => {
   }, [blog?.publishedAt]);
 
   if (isLoading) {
-    return <div className="text-center text-white mt-5">Loading…</div>;
+    return <div className="text-center text-dark mt-5">Loading…</div>;
   }
 
   if (!blog) {
-    return <div className="text-center text-white mt-5">Blog not found.</div>;
+    return <div className="text-center text-dark mt-5">Blog not found.</div>;
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+    <div className="min-h-screen text-dark" style={pageBackground}>
       <MetaData
         title={`${blog.title} – AI Blog`}
         description={blog.summary || "AI blog post"}
         canonical={`https://www.toolzite.com/ai-blogs/${blog.slug}`}
       />
 
-      <div className="container" style={{ marginTop: "110px", maxWidth: "960px" }}>
+      <div className="container" style={{ marginTop: "88px", maxWidth: "960px" }}>
         <div className="blog-hero-lg mb-4" style={{ backgroundImage: `url(${blog.heroImage?.url})` }} />
 
         <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-3">
-          <h1 className="text-3xl md:text-4xl fw-bold mb-0">{blog.title}</h1>
-          <button className="btn btn-outline-light btn-sm" onClick={handleUpvote}>
+          <h1 className="text-3xl md:text-4xl fw-bold mb-0 text-dark">{blog.title}</h1>
+          <button className="btn btn-outline-secondary btn-sm" onClick={handleUpvote}>
             ▲ Upvote {upvoteCount}
           </button>
           {user?.role === "admin" && (
@@ -79,12 +84,12 @@ const BlogDetail = () => {
             </button>
           )}
         </div>
-        <div className="text-gray-400 mb-3">{formattedDate}</div>
+        <div className="text-secondary mb-3">{formattedDate}</div>
 
-        <p className="lead text-gray-200">{blog.summary}</p>
+        <p className="lead text-dark">{blog.summary}</p>
 
         <div
-          className="blog-content text-gray-100"
+          className="blog-content text-dark"
           dangerouslySetInnerHTML={{ __html: blog.content }}
         />
 
@@ -110,14 +115,13 @@ const BlogDetail = () => {
           .blog-content {
             font-size: 1.05rem;
             line-height: 1.7;
+            color: #16221b;
           }
           .blog-content h2, .blog-content h3, .blog-content h4 {
             margin-top: 1.2rem;
             margin-bottom: 0.6rem;
             font-weight: 700;
-            background: linear-gradient(to right, rgb(0, 156, 62), rgb(172, 236, 32));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #111a16;
           }
           .blog-content p {
             margin-bottom: 1rem;
@@ -130,7 +134,7 @@ const BlogDetail = () => {
             margin-bottom: 0.4rem;
           }
           .blog-content strong {
-            color: #fff;
+            color: #111a16;
           }
         `}
       </style>

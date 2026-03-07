@@ -35,7 +35,7 @@ const Search = () => {
   };
 
   return (
-    <form onSubmit={submitHandler} className="position-relative">
+    <form onSubmit={submitHandler} className="position-relative tz-search-form">
       <div className="input-group search-input-group">
         <input
           type="text"
@@ -46,37 +46,15 @@ const Search = () => {
           name="keyword"
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
-          style={{
-            fontFamily: "Poppins, sans-serif",
-            fontSize: "16px",
-            fontWeight: "500",
-            transition: "all 0.3s ease-in-out",
-          }}
         />
         <button
           id="search_btn"
           className="btn search-btn"
           type="submit"
-          style={{ minWidth: "68px", padding: "0 16px", fontWeight: "600" }}
         >
           <i className="fa fa-search" aria-hidden="true"></i>
         </button>
       </div>
-
-      <style>
-        {`
-          @media (max-width: 768px) {
-            .search-input-group {
-              width: 100%;
-            }
-            .search-btn {
-              min-width: 78px;
-              padding: 0 20px;
-              font-size: 16px;
-            }
-          }
-        `}
-      </style>
     </form>
   );
 };

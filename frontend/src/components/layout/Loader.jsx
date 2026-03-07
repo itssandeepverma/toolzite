@@ -20,14 +20,17 @@ const LoaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #121212;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(90, 206, 122, 0.18), transparent 40%),
+    radial-gradient(circle at 95% 0%, rgba(255, 180, 78, 0.16), transparent 42%),
+    linear-gradient(180deg, #f3f5ef 0%, #eef2ea 100%);
 `;
 
 const LoaderBar = styled.div`
   width: 60%;
   height: 12px;
   border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(17, 34, 25, 0.08);
   overflow: hidden;
   position: relative;
 `;
@@ -42,9 +45,9 @@ const LoaderFill = styled.div`
   box-shadow: 0px 0px 20px rgba(172, 236, 32, 0.8);
 `;
 
-const Loader = () => {
+const Loader = ({ height = "100vh" }) => {
   return (
-    <LoaderContainer>
+    <LoaderContainer style={{ minHeight: height, height }}>
       <LoaderBar>
         <LoaderFill />
       </LoaderBar>

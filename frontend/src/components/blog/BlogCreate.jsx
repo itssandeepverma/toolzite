@@ -3,6 +3,11 @@ import { useCreateBlogMutation } from "../../redux/api/blogApi";
 import MetaData from "../layout/MetaData";
 import toast from "react-hot-toast";
 
+const pageBackground = {
+  background:
+    "radial-gradient(circle at 10% 10%, rgba(90, 206, 122, 0.18), transparent 40%), radial-gradient(circle at 95% 0%, rgba(255, 180, 78, 0.16), transparent 42%), linear-gradient(180deg, #f3f5ef 0%, #eef2ea 100%)",
+};
+
 const BlogCreate = () => {
   const [form, setForm] = useState({
     title: "",
@@ -50,19 +55,23 @@ const BlogCreate = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+    <div className="min-h-screen text-dark" style={pageBackground}>
       <MetaData
         title="Publish AI Blog"
         description="Create a new AI blog post"
         canonical="https://www.toolzite.com/me/blogs/new"
       />
-      <div className="container" style={{ marginTop: "120px", maxWidth: "900px" }}>
-        <h1 className="text-3xl fw-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+      <div className="container" style={{ marginTop: "92px", maxWidth: "900px" }}>
+        <h1 className="text-3xl fw-bold mb-4 text-dark">
           Publish AI Blog
         </h1>
-        <form onSubmit={onSubmit} className="bg-gray-900 p-4 rounded-3 border border-gray-700">
+        <form
+          onSubmit={onSubmit}
+          className="p-4 rounded-3 border"
+          style={{ background: "rgba(255, 255, 255, 0.88)", borderColor: "rgba(28, 60, 42, 0.12)" }}
+        >
           <div className="mb-3">
-            <label className="form-label text-gray-300">Title</label>
+            <label className="form-label text-dark">Title</label>
             <input
               type="text"
               name="title"
@@ -73,7 +82,7 @@ const BlogCreate = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label text-gray-300">Summary</label>
+            <label className="form-label text-dark">Summary</label>
             <input
               type="text"
               name="summary"
@@ -84,7 +93,7 @@ const BlogCreate = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label text-gray-300">Content</label>
+            <label className="form-label text-dark">Content</label>
             <textarea
               name="content"
               className="form-control"
@@ -95,7 +104,7 @@ const BlogCreate = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label text-gray-300">Tags (comma separated)</label>
+            <label className="form-label text-dark">Tags (comma separated)</label>
             <input
               type="text"
               name="tags"
@@ -106,7 +115,7 @@ const BlogCreate = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label text-gray-300">Hero Image URL (Cloudinary)</label>
+            <label className="form-label text-dark">Hero Image URL (Cloudinary)</label>
             <input
               type="url"
               name="heroImageUrl"
@@ -117,7 +126,7 @@ const BlogCreate = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="form-label text-gray-300">Hero Image public_id (optional)</label>
+            <label className="form-label text-dark">Hero Image public_id (optional)</label>
             <input
               type="text"
               name="heroImagePublicId"

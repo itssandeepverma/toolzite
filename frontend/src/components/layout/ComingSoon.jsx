@@ -1,10 +1,15 @@
 import React from "react";
 import { FaTools, FaClock, FaRocket } from "react-icons/fa";
 
+const pageBackground = {
+  background:
+    "radial-gradient(circle at 10% 10%, rgba(90, 206, 122, 0.18), transparent 40%), radial-gradient(circle at 95% 0%, rgba(255, 180, 78, 0.16), transparent 42%), linear-gradient(180deg, #f3f5ef 0%, #eef2ea 100%)",
+};
+
 const ComingSoon = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
-      <div className="container mx-auto px-4 py-8" style={{ marginTop: "110px" }}>
+    <div className="min-h-screen text-dark" style={pageBackground}>
+      <div className="container mx-auto px-4 py-8" style={{ marginTop: "88px" }}>
         <div className="text-center">
           {/* Icon */}
           <div className="mb-8">
@@ -19,13 +24,13 @@ const ComingSoon = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+          <p className="text-xl md:text-2xl text-secondary mb-8">
             We're working hard to bring you something amazing
           </p>
 
           {/* Description */}
           <div className="max-w-2xl mx-auto mb-12">
-            <p className="text-gray-400 text-lg leading-relaxed">
+            <p className="text-secondary text-lg leading-relaxed">
               Our team is currently developing this feature with cutting-edge technology. 
               Stay tuned for updates and be among the first to experience what we're building.
             </p>
@@ -33,20 +38,20 @@ const ComingSoon = () => {
 
           {/* Features Preview */}
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
-            <div className="text-center p-6 rounded-lg bg-gray-800 bg-opacity-50">
+            <div className="text-center p-6 rounded-lg" style={{ background: "rgba(255, 255, 255, 0.72)" }}>
               <FaRocket className="text-green-400 text-3xl mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Innovation</h3>
-              <p className="text-gray-400">Cutting-edge features powered by the latest AI technology</p>
+              <h3 className="text-xl font-semibold mb-2 text-dark">Innovation</h3>
+              <p className="text-secondary">Cutting-edge features powered by the latest AI technology</p>
             </div>
-            <div className="text-center p-6 rounded-lg bg-gray-800 bg-opacity-50">
+            <div className="text-center p-6 rounded-lg" style={{ background: "rgba(255, 255, 255, 0.72)" }}>
               <FaClock className="text-blue-400 text-3xl mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Progress</h3>
-              <p className="text-gray-400">We're making steady progress towards launch</p>
+              <h3 className="text-xl font-semibold mb-2 text-dark">Progress</h3>
+              <p className="text-secondary">We're making steady progress towards launch</p>
             </div>
-            <div className="text-center p-6 rounded-lg bg-gray-800 bg-opacity-50">
+            <div className="text-center p-6 rounded-lg" style={{ background: "rgba(255, 255, 255, 0.72)" }}>
               <FaTools className="text-purple-400 text-3xl mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Quality</h3>
-              <p className="text-gray-400">Ensuring the highest quality before release</p>
+              <h3 className="text-xl font-semibold mb-2 text-dark">Quality</h3>
+              <p className="text-secondary">Ensuring the highest quality before release</p>
             </div>
           </div>
 
@@ -61,7 +66,7 @@ const ComingSoon = () => {
           </div>
 
           {/* Additional Info */}
-          <div className="text-gray-500 text-sm">
+          <div className="text-secondary text-sm">
             <p>Have questions? Contact us at support@toolzite.com</p>
           </div>
         </div>
