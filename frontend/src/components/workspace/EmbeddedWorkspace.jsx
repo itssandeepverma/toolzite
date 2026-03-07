@@ -9,18 +9,18 @@ const WORKSPACE_CONFIG = {
     subtitle: "Algorithm walkthroughs, readable code, and visual interview prep inside the ToolZite shell.",
     badge: "TOOLZITE WORKSPACE",
     section: "Code Tools",
-    origin: "http://localhost:8083/",
+    origin: "https://code.toolzite.com",
     defaultChildPath: "/algorithms/two-sum",
     internalBasePath: "/code-tools",
     childBasePath: "/algorithms/",
-    minFrameHeight: 520,
+    minFrameHeight: 680,
   },
   pdf: {
     title: "ToolZite PDF Tools",
     subtitle: "Document, image, and browser-side utility workflows embedded directly into ToolZite.",
     badge: "TOOLZITE WORKSPACE",
     section: "PDF Tools",
-    origin: "http://localhost:8082/",
+    origin: "https://pdf.toolzite.com",
     defaultChildPath: "/tools/compress",
     internalBasePath: "/pdf-tools",
     childBasePath: "/tools/",
@@ -112,7 +112,6 @@ const EmbeddedWorkspace = ({ kind }) => {
               title={config.title}
               src={iframeSrc}
               className="tz-embed-frame"
-              scrolling="no"
               style={{ height: `${frameHeight}px`, opacity: isLoaded ? 1 : 0 }}
               onLoad={() => setIsLoaded(true)}
             />
