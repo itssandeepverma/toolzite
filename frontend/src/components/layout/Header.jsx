@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLazyLogoutQuery } from "../../redux/api/authApi";
 import { useGetMeQuery } from "../../redux/api/userApi";
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { isLoading } = useGetMeQuery();
   const [logout] = useLazyLogoutQuery();
   const { user } = useSelector((state) => state.auth);
@@ -24,8 +25,17 @@ const Header = () => {
     navigate(0);
   };
 
-  const navLinkClass = ({ isActive }) =>
-    `nav-link tz-nav-link${isActive ? " tz-nav-link-active" : ""}`;
+  const hardNavigate = (event, path) => {
+    event.preventDefault();
+    window.location.assign(path);
+  };
+
+  const navLinkClass = (matcher) =>
+    `nav-link tz-nav-link${
+      (typeof matcher === "function" ? matcher(location.pathname) : location.pathname === matcher)
+        ? " tz-nav-link-active"
+        : ""
+    }`;
 
   useEffect(() => {
     const onScroll = () => {
@@ -39,18 +49,23 @@ const Header = () => {
   return (
     <nav className={`navbar navbar-expand-xl tz-nav${scrolled ? " tz-nav-scrolled" : ""}`}>
       <div className="container tz-nav-container tz-nav-shell">
-        <Link className="navbar-brand tz-brand" to="/">
+        <a className="navbar-brand tz-brand" href="/">
           <img src="/images/icon.png" alt="" aria-hidden="true" className="tz-brand-icon" />
           <span className="tz-brand-text" data-text="ToolZite">ToolZite</span>
-        </Link>
+        </a>
 
         <div className="tz-nav-mobile-controls d-xl-none ms-auto">
-          <Link to="/products" className="tz-search-btn tz-search-btn-mobile" aria-label="Search tools">
+          <a
+            href="/products"
+            className="tz-search-btn tz-search-btn-mobile"
+            aria-label="Search tools"
+            onClick={(event) => hardNavigate(event, "/products")}
+          >
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" stroke="currentColor" strokeWidth="2" />
               <path d="m20 20-3.5-3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
-          </Link>
+          </a>
           <button
             className="navbar-toggler tz-nav-toggler d-xl-none"
             type="button"
@@ -67,17 +82,17 @@ const Header = () => {
         <div className="collapse navbar-collapse d-none d-xl-flex" id="toolziteNavbar">
           <ul className="navbar-nav ms-auto align-items-xl-center tz-nav-links">
             <li className="nav-item">
-              <NavLink to="/products" className={navLinkClass}>
+              <a href="/products" className={navLinkClass("/products")}>
                 AI Tools
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <a href="/code-tools" className="nav-link tz-nav-link">
+              <a href="/code-tools" className={navLinkClass((path) => path.startsWith("/code-tools"))}>
                 Code Tools
               </a>
             </li>
             <li className="nav-item">
-              <a href="/pdf-tools" className="nav-link tz-nav-link">
+              <a href="/pdf-tools" className={navLinkClass((path) => path.startsWith("/pdf-tools"))}>
                 PDF Tools
               </a>
             </li>
@@ -94,29 +109,32 @@ const Header = () => {
               <ul className="dropdown-menu tz-dropdown" aria-labelledby="exploreDropdown">
                 {resourceLinks.map((item, index) => (
                   <li key={index}>
-                    <a href={item.href} className="dropdown-item tz-dropdown-item">
+                    <Link to={item.href} className="dropdown-item tz-dropdown-item">
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </li>
 
             <li className="nav-item">
-              <NavLink to="/allcategory" className={navLinkClass}>All Categories</NavLink>
+              <a href="/allcategory" className={navLinkClass("/allcategory")}>All Categories</a>
             </li>
             <li className="nav-item">
-              <NavLink to={user ? "/me/bookmarks" : "/login"} className={navLinkClass}>
+              <a
+                href={user ? "/me/bookmarks" : "/login"}
+                className={navLinkClass((path) => (user ? path.startsWith("/me/bookmarks") : path === "/login"))}
+              >
                 Bookmarks {user && bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item d-none d-xl-flex">
-              <Link to="/products" className="tz-search-btn" aria-label="Search tools">
+              <a href="/products" className="tz-search-btn" aria-label="Search tools">
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" stroke="currentColor" strokeWidth="2" />
                   <path d="m20 20-3.5-3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 </svg>
-              </Link>
+              </a>
             </li>
 
             {user ? (
@@ -139,10 +157,10 @@ const Header = () => {
                   {user?.role === 'admin' && (
                     <>
                       <li>
-                        <Link className="dropdown-item tz-dropdown-item" to="/me/dashboard">Dashboard</Link>
+                        <a className="dropdown-item tz-dropdown-item" href="/me/dashboard">Dashboard</a>
                       </li>
                       <li>
-                        <Link className="dropdown-item tz-dropdown-item" to="/me/orders">Orders</Link>
+                        <a className="dropdown-item tz-dropdown-item" href="/me/orders">Orders</a>
                       </li>
                     </>
                   )}
@@ -164,10 +182,10 @@ const Header = () => {
             ) : (
               !isLoading && (
                 <li className="nav-item d-flex gap-2 tz-auth-actions">
-                  <Link to="/login" className="tz-login-text">Sign in</Link>
-                  <Link to="/register" className="tz-nav-auth tz-nav-auth-solid">
+                  <a href="/login" className="tz-login-text">Sign in</a>
+                  <a href="/register" className="tz-nav-auth tz-nav-auth-solid">
                     Get Started <span className="tz-cta-arrow" aria-hidden="true">→</span>
-                  </Link>
+                  </a>
                 </li>
               )
             )}
@@ -176,16 +194,16 @@ const Header = () => {
       </div>
 
       <div
-        className="offcanvas offcanvas-start tz-offcanvas d-xl-none"
+        className="offcanvas offcanvas-end tz-offcanvas d-xl-none"
         tabIndex="-1"
         id="toolziteMobileMenu"
         aria-labelledby="toolziteMobileMenuLabel"
       >
         <div className="offcanvas-header tz-offcanvas-header">
-          <Link className="tz-offcanvas-brand" to="/" data-bs-dismiss="offcanvas">
+          <a className="tz-offcanvas-brand" href="/" data-bs-dismiss="offcanvas">
             <img src="/images/icon.png" alt="" aria-hidden="true" className="tz-brand-icon" />
             <span className="tz-brand-text" id="toolziteMobileMenuLabel">ToolZite</span>
-          </Link>
+          </a>
           <button
             type="button"
             className="btn-close tz-offcanvas-close"
@@ -195,41 +213,73 @@ const Header = () => {
         </div>
         <div className="offcanvas-body tz-offcanvas-body">
           <div className="tz-offcanvas-links">
-            <NavLink to="/products" className={navLinkClass} data-bs-dismiss="offcanvas">
+            <a
+              href="/products"
+              className={navLinkClass("/products")}
+              data-bs-dismiss="offcanvas"
+              onClick={(event) => hardNavigate(event, "/products")}
+            >
               AI Tools
-            </NavLink>
-            <a href="/code-tools" className="nav-link tz-nav-link">
+            </a>
+            <a
+              href="/code-tools"
+              className={navLinkClass((path) => path.startsWith("/code-tools"))}
+              data-bs-dismiss="offcanvas"
+              onClick={(event) => hardNavigate(event, "/code-tools")}
+            >
               Code Tools
             </a>
-            <a href="/pdf-tools" className="nav-link tz-nav-link">
+            <a
+              href="/pdf-tools"
+              className={navLinkClass((path) => path.startsWith("/pdf-tools"))}
+              data-bs-dismiss="offcanvas"
+              onClick={(event) => hardNavigate(event, "/pdf-tools")}
+            >
               PDF Tools
             </a>
-            <NavLink to="/allcategory" className={navLinkClass} data-bs-dismiss="offcanvas">
-              All Categories
-            </NavLink>
-            <NavLink
-              to={user ? "/me/bookmarks" : "/login"}
-              className={navLinkClass}
+            <a
+              href="/allcategory"
+              className={navLinkClass("/allcategory")}
               data-bs-dismiss="offcanvas"
+              onClick={(event) => hardNavigate(event, "/allcategory")}
+            >
+              All Categories
+            </a>
+            <a
+              href={user ? "/me/bookmarks" : "/login"}
+              className={navLinkClass((path) => (user ? path.startsWith("/me/bookmarks") : path === "/login"))}
+              data-bs-dismiss="offcanvas"
+              onClick={(event) => hardNavigate(event, user ? "/me/bookmarks" : "/login")}
             >
               Bookmarks {user && bookmarksCount > 0 ? `(${bookmarksCount})` : ""}
-            </NavLink>
+            </a>
           </div>
 
           <div className="tz-offcanvas-subhead">Resources</div>
           <div className="tz-offcanvas-resource-list">
             {resourceLinks.map((item, index) => (
-              <Link key={index} to={item.href} className="tz-offcanvas-resource" data-bs-dismiss="offcanvas">
+              <a
+                key={index}
+                href={item.href}
+                className="tz-offcanvas-resource"
+                data-bs-dismiss="offcanvas"
+                onClick={(event) => hardNavigate(event, item.href)}
+              >
                 {item.name}
-              </Link>
+              </a>
             ))}
           </div>
 
           {user ? (
             <div className="tz-offcanvas-auth">
-              <Link to="/me/profile" className="tz-nav-auth tz-nav-auth-ghost" data-bs-dismiss="offcanvas">
+              <a
+                href="/me/profile"
+                className="tz-nav-auth tz-nav-auth-ghost"
+                data-bs-dismiss="offcanvas"
+                onClick={(event) => hardNavigate(event, "/me/profile")}
+              >
                 Profile
-              </Link>
+              </a>
               <button
                 type="button"
                 className="tz-nav-auth tz-nav-auth-solid tz-offcanvas-logout"
@@ -241,12 +291,22 @@ const Header = () => {
           ) : (
             !isLoading && (
               <div className="tz-offcanvas-auth">
-                <Link to="/login" className="tz-login-text" data-bs-dismiss="offcanvas">
+                <a
+                  href="/login"
+                  className="tz-login-text"
+                  data-bs-dismiss="offcanvas"
+                  onClick={(event) => hardNavigate(event, "/login")}
+                >
                   Sign in
-                </Link>
-                <Link to="/register" className="tz-nav-auth tz-nav-auth-solid" data-bs-dismiss="offcanvas">
+                </a>
+                <a
+                  href="/register"
+                  className="tz-nav-auth tz-nav-auth-solid"
+                  data-bs-dismiss="offcanvas"
+                  onClick={(event) => hardNavigate(event, "/register")}
+                >
                   Get Started <span className="tz-cta-arrow" aria-hidden="true">→</span>
-                </Link>
+                </a>
               </div>
             )
           )}
