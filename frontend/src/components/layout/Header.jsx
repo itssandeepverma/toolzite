@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLazyLogoutQuery } from "../../redux/api/authApi";
 import { useGetMeQuery } from "../../redux/api/userApi";
+import { APP_PATHS } from "../../constants/routes";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -13,11 +14,11 @@ const Header = () => {
   const bookmarksCount = user?.bookmarks?.length || 0;
   const [scrolled, setScrolled] = useState(false);
   const resourceLinks = [
-    { name: "AI Jobs", href: "/ai-jobs" },
-    { name: "AI Newsletters", href: "/ai-newsletters" },
-    { name: "AI News", href: "/ai-news" },
-    { name: "AI Research Papers", href: "/ai-papers" },
-    { name: "AI Blogs", href: "/ai-blogs" },
+    { name: "AI Jobs", href: APP_PATHS.aiJobs },
+    { name: "AI Newsletters", href: APP_PATHS.aiNewsletters },
+    { name: "AI News", href: APP_PATHS.aiNews },
+    { name: "AI Research Papers", href: APP_PATHS.aiPapers },
+    { name: "AI Blogs", href: APP_PATHS.aiBlogs },
   ];
 
   const logoutHandler = () => {
@@ -56,10 +57,10 @@ const Header = () => {
 
         <div className="tz-nav-mobile-controls d-xl-none ms-auto">
           <a
-            href="/products"
+            href={APP_PATHS.aiTools}
             className="tz-search-btn tz-search-btn-mobile"
             aria-label="Search tools"
-            onClick={(event) => hardNavigate(event, "/products")}
+            onClick={(event) => hardNavigate(event, APP_PATHS.aiTools)}
           >
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" stroke="currentColor" strokeWidth="2" />
@@ -82,18 +83,18 @@ const Header = () => {
         <div className="collapse navbar-collapse d-none d-xl-flex" id="toolziteNavbar">
           <ul className="navbar-nav ms-auto align-items-xl-center tz-nav-links">
             <li className="nav-item">
-              <a href="/products" className={navLinkClass("/products")}>
+              <a href={APP_PATHS.pdfTools} className={navLinkClass((path) => path.startsWith(APP_PATHS.pdfTools))}>
+                PDF Tools
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href={APP_PATHS.aiTools} className={navLinkClass(APP_PATHS.aiTools)}>
                 AI Tools
               </a>
             </li>
             <li className="nav-item">
-              <a href="/code-tools" className={navLinkClass((path) => path.startsWith("/code-tools"))}>
+              <a href={APP_PATHS.codeTools} className={navLinkClass((path) => path.startsWith(APP_PATHS.codeTools))}>
                 Code Tools
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/pdf-tools" className={navLinkClass((path) => path.startsWith("/pdf-tools"))}>
-                PDF Tools
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -118,7 +119,7 @@ const Header = () => {
             </li>
 
             <li className="nav-item">
-              <a href="/allcategory" className={navLinkClass("/allcategory")}>All Categories</a>
+              <a href={APP_PATHS.allCategories} className={navLinkClass(APP_PATHS.allCategories)}>All Categories</a>
             </li>
             <li className="nav-item">
               <a
@@ -129,7 +130,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item d-none d-xl-flex">
-              <a href="/products" className="tz-search-btn" aria-label="Search tools">
+              <a href={APP_PATHS.aiTools} className="tz-search-btn" aria-label="Search tools">
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" stroke="currentColor" strokeWidth="2" />
                   <path d="m20 20-3.5-3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -214,34 +215,34 @@ const Header = () => {
         <div className="offcanvas-body tz-offcanvas-body">
           <div className="tz-offcanvas-links">
             <a
-              href="/products"
-              className={navLinkClass("/products")}
+              href={APP_PATHS.pdfTools}
+              className={navLinkClass((path) => path.startsWith(APP_PATHS.pdfTools))}
               data-bs-dismiss="offcanvas"
-              onClick={(event) => hardNavigate(event, "/products")}
-            >
-              AI Tools
-            </a>
-            <a
-              href="/code-tools"
-              className={navLinkClass((path) => path.startsWith("/code-tools"))}
-              data-bs-dismiss="offcanvas"
-              onClick={(event) => hardNavigate(event, "/code-tools")}
-            >
-              Code Tools
-            </a>
-            <a
-              href="/pdf-tools"
-              className={navLinkClass((path) => path.startsWith("/pdf-tools"))}
-              data-bs-dismiss="offcanvas"
-              onClick={(event) => hardNavigate(event, "/pdf-tools")}
+              onClick={(event) => hardNavigate(event, APP_PATHS.pdfTools)}
             >
               PDF Tools
             </a>
             <a
-              href="/allcategory"
-              className={navLinkClass("/allcategory")}
+              href={APP_PATHS.aiTools}
+              className={navLinkClass(APP_PATHS.aiTools)}
               data-bs-dismiss="offcanvas"
-              onClick={(event) => hardNavigate(event, "/allcategory")}
+              onClick={(event) => hardNavigate(event, APP_PATHS.aiTools)}
+            >
+              AI Tools
+            </a>
+            <a
+              href={APP_PATHS.codeTools}
+              className={navLinkClass((path) => path.startsWith(APP_PATHS.codeTools))}
+              data-bs-dismiss="offcanvas"
+              onClick={(event) => hardNavigate(event, APP_PATHS.codeTools)}
+            >
+              Code Tools
+            </a>
+            <a
+              href={APP_PATHS.allCategories}
+              className={navLinkClass(APP_PATHS.allCategories)}
+              data-bs-dismiss="offcanvas"
+              onClick={(event) => hardNavigate(event, APP_PATHS.allCategories)}
             >
               All Categories
             </a>

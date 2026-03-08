@@ -35,7 +35,8 @@ const stripTags = (html) => {
 };
 
 const parseFeed = (xmlText, fallbackSource) => {
-  const $ = load(xmlText, { xmlMode: true, decodeEntities: true });
+  const $ = load(xmlText, { xmlMode: true, decodeEntities: 
+    true });
   const sourceTitle =
     $("channel > title").first().text().trim() ||
     $("feed > title").first().text().trim() ||

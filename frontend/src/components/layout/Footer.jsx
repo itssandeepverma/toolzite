@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { APP_PATHS } from "../../constants/routes";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,28 +17,30 @@ export default function Footer() {
             Every tool you need to ship faster. One ecosystem for AI discovery, code visuals, PDF workflows, and image utilities.
           </p>
           <div className="tz-footer-pills">
-            <a href="/code-tools">Code Tools</a>
-            <a href="/pdf-tools">PDF Tools</a>
-            <Link to="/products">AI Tools</Link>
+            <a href={APP_PATHS.pdfTools}>PDF Tools</a>
+            <Link to={APP_PATHS.aiTools}>AI Tools</Link>
+            <a href={APP_PATHS.codeTools}>Code Tools</a>
           </div>
         </div>
 
         <div>
           <h6>Discover</h6>
           <ul>
-            <li><Link to="/products">All AI Tools</Link></li>
-            <li><Link to="/allcategory">All Categories</Link></li>
-            <li><Link to="/ai-news">AI News</Link></li>
-            <li><Link to="/ai-newsletters">AI Newsletters</Link></li>
-            <li><Link to="/ai-papers">AI Research Papers</Link></li>
-            <li><Link to="/ai-jobs">AI Jobs</Link></li>
-            <li><Link to="/ai-blogs">AI Blogs</Link></li>
+            <li><Link to={APP_PATHS.aiTools}>All AI Tools</Link></li>
+            <li><Link to={APP_PATHS.allCategories}>All Categories</Link></li>
+            <li><Link to={APP_PATHS.aiNews}>AI News</Link></li>
+            <li><Link to={APP_PATHS.aiNewsletters}>AI Newsletters</Link></li>
+            <li><Link to={APP_PATHS.aiPapers}>AI Research Papers</Link></li>
+            <li><Link to={APP_PATHS.aiJobs}>AI Jobs</Link></li>
+            <li><Link to={APP_PATHS.aiBlogs}>AI Blogs</Link></li>
           </ul>
         </div>
 
         <div>
           <h6>Company</h6>
           <ul>
+            <li><Link to={APP_PATHS.about}>About</Link></li>
+            <li><Link to={APP_PATHS.terms}>Terms and Conditions</Link></li>
             <li>
               <a
                 href="https://docs.google.com/forms/d/1YgUtr8ekr7SR4k8HhyxIfgQztW0DnRvLPw-OfhwyRaI/edit"
@@ -102,7 +105,11 @@ export default function Footer() {
 
       <div className="tz-footer-bottom">
         <span>&copy; {year} Toolzite. All rights reserved.</span>
-        <a href="https://toolzite.com/">toolzite.com</a>
+        <div className="tz-footer-bottom-links">
+          <Link to={APP_PATHS.about}>About</Link>
+          <Link to={APP_PATHS.terms}>Terms</Link>
+          <a href="https://toolzite.com/">toolzite.com</a>
+        </div>
       </div>
     </footer>
   );

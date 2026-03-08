@@ -9,10 +9,10 @@ const HeroSection = () => {
         </h1>
         <div className="hero-title-image">
           <img src="/images/icon.png" alt="AI" className="hero-icon" />
-          <span className="hero-tools-text">Tools</span>
+          <span className="hero-tools-text">AI, PDF, Code and Image Tools</span>
         </div>
         <p className="hero-tagline">
-          Access the most extensive collection of AI tools available online.
+          Access every tool you need to ship faster, work smarter, and get tasks done easily.
         </p>
       </div>
     </div>

@@ -1,41 +1,45 @@
 import React, { useEffect, useMemo, useState } from "react";
 import MetaData from "./layout/MetaData";
 import { PRODUCT_CATEGORIES } from "../constants/constants";
+import {
+  APP_PATHS,
+  getWorkspaceToolPath,
+} from "../constants/routes";
 
 const AI_RESOURCE_CARDS = [
   {
     title: "AI News",
     subtitle: "Daily updates",
     description: "Latest AI launches, policy updates, and ecosystem trends.",
-    href: "/ai-news",
+    href: APP_PATHS.aiNews,
     badge: "News",
   },
   {
     title: "AI Blogs",
     subtitle: "Deep dives",
     description: "Product stories, experiments, and builder insights.",
-    href: "/ai-blogs",
+    href: APP_PATHS.aiBlogs,
     badge: "Blogs",
   },
   {
     title: "AI Newsletters",
     subtitle: "Curated picks",
     description: "Best weekly AI reads in one place.",
-    href: "/ai-newsletters",
+    href: APP_PATHS.aiNewsletters,
     badge: "Newsletter",
   },
   {
     title: "AI Papers",
     subtitle: "Research first",
     description: "Track important papers and practical takeaways.",
-    href: "/ai-papers",
+    href: APP_PATHS.aiPapers,
     badge: "Papers",
   },
   {
     title: "AI Jobs",
     subtitle: "Career radar",
     description: "Roles across AI engineering, product, and research.",
-    href: "/ai-jobs",
+    href: APP_PATHS.aiJobs,
     badge: "Jobs",
   },
 ];
@@ -64,8 +68,8 @@ const AI_GROUPS = {
   Lifestyle: ["Dating & Relationships"],
 };
 
-const getCodeToolUrl = (id) => `/code-tools/algorithms/${id}`;
-const getPdfToolUrl = (id) => `/pdf-tools/tools/${id}`;
+const getCodeToolUrl = (id) => getWorkspaceToolPath("code", id);
+const getPdfToolUrl = (id) => getWorkspaceToolPath("pdf", id);
 
 const CODE_ALGORITHM_CARDS = [
   { id: "bubble-sort", title: "Bubble Sort", category: "Arrays", description: "Simple adjacent swap sorting." },
@@ -200,9 +204,9 @@ const IMAGE_TOOL_CARDS = [
 ];
 
 const TOOL_SECTIONS = [
+  { id: "pdf", label: "PDF TOOLS", accent: "tz-accent-pdf" },
   { id: "ai", label: "AI TOOLS", accent: "tz-accent-ai" },
   { id: "code", label: "CODE TOOLS", accent: "tz-accent-code" },
-  { id: "pdf", label: "PDF TOOLS", accent: "tz-accent-pdf" },
   { id: "image", label: "IMAGE TOOLS", accent: "tz-accent-image" },
 ];
 
@@ -223,7 +227,7 @@ const formatAiDescription = (category) => {
 };
 
 const Home = () => {
-  const [activeSection, setActiveSection] = useState("ai");
+  const [activeSection, setActiveSection] = useState("pdf");
   const [aiFilter, setAiFilter] = useState("All");
   const [codeFilter, setCodeFilter] = useState("All");
   const [pdfFilter, setPdfFilter] = useState("All");
@@ -244,7 +248,7 @@ const Home = () => {
     const activeCategories = AI_GROUPS[aiFilter] || PRODUCT_CATEGORIES;
     return activeCategories.map((category) => ({
       title: category,
-      href: `/products?category=${encodeURIComponent(category)}`,
+      href: `${APP_PATHS.aiTools}?category=${encodeURIComponent(category)}`,
       description: formatAiDescription(category),
     }));
   }, [aiFilter]);
@@ -288,8 +292,8 @@ const Home = () => {
   return (
     <>
       <MetaData
-        title="Toolzite | AI, Code, PDF & Image Tools"
-        description="Toolzite is your unified workspace for AI tools, code visualization, PDF utilities, and image tools."
+        title="Toolzite | AI, PDF, Code & Image Tools"
+        description="Toolzite is your unified workspace for AI tools, PDF utilities, code visualization, and image tools."
         canonical="https://www.toolzite.com/"
         image="https://www.toolzite.com/images/og-default.jpg"
         keywords="toolzite, ai tools, code tools, pdf tools, image tools"
@@ -300,10 +304,10 @@ const Home = () => {
           <div className="tz-home-hero-copy">
             <p className="tz-home-badge">TOOLZITE PLATFORM</p>
             <h1>
-              The Ultimate Library of <span>AI, Code, PDF and Image Tools</span>
+              The Ultimate Library of <span>AI, PDF, Code and Image Tools</span>
             </h1>
             <p className="tz-home-subtitle">
-              Access every tool you need to ship faster, study smarter, and finish work without switching ecosystems.
+              Access every tool you need to ship faster, work smarter, and get tasks done easily without switching ecosystems.
             </p>
           </div>
         </section>

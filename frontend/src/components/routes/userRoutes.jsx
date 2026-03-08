@@ -31,18 +31,24 @@ import BlogList from "../blog/BlogList";
 import BlogDetail from "../blog/BlogDetail";
 import BlogCreate from "../blog/BlogCreate";
 import EmbeddedWorkspace from "../workspace/EmbeddedWorkspace";
+import { APP_PATHS } from "../../constants/routes";
+import About from "../pages/About";
+import TermsAndConditions from "../pages/TermsAndConditions";
 
 const userRoutes = () => {
   return (
     <>
-      <Route path="/" element={<Home />} />
+      <Route path={APP_PATHS.home} element={<Home />} />
+      <Route path={APP_PATHS.about} element={<About />} />
+      <Route path={APP_PATHS.terms} element={<TermsAndConditions />} />
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       
-      <Route path="/products" element={<ListProducts/>} />
+      <Route path={APP_PATHS.aiTools} element={<ListProducts/>} />
+      <Route path={APP_PATHS.aiToolsLegacy} element={<ListProducts/>} />
 
-      <Route path="/allcategory" element={<ListAllCard/>} />
+      <Route path={APP_PATHS.allCategories} element={<ListAllCard/>} />
 
       <Route path='/comingsoon' element = {<ComingSoon/>}></Route>
 
@@ -138,16 +144,14 @@ const userRoutes = () => {
         }
       />
 
-      <Route key="newsletters" path="/ai-newsletters" element={<AINewsletters />} />
-      <Route key="jobs" path="/ai-jobs" element={<AIJobs />} />
-      <Route key="news" path="/ai-news" element={<AINews />} />
-      <Route key="news" path="/ai-papers" element={<AIPapers />} />
-      <Route key="blogs" path="/ai-blogs" element={<BlogList />} />
-      <Route key="blog-detail" path="/ai-blogs/:slug" element={<BlogDetail />} />
-      <Route path="/code-tools" element={<EmbeddedWorkspace kind="code" />} />
-      <Route path="/code-tools/algorithms/:slug" element={<EmbeddedWorkspace kind="code" />} />
-      <Route path="/pdf-tools" element={<EmbeddedWorkspace kind="pdf" />} />
-      <Route path="/pdf-tools/tools/:toolId" element={<EmbeddedWorkspace kind="pdf" />} />
+      <Route key="newsletters" path={APP_PATHS.aiNewsletters} element={<AINewsletters />} />
+      <Route key="jobs" path={APP_PATHS.aiJobs} element={<AIJobs />} />
+      <Route key="news" path={APP_PATHS.aiNews} element={<AINews />} />
+      <Route key="news" path={APP_PATHS.aiPapers} element={<AIPapers />} />
+      <Route key="blogs" path={APP_PATHS.aiBlogs} element={<BlogList />} />
+      <Route key="blog-detail" path={`${APP_PATHS.aiBlogs}/:slug`} element={<BlogDetail />} />
+      <Route path="/:workspaceSlug" element={<EmbeddedWorkspace />} />
+      <Route path="/:workspaceSlug/:childType/:toolSlug" element={<EmbeddedWorkspace />} />
 
       <Route
         path="/me/bookmarks"

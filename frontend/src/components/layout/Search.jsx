@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { APP_PATHS } from "../../constants/routes";
 
 const Search = () => {
   const [keyword, setKeyword] = useState("");
@@ -28,9 +29,9 @@ const Search = () => {
     e.preventDefault();
 
     if (keyword?.trim()) {
-      navigate(`/products?keyword=${encodeURIComponent(keyword)}`);
+      navigate(`${APP_PATHS.aiTools}?keyword=${encodeURIComponent(keyword)}`);
     } else {
-      navigate(`/products`);
+      navigate(APP_PATHS.aiTools);
     }
   };
 

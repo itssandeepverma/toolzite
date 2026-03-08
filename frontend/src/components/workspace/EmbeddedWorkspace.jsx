@@ -2,78 +2,73 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Loader from "../layout/Loader";
 import MetaData from "../layout/MetaData";
+import NotFound from "../layout/NotFound";
+import {
+  getWorkspaceChildPath,
+  getWorkspaceConfigByKind,
+  getWorkspaceConfigBySlug,
+  getWorkspaceToolPath,
+} from "../../constants/routes";
 
-const WORKSPACE_CONFIG = {
-  code: {
-    title: "ToolZite Code Tools",
-    subtitle: "Algorithm walkthroughs, readable code, and visual interview prep inside the ToolZite shell.",
-    badge: "TOOLZITE WORKSPACE",
-    section: "Code Tools",
-    origin: "https://code.toolzite.com",
-    defaultChildPath: "/algorithms/two-sum",
-    internalBasePath: "/code-tools",
-    childBasePath: "/algorithms/",
-    minFrameHeight: 680,
-  },
-  pdf: {
-    title: "ToolZite PDF Tools",
-    subtitle: "Document, image, and browser-side utility workflows embedded directly into ToolZite.",
-    badge: "TOOLZITE WORKSPACE",
-    section: "PDF Tools",
-    origin: "https://pdf.toolzite.com",
-    defaultChildPath: "/tools/compress",
-    internalBasePath: "/pdf-tools",
-    childBasePath: "/tools/",
-    minFrameHeight: 980,
-  },
-};
-
-const getChildPath = (kind, slug) => {
-  const config = WORKSPACE_CONFIG[kind];
-  if (!slug) return config.defaultChildPath;
-  return `${config.childBasePath}${slug}`;
-};
-
-const toInternalPath = (kind, childPath) => {
-  const config = WORKSPACE_CONFIG[kind];
-  if (!childPath || !childPath.startsWith(config.childBasePath)) {
-    return `${config.internalBasePath}${config.defaultChildPath}`;
+const toInternalPath = (config, childPath) => {
+  const childPrefix = `/${config.childSegment}/`;
+  if (!childPath || !childPath.startsWith(childPrefix)) {
+    return getWorkspaceToolPath(config.kind, config.defaultToolId);
   }
-  return `${config.internalBasePath}${childPath}`;
+  return `${config.path}${childPath}`;
 };
 
-const buildEmbedSrc = (kind, childPath) => {
-  const config = WORKSPACE_CONFIG[kind];
-  return `${config.origin}${childPath}?embed=1`;
-};
+const buildEmbedSrc = (config, childPath) => `${config.origin}${childPath}?embed=1`;
 
 const EmbeddedWorkspace = ({ kind }) => {
-  const config = WORKSPACE_CONFIG[kind];
   const params = useParams();
   const location = useLocation();
   const navigate = useNavigate();
   const iframeRef = useRef(null);
-  const [frameHeight, setFrameHeight] = useState(config.minFrameHeight);
+  const config = useMemo(() => {
+    if (kind) return getWorkspaceConfigByKind(kind);
+    return getWorkspaceConfigBySlug(params.workspaceSlug);
+  }, [kind, params.workspaceSlug]);
+  const toolId = params.toolSlug;
+  const childType = params.childType;
+  const resolvedKind = config?.kind || kind;
+  const [frameHeight, setFrameHeight] = useState(config?.minFrameHeight || 680);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const slug = kind === "code" ? params.slug : params.toolId;
-  const childPath = useMemo(() => getChildPath(kind, slug), [kind, slug]);
-  const iframeSrc = useMemo(() => buildEmbedSrc(kind, childPath), [kind, childPath]);
+  const hasInvalidWorkspaceRoute =
+    !config || (childType && childType !== config.childSegment);
+
+  const childPath = useMemo(() => {
+    if (!config) return null;
+    return getWorkspaceChildPath(config.kind, toolId);
+  }, [config, toolId]);
+  const iframeSrc = useMemo(() => {
+    if (!config || !childPath) return null;
+    return buildEmbedSrc(config, childPath);
+  }, [config, childPath]);
 
   useEffect(() => {
+    if (config) {
+      setFrameHeight(config.minFrameHeight);
+    }
+  }, [config]);
+
+  useEffect(() => {
+    if (!config) return undefined;
+
     const handleMessage = (event) => {
       if (event.source !== iframeRef.current?.contentWindow) return;
       if (!event.data || typeof event.data !== "object") return;
 
-      if (event.data.type === "toolzite:embed-height" && event.data.kind === kind) {
+      if (event.data.type === "toolzite:embed-height" && event.data.kind === resolvedKind) {
         const nextHeight = Number(event.data.height);
         if (Number.isFinite(nextHeight) && nextHeight > 0) {
           setFrameHeight(Math.max(config.minFrameHeight, Math.ceil(nextHeight) + 8));
         }
       }
 
-      if (event.data.type === "toolzite:embed-route" && event.data.kind === kind) {
-        const nextPath = toInternalPath(kind, event.data.path);
+      if (event.data.type === "toolzite:embed-route" && event.data.kind === resolvedKind) {
+        const nextPath = toInternalPath(config, event.data.path);
         if (nextPath !== location.pathname) {
           navigate(nextPath, { replace: true });
         }
@@ -82,18 +77,22 @@ const EmbeddedWorkspace = ({ kind }) => {
 
     window.addEventListener("message", handleMessage);
     return () => window.removeEventListener("message", handleMessage);
-  }, [config.minFrameHeight, kind, location.pathname, navigate]);
+  }, [config, location.pathname, navigate, resolvedKind]);
 
   useEffect(() => {
     setIsLoaded(false);
   }, [iframeSrc]);
+
+  if (hasInvalidWorkspaceRoute) {
+    return <NotFound />;
+  }
 
   return (
     <>
       <MetaData
         title={`${config.title} | ToolZite`}
         description={config.subtitle}
-        canonical={`https://www.toolzite.com${toInternalPath(kind, childPath)}`}
+        canonical={`https://www.toolzite.com${toInternalPath(config, childPath)}`}
         image="https://www.toolzite.com/images/og-default.jpg"
         keywords={`toolzite, ${config.section.toLowerCase()}, embedded tools`}
       />

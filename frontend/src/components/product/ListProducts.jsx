@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import CustomPagination from "../layout/CustomPagination";
 import Filters from "../layout/Filters";
 import Search from "../layout/Search";
+import { APP_PATHS } from "../../constants/routes";
 
 const ListProducts = () => {
   let [searchParams] = useSearchParams();
@@ -50,7 +51,7 @@ const ListProducts = () => {
   // Build dynamic SEO
   const pageNum = Number(page) || 1;
   const base = "https://www.toolzite.com";
-  const path = "/products";
+  const path = APP_PATHS.aiTools;
   const canonicalParams = new URLSearchParams();
   if (category) canonicalParams.set("category", category);
   if (keyword) canonicalParams.set("keyword", keyword);

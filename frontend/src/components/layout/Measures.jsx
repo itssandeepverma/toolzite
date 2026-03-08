@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBolt, FaGlobe, FaLayerGroup, FaSearch } from "react-icons/fa";
+import { APP_PATHS } from "../../constants/routes";
 
 // Define stats data
 const stats = [
@@ -9,7 +10,7 @@ const stats = [
     number: "50+",
     title: "New AI Tools Weekly",
     description: "Discover the latest AI tools added every week for maximum efficiency.",
-    link: "/products",
+    link: APP_PATHS.aiTools,
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const stats = [
     number: "20+",
     title: "AI Categories",
     description: "Explore AI tools categorized to fit different industries and needs effortlessly.",
-    link: "/allcategory",
+    link: APP_PATHS.allCategories,
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ const stats = [
     number: "3,000+",
     title: "AI Tools Listed",
     description: "Browse through thousands of AI tools for all your projects with ease.",
-    link: "/products",
+    link: APP_PATHS.aiTools,
   },
   {
     id: 4,
@@ -33,7 +34,7 @@ const stats = [
     number: "One-Click",
     title: "Instant AI Access",
     description: "Find and access AI tools instantly with just a single click anytime.",
-    link: "/products",
+    link: APP_PATHS.aiTools,
   },
 ];
 

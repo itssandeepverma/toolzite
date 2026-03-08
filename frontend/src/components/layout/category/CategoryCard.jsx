@@ -3,6 +3,7 @@ import Loader from "../Loader";
 import { useGetProductsQuery } from "../../../redux/api/productsApi";
 import toast from "react-hot-toast";
 import { FiExternalLink } from "react-icons/fi";
+import { APP_PATHS } from "../../../constants/routes";
 
 const CategoryCard = ({ category }) => {
   const { data, isLoading, error, isError } = useGetProductsQuery({ category });
@@ -57,7 +58,7 @@ const CategoryCard = ({ category }) => {
       </ul>
 
       <a
-        href={`/products?category=${encodeURIComponent(category)}`}
+        href={`${APP_PATHS.aiTools}?category=${encodeURIComponent(category)}`}
         className="tz-category-cta"
       >
         See all tools ({size}) →
