@@ -59,12 +59,12 @@ const TEAM_MEMBERS = [
   {
     name: "Sandeep Verma",
     role: "Founder & CEO",
-    image: "/images/sandeep.jpg",
+    image: "/images/sandeep.png",
     initials: "S",
     linkedin: "https://www.linkedin.com/in/sandeepiitb/",
   },
   {
-    name: "Abhhishek Yadav",
+    name: "Abhishek Yadav",
     role: "Co-Founder & Designer",
     image: "/images/abhishek.jpg",
     initials: "A",
