@@ -83,6 +83,29 @@ const EmbeddedWorkspace = ({ kind }) => {
     setIsLoaded(false);
   }, [iframeSrc]);
 
+  useEffect(() => {
+    if (!config || typeof window === "undefined") return undefined;
+
+    const postViewportHeight = () => {
+      iframeRef.current?.contentWindow?.postMessage(
+        {
+          type: "toolzite:embed-viewport",
+          kind: config.kind,
+          height: window.innerHeight,
+        },
+        "*",
+      );
+    };
+
+    const frame = window.requestAnimationFrame(postViewportHeight);
+    window.addEventListener("resize", postViewportHeight);
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("resize", postViewportHeight);
+    };
+  }, [config, iframeSrc, isLoaded]);
+
   if (hasInvalidWorkspaceRoute) {
     return <NotFound />;
   }
@@ -112,7 +135,17 @@ const EmbeddedWorkspace = ({ kind }) => {
               src={iframeSrc}
               className="tz-embed-frame"
               style={{ height: `${frameHeight}px`, opacity: isLoaded ? 1 : 0 }}
-              onLoad={() => setIsLoaded(true)}
+              onLoad={() => {
+                setIsLoaded(true);
+                iframeRef.current?.contentWindow?.postMessage(
+                  {
+                    type: "toolzite:embed-viewport",
+                    kind: config.kind,
+                    height: window.innerHeight,
+                  },
+                  "*",
+                );
+              }}
             />
           </section>
         </div>
