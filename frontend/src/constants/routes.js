@@ -1,6 +1,7 @@
 export const APP_PATHS = {
   home: "/",
   about: "/about",
+  verify: "/verify",
   terms: "/terms-and-conditions",
   aiTools: "/ai-tools",
   aiToolsLegacy: "/products",

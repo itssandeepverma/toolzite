@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Navigate, Route } from "react-router-dom";
 
 import ProductDetails from "../product/ProductDetails";
 import Login from "../auth/Login";
@@ -32,14 +32,16 @@ import BlogDetail from "../blog/BlogDetail";
 import BlogCreate from "../blog/BlogCreate";
 import EmbeddedWorkspace from "../workspace/EmbeddedWorkspace";
 import { APP_PATHS } from "../../constants/routes";
-import About from "../pages/About";
 import TermsAndConditions from "../pages/TermsAndConditions";
+import CertificateVerify from "../pages/CertificateVerify";
 
 const userRoutes = () => {
   return (
     <>
       <Route path={APP_PATHS.home} element={<Home />} />
-      <Route path={APP_PATHS.about} element={<About />} />
+      <Route path={APP_PATHS.about} element={<Navigate to={APP_PATHS.home} replace />} />
+      <Route path={APP_PATHS.verify} element={<CertificateVerify />} />
+      <Route path={`${APP_PATHS.verify}/:certificateId`} element={<CertificateVerify />} />
       <Route path={APP_PATHS.terms} element={<TermsAndConditions />} />
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/login" element={<Login />} />

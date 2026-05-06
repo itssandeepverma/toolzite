@@ -39,7 +39,6 @@ export default function Footer() {
         <div>
           <h6>Company</h6>
           <ul>
-            <li><Link to={APP_PATHS.about}>About</Link></li>
             <li><Link to={APP_PATHS.terms}>Terms and Conditions</Link></li>
             <li>
               <a
@@ -106,7 +105,6 @@ export default function Footer() {
       <div className="tz-footer-bottom">
         <span>&copy; {year} Toolzite. All rights reserved.</span>
         <div className="tz-footer-bottom-links">
-          <Link to={APP_PATHS.about}>About</Link>
           <Link to={APP_PATHS.terms}>Terms</Link>
           <a href="https://toolzite.com/">toolzite.com</a>
         </div>

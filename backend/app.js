@@ -12,6 +12,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 import newsRoutes from "./routes/news.js";
 import blogRoutes from "./routes/blogs.js";
+import certificateRoutes from "./routes/certificates.js";
+import { ensureDefaultCertificateSeed } from "./controllers/certificateControllers.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,6 +37,9 @@ console.log(`Port: ${process.env.PORT}`);
 
 // Connecting to database
 connectDatabase();
+ensureDefaultCertificateSeed().catch((error) => {
+  console.error("Failed to seed default certificate:", error);
+});
 
 // CORS middleware for development
 if (process.env.NODE_ENV !== "PRODUCTION") {
@@ -79,6 +84,7 @@ app.use("/api/v1", orderRoutes);
 app.use("/api/v1", paymentRoutes);
 app.use("/api/v1", newsRoutes);
 app.use("/api/v1", blogRoutes);
+app.use("/api/v1", certificateRoutes);
 
 // Production static file serving
 if (process.env.NODE_ENV === "PRODUCTION") {
